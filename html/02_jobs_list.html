@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>고용노동부 대체인력뱅크</title>
+	<meta name="keywords" content="대체인력뱅크, 취업관리시스템, 히든챔피언, hidden, champion, hidden champion, 고졸채용, highschool, rhwhf, rhwhfcodyd 커리어, career, career.co.kr, CAREER, zjfldj, 취업, 사람, 구인, 구직, 구직정보, 구인정보, 이력서 , resume, dlfurtj, 아르바이트, 알바, alba, dkfmqkdlxm, dkfqk, 헤드헌팅, 서치펌, 고용, 고용정보, 취업정보, 취업뉴스, 취업 뉴스, 취업속보, 취업 속보, 공채속보, 공채 속보, 공채, 취업포털, 채용포털, 채용, 채용정보, 취업사이트, 구직사이트, 구인사이트, 인터넷채용시스템, 인터넷취업시스템, 고용정보, 취업교육, 대기업, 중견기업, 중소기업, 일반기업, 일자리, 벤처기업, 워크, work, 잡, job, 재취업, 여성취업, cnldjq, rndls, rnwlr, 전직, 재취업, 정보통신취업, it취업, 임원, ceo, 리쿠르트,  리크루트, 헤드헌팅 파견.대행, 아웃소싱, 인재파견, 채용대행, 위탁도급, 파견임시, 취업박람회, 채용박람회, 일자리박람회, 박람회, 취업교육, 취업교육센터, 교육, 교육과정, 교육정보, 교육기관, 외국계기업, 외국인업체, 외국인기업, 자원봉사, 프리랜서, 취업상담실, 해외취업, 취업성공, 성공취업, joblink, jobsns, jobfair, work, recruit, saram, tkfka, pay, cnldjq, zjfldj" />
+	<meta name="description" content="대체인력뱅크, 취업관리시스템, 구인, 구직, 구인검색, 구직검색, 취업정보, 채용정보, 구직정보, 구인정보, 취업가이드, 경력관리, 커리어, CAEEER, Career, 헤드헌팅, 파견.대행, 아웃소싱, 인재파견, 채용대행, 교육과정, 교육정보, 취업박람회, 채용박람회, 박람회, 기업정보, 상세기업정보, 취업뉴스, 해외취업, 아르바이트, 알바, 이력서, 대학전산망" />
+	<meta name="author" content="희망을 전하는 취업포털 커리어 old.career.co.kr" />
+	<meta name="copyright" content="희망을 전하는 취업포털 커리어 old.career.co.kr" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="imagetoolbar" content="no" />
+
+
+	<!-- 기존리소스:S -->
+	<!-- 커리어 관련 -->
+	<link href="//old.career.co.kr/css/jobs_2013.css" rel="stylesheet" type="text/css" />
+	<link href="//old.career.co.kr/css/login_2011.css" rel="stylesheet" type="text/css" />
+	<link href="//old.career.co.kr/css/basic_2011.css" rel="stylesheet" type="text/css" />
+	<link href="//old.career.co.kr/css/company_2011.css" rel="stylesheet" type="text/css" />
+
+	<link href="//old.career.co.kr/css/resume_2011.css" rel="stylesheet" type="text/css" />
+
+	<!-- 커리어 상단 -->
+	<link href="//old.career.co.kr/css/topGnb_2012v1.css" rel="stylesheet" type="text/css" />
+
+	<!-- 대체인력뱅크 -->
+	<link href="//old.career.co.kr/css/substitute.css?140325" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="//old.career.co.kr/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="//old.career.co.kr/js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="//old.career.co.kr/js/substitute.js"></script>
+
+
+	<script type="text/javascript" src="//old.career.co.kr/js/main/ui_main_2012.js"></script>
+	<script type="text/javascript" src="//old.career.co.kr/js/gnb2013.js"></script>
+	<script type="text/javascript" src="//old.career.co.kr/js/jobs2013.js?131113"></script>
+
+	<script type="text/javascript" src="http://www4.career.co.kr/js/login.js"></script>
+	<script type="text/javascript" src="http://www4.career.co.kr/js/common.js"></script>
+	<!-- <script type="text/javascript" src="http://www4.career.co.kr/js/jquery-1.5.1.js"></script> -->
+	<script type="text/javascript" src="//old.career.co.kr/register/js/ajax.js"></script>
+	<!-- 기존리소스:E -->
+
+
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/reset.css?<%=publishUpdateDt%>" />
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/jquery-ui.css?<%=publishUpdateDt%>" />
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/common.css?<%=publishUpdateDt%>3" />
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/popup.css?<%=publishUpdateDt%>" />
+
+
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/jquery-1.11.1.min.js?<%=publishUpdateDt%>"></script>
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/jquery-ui.js?<%=publishUpdateDt%>"></script>
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/jquery.bxSlider.min.js?<%=publishUpdateDt%>"></script>
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/jquery.placeholder.js?<%=publishUpdateDt%>"></script>
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/placeholders.jquery.min.js?<%=publishUpdateDt%>"></script>
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/slick.min.js?<%=publishUpdateDt%>"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/fair_sub.css?<%=publishUpdateDt%>4" />
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/fair_jobs.css?<%=publishUpdateDt%>" />
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/fair_my.css?<%=publishUpdateDt%>" />
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/fair_main.css?<%=publishUpdateDt%>1" />
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/teaser2.css?<%=publishUpdateDt%>" />
+
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/comm_2009.js?<%=publishUpdateDt%>"></script>
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/common2.js?<%=publishUpdateDt%>"></script>
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/validateCommon.js?<%=publishUpdateDt%>"></script>
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/ui.js?<%=publishUpdateDt%>"></script>
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/view2015.js?<%=publishUpdateDt%>"></script>
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/code.js?<%=publishUpdateDt%>"></script>
+
+
+	<!-- 아이디찾기/비밀번호재설정/회원탈퇴 -->
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/members_2018.css?<%=publishUpdateDt%>" />
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/members_2018.js?<%=publishUpdateDt%>"></script>
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/members_search.js?<%=publishUpdateDt%>"></script>
+
+	<!-- 로그인 -->
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/fair_signup.css?<%=publishUpdateDt%>" />
+
+	<!-- 이력서 -->
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/ui_resume.js?<%=publishUpdateDt%>"></script>
+	<!-- 입사지원 리스트(기업회원) -->
+	<!-- 지원자관리 제외 -->
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/company_2017.css?<%=publishUpdateDt%>" />
+	<script type="text/javascript" src="https://tmatchingbank.career.co.kr/js/company_2017.js?<%=publishUpdateDt%>"></script>
+
+	<!-- 인재정보 -->
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/fair_resume.css?<%=publishUpdateDt%>" />
+
+	<link rel="stylesheet" type="text/css" href="https://tmatchingbank.career.co.kr//css/tools_2019.css" />
+
+
+
+
+
+
+	<link rel="stylesheet" href="/static/css/r_common.css">
+	<script src="/static/js/libs/jquery-1.11.1.min.js"></script>
+	<script src="/static/js/libs/jquery.mCustomScrollbar.js"></script>
+	<script src="/static/js/libs/jquery-ui.min.js"></script>
+	<script src="/static/js/libs/slick.min.js"></script>
+	<script src="/static/js/design.utils.js"></script>
+	<script src="/static/js/design.plugin.js"></script>
+	<script src="/static/js/customTags.js"></script>
+	<script src="/static/js/_cl.js"></script>
+	<script src="/static/js/common.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(this).customTags();
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Skip Nav : S -->
+	<div id="skipnavigation">
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#container">본문내용 바로가기</a>
+		<a href="#footer">하단 바로가기</a>
+	</div>
+	<!-- Skip Nav : E -->
+
+
+
+	<!-- HEADER :S -->
+	<div id="header" class="header">
+		<script>
+			$(document).ready(function () {
+				$(this).include(true, [
+					['header', {
+						target: '#header',
+						url: '/html/include/header.html',
+						get: true
+					}]
+				]);
+			});
+		</script>
+		<!-- /include/header.html -->
+	</div>
+	<!-- HEADER :E -->
+
+
+
+
+
+	<div id="container" class="container">
+		<div id="contents" class="contetns sub_page">
+
+			<script>
+				$(document).ready(function () {});
+			</script>
+			<div class="sub_visual" style="background-image: url(/static/images/bann/bann006.png);">
+				<div class="visual_area">
+					<h2>대체인력뱅크 채용정보</h2>
+				</div>
+			</div>
+
+			<!-- 채용정보 :S -->
+			<div class="empInfoArea MT70">
+				<div class="innerWrap">
+
+					<!-- 채용정보패널:S -->
+					<div class="empPanArea">
+						<!-- 직무:S -->
+						<div class="emPanCol col1">
+							<div class="ttit tp1">
+								<span class="int">직무</span>
+							</div>
+							<div class="tCont">
+								<div class="tConBox col6">
+									<!-- foreach:S -->
+									<div class="lasForm">
+										<label>
+											<input type="checkbox" id="" name="" value="">
+											<span class="lb">경영.기획</span>
+										</label>
+									</div>
+									<div class="lasForm">
+										<label>
+											<input type="checkbox" id="" name="" value="">
+											<span class="lb">전문직</span>
+										</label>
+									</div>
+									<!-- foreach:E -->
+								</div>
+								<div class="tConBox col6">
+									<!-- foreach:S -->
+									<div class="lasForm">
+										<label>
+											<input type="checkbox" id="" name="" value="">
+											<span class="lb">경영.기획</span>
+										</label>
+									</div>
+									<div class="lasForm">
+										<label>
+											<input type="checkbox" id="" name="" value="">
+											<span class="lb">전문직</span>
+										</label>
+									</div>
+									<!-- foreach:E -->
+									<!-- 선택된거없을때:S -->
+									<!-- <div class="nores">
+										직무를 선택해 주세요.
+									</div> -->
+									<!-- 선택된거없을때:E -->
+								</div>
+							</div>
+						</div>
+						<!-- 직무:E -->
+						<!-- 지역:S -->
+						<div class="emPanCol col2">
+							<div class="ttit tp2">
+								<span class="int">지역</span>
+							</div>
+							<div class="tCont">
+								<div class="tConBox col6">
+									<!-- foreach:S -->
+									<div class="lasForm">
+										<label>
+											<input type="checkbox" id="" name="" value="">
+											<span class="lb">서울특별시</span>
+										</label>
+									</div>
+									<div class="lasForm">
+										<label>
+											<input type="checkbox" id="" name="" value="">
+											<span class="lb">부산광역시</span>
+										</label>
+									</div>
+									<!-- foreach:E -->
+								</div>
+								<div class="tConBox col6">
+									<!-- foreach:S -->
+									<!-- <div class="lasForm">
+										<label>
+											<input type="checkbox" id="" name="" value="">
+											<span class="lb">경영.기획</span>
+										</label>
+									</div>
+									<div class="lasForm">
+										<label>
+											<input type="checkbox" id="" name="" value="">
+											<span class="lb">전문직</span>
+										</label>
+									</div> -->
+									<!-- foreach:E -->
+									<!-- 선택된거없을때:S -->
+									<div class="nores">
+										지역를 선택해 주세요.
+									</div>
+									<!-- 선택된거없을때:E -->
+								</div>
+							</div>
+						</div>
+						<!-- 지역:E -->
+						<!-- 신입/경력:S -->
+						<div class="emPanCol col3">
+							<div class="ttit tp3">
+								<span class="int">신입/경력</span>
+							</div>
+							<div class="tCont">
+								<div class="tConBox">
+									<!-- foreach:S -->
+									<div class="lasForm">
+										<label>
+											<input type="radio" id="" name="a" value="">
+											<span class="lb">신입</span>
+										</label>
+									</div>
+									<div class="lasForm">
+										<label>
+											<input type="radio" id="" name="a" value="">
+											<span class="lb">경력</span>
+										</label>
+									</div>
+									<div class="lasForm">
+										<label>
+											<input type="radio" id="" name="a" value="">
+											<span class="lb">경력무관</span>
+										</label>
+									</div>
+									<!-- foreach:E -->
+								</div>
+							</div>
+						</div>
+						<!-- 신입/경력:E -->
+						<!-- 학력:S -->
+						<div class="emPanCol col4">
+							<div class="ttit tp4">
+								<span class="int">학력</span>
+							</div>
+							<div class="tCont">
+								<div class="tConBox">
+									<!-- foreach:S -->
+									<div class="lasForm">
+										<label>
+											<input type="radio" id="" name="b" value="">
+											<span class="lb">전체</span>
+										</label>
+									</div>
+									<div class="lasForm">
+										<label>
+											<input type="radio" id="" name="b" value="">
+											<span class="lb">학력무관</span>
+										</label>
+									</div>
+									<div class="lasForm">
+										<label>
+											<input type="radio" id="" name="b" value="">
+											<span class="lb">고등학교 졸업</span>
+										</label>
+									</div>
+									<div class="lasForm">
+										<label>
+											<input type="radio" id="" name="b" value="">
+											<span class="lb">대학(2, 3년)졸업</span>
+										</label>
+									</div>
+									<div class="lasForm">
+										<label>
+											<input type="radio" id="" name="b" value="">
+											<span class="lb">대학교(4년) 졸업</span>
+										</label>
+									</div>
+									<div class="lasForm">
+										<label>
+											<input type="radio" id="" name="b" value="">
+											<span class="lb">석사학윈</span>
+										</label>
+									</div>
+									<!-- foreach:E -->
+								</div>
+							</div>
+						</div>
+						<!-- 학력:E -->
+					</div>
+					<!-- 채용정보패널:E -->
+
+
+					<!-- 리스트:S -->
+					<div class="notice_area MT70" >
+						<div class="searchArea" style="border-top: none;">
+							<div class="searchInner">
+								<div class="fl">
+									<select class="tp2 MINWIDTH130 MR05">
+										<option value="">최근업데이트순</option>
+									</select>
+									<span class="lnses"></span>
+									<select class="tp2 MINWIDTH080 MR05">
+										<option value="">40줄</option>
+									</select>
+								</div>
+								<div class="fr">
+									<div class="searchBox">
+										<div>
+											<input type="text" class="txt" id="" name="" placeholder="제목 또는 내용을 입력해 주세요" value="" style="width:377px;">
+											<button type="button" class="btn typegray"><strong>검색</strong></button>
+											<button type="button" class="btn typereset"><strong>초기화</strong></button>
+										</div>
+									</div><!-- .searchBox -->
+								</div>
+								<!--.fr-->
+							</div>
+							<!--.searchInner-->
+						</div>
+						<!-- 채용관련 테이블:S -->
+						<div class="cmmTblTp recruit ">
+							<div class="cttCont ">
+								<table>
+									<colgroup>
+										<col class="col1">
+										<col class="col2">
+										<col class="col3">
+										<col class="col4">
+										<col class="col5">
+										<col class="col6">
+									</colgroup>
+									<thead>
+										<tr>
+											<th> </th>
+											<th>회사명</th>
+											<th>채용제목</th>
+											<th>지원자격</th>
+											<th>근무조건</th>
+											<th>마감일/등록일</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- foreach:S -->
+										<tr>
+											<td colspan="2">
+												<div class="cttCkNm">
+													<div class="ckbBx"></div>
+													<div class="txtBx">
+														<div class="tpNm">
+															<a href="#" class="tx">한국전력거래소한국전력거래소한국전력거래소</a>
+															<a href="#" class="ic active" title="관심기업"></a>
+														</div>
+														<span class="otNm">산업통상자원부그룹</span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="cttCntArea">
+													<div class="txtBx">
+														<div class="tpNm">
+															<a href="/html/recruit/recruit_view.html" class="tx">2021년도 한국자산관리공사 채용형 청년인턴 채용공고</a>
+															<a href="#" class="ic " title="스크랩"></a>
+														</div>
+														<div class="otNmArea">
+															<span class="otNm">#웹기획</span>
+															<span class="otNm">#웹디자인</span>
+															<span class="otNm">#웹퍼블리셔</span>
+															<span class="otNm">#산업</span>
+															<span class="otNm">#기획</span>
+														</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<!-- foreach:S -->
+												<div class="txsArea">
+													<span class="itx">경력3년</span>
+													<!-- "이상" 일때:S -->
+													<span class="ico gt"></span>
+													<!-- "이상" 일때:E -->
+												</div>
+												<div class="txsArea">
+													<span class="itx">대학교(4년)</span>
+													<!-- "이하" 일때:S -->
+													<span class="ico lt"></span>
+													<!-- "이하" 일때:E -->
+												</div>
+												<!-- foreach:E -->
+											</td>
+											<td>
+												<!-- foreach:S -->
+												<div class="txsArea">
+													<span class="itx">정규직</span>
+												</div>
+												<div class="txsArea">
+													<span class="itx">서울 강남구</span>
+												</div>
+												<!-- foreach:E -->
+											</td>
+											<td>
+												<a href="#;" onclick="alert('작업중');" class="cttBtns radius org block FWB">
+													<span class="icos check_7 white"></span>
+													<span class="VMIDDLE">입사지원</span>
+												</a>
+												<div class="txsArea tp2 MT05">
+													<span class="itx">~04/07(수)</span>
+												</div>
+												<div class="txsArea tp2">
+													<span class="itx cgray">(3분 전 등록)</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<div class="cttCkNm">
+													<div class="ckbBx"></div>
+													<div class="txtBx">
+														<div class="tpNm">
+															<a href="#" class="tx">한국전력거래소</a>
+															<a href="#" class="ic active" title="관심기업"></a>
+														</div>
+														<span class="otNm">산업통상자원부그룹</span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="cttCntArea">
+													<div class="txtBx">
+														<div class="tpNm">
+															<a href="/html/recruit/recruit_view.html" class="tx ">2021년도 상반기 한국전력거래소 공개채용</a>
+															<a href="#" class="ic active" title="스크랩"></a>
+														</div>
+														<div class="otNmArea">
+															<span class="otNm">#웹기획</span>
+															<span class="otNm">#웹디자인</span>
+															<span class="otNm">#웹퍼블리셔</span>
+															<span class="otNm">#산업</span>
+															<span class="otNm">#기획</span>
+														</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<!-- foreach:S -->
+												<div class="txsArea">
+													<span class="itx">경력3년</span>
+													<!-- "이상" 일때:S -->
+													<span class="ico gt"></span>
+													<!-- "이상" 일때:E -->
+												</div>
+												<div class="txsArea">
+													<span class="itx">대학교(4년)</span>
+													<!-- "이하" 일때:S -->
+													<span class="ico lt"></span>
+													<!-- "이하" 일때:E -->
+												</div>
+												<!-- foreach:E -->
+											</td>
+											<td>
+												<!-- foreach:S -->
+												<div class="txsArea">
+													<span class="itx">정규직</span>
+												</div>
+												<div class="txsArea">
+													<span class="itx">서울 강남구</span>
+												</div>
+												<!-- foreach:E -->
+											</td>
+											<td>
+												<a href="#;" class="cttBtns radius blue1 outline block">홈페이지</a>
+												<div class="txsArea tp2 MT05">
+													<span class="itx">~04/07(수)</span>
+												</div>
+												<div class="txsArea tp2">
+													<span class="itx cgray">(3분 전 등록)</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<div class="cttCkNm">
+													<div class="ckbBx"></div>
+													<div class="txtBx">
+														<div class="tpNm">
+															<a href="#" class="tx">한국전</a>
+															<a href="#" class="ic" title="관심기업"></a>
+														</div>
+														<span class="otNm">산업통상자원부그룹</span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="cttCntArea">
+													<div class="txtBx">
+														<div class="tpNm">
+															<a href="/html/recruit/recruit_view.html" class="tx ">온라인쇼핑몰/어린이집 ERP 고객상담(CS) 및 영업관리(교육기관 및 대리점 관리) 채용모온라인쇼핑몰/어린이집 ERP 고객상담(CS) 및 영업관리(교육기관 및 대리점 관리) 채용모</a>
+															<a href="#" class="ic active" title="스크랩"></a>
+														</div>
+														<div class="otNmArea">
+															<span class="otNm">#웹기획</span>
+															<span class="otNm">#웹디자인</span>
+															<span class="otNm">#웹퍼블리셔</span>
+															<span class="otNm">#산업</span>
+															<span class="otNm">#기획</span>
+														</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<!-- foreach:S -->
+												<div class="txsArea">
+													<span class="itx">경력3년</span>
+													<!-- "이상" 일때:S -->
+													<span class="ico gt"></span>
+													<!-- "이상" 일때:E -->
+												</div>
+												<div class="txsArea">
+													<span class="itx">대학교(4년)</span>
+													<!-- "이하" 일때:S -->
+													<span class="ico lt"></span>
+													<!-- "이하" 일때:E -->
+												</div>
+												<!-- foreach:E -->
+											</td>
+											<td>
+												<!-- foreach:S -->
+												<div class="txsArea">
+													<span class="itx">정규직</span>
+												</div>
+												<div class="txsArea">
+													<span class="itx">서울 강남구</span>
+												</div>
+												<!-- foreach:E -->
+											</td>
+											<td>
+												<a href="#;" onclick="alert('작업중');" class="cttBtns radius org block FWB">
+													<span class="icos check_7 white"></span>
+													<span class="VMIDDLE">입사지원</span>
+												</a>
+												<div class="txsArea tp2 MT05">
+													<span class="itx">~04/07(수)</span>
+												</div>
+												<div class="txsArea tp2">
+													<span class="itx cgray">(3분 전 등록)</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<div class="cttCkNm">
+													<div class="ckbBx"></div>
+													<div class="txtBx">
+														<div class="tpNm">
+															<a href="#" class="tx">한국전력거</a>
+															<a href="#" class="ic" title="관심기업"></a>
+														</div>
+														<span class="otNm">산업통상자원부그룹</span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="cttCntArea">
+													<div class="txtBx">
+														<div class="tpNm">
+															<a href="/html/recruit/recruit_view.html" class="tx">강동구 상일동 오피스빌딩 시설관리 팀장 및 기사급 모집</a>
+															<a href="#" class="ic active" title="스크랩"></a>
+														</div>
+														<div class="otNmArea">
+															<span class="otNm">#웹기획</span>
+															<span class="otNm">#웹디자인</span>
+															<span class="otNm">#웹퍼블리셔</span>
+															<span class="otNm">#산업</span>
+															<span class="otNm">#기획</span>
+														</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<!-- foreach:S -->
+												<div class="txsArea">
+													<span class="itx">경력3년</span>
+													<!-- "이상" 일때:S -->
+													<span class="ico gt"></span>
+													<!-- "이상" 일때:E -->
+												</div>
+												<div class="txsArea">
+													<span class="itx">대학교(4년)</span>
+													<!-- "이하" 일때:S -->
+													<span class="ico lt"></span>
+													<!-- "이하" 일때:E -->
+												</div>
+												<!-- foreach:E -->
+											</td>
+											<td>
+												<!-- foreach:S -->
+												<div class="txsArea">
+													<span class="itx">정규직</span>
+												</div>
+												<div class="txsArea">
+													<span class="itx">서울 강남구</span>
+												</div>
+												<!-- foreach:E -->
+											</td>
+											<td>
+												<a href="#;" class="cttBtns radius blue1 outline block">홈페이지</a>
+												<div class="txsArea tp2 MT05">
+													<span class="itx">~04/07(수)</span>
+												</div>
+												<div class="txsArea tp2">
+													<span class="itx cgray">(3분 전 등록)</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<div class="cttCkNm">
+													<div class="ckbBx"></div>
+													<div class="txtBx">
+														<div class="tpNm">
+															<a href="#" class="tx">한국전</a>
+															<a href="#" class="ic" title="관심기업"></a>
+														</div>
+														<span class="otNm">산업통상자원부그룹</span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="cttCntArea">
+													<div class="txtBx">
+														<div class="tpNm">
+															<a href="/html/recruit/recruit_view.html" class="tx">.sdf</a>
+															<a href="#" class="ic active" title="스크랩"></a>
+														</div>
+														<div class="otNmArea">
+															<span class="otNm">#웹기획</span>
+															<span class="otNm">#웹디자인</span>
+															<span class="otNm">#웹퍼블리셔</span>
+															<span class="otNm">#산업</span>
+															<span class="otNm">#기획</span>
+														</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<!-- foreach:S -->
+												<div class="txsArea">
+													<span class="itx">경력3년</span>
+													<!-- "이상" 일때:S -->
+													<span class="ico gt"></span>
+													<!-- "이상" 일때:E -->
+												</div>
+												<div class="txsArea">
+													<span class="itx">대학교(4년)</span>
+													<!-- "이하" 일때:S -->
+													<span class="ico lt"></span>
+													<!-- "이하" 일때:E -->
+												</div>
+												<!-- foreach:E -->
+											</td>
+											<td>
+												<!-- foreach:S -->
+												<div class="txsArea">
+													<span class="itx">정규직</span>
+												</div>
+												<div class="txsArea">
+													<span class="itx">서울 강남구</span>
+												</div>
+												<!-- foreach:E -->
+											</td>
+											<td>
+												<a href="#;" onclick="alert('작업중');" class="cttBtns radius org block FWB">
+													<span class="icos check_7 white"></span>
+													<span class="VMIDDLE">입사지원</span>
+												</a>
+												<div class="txsArea tp2 MT05">
+													<span class="itx">~04/07(수)</span>
+												</div>
+												<div class="txsArea tp2">
+													<span class="itx cgray">(3분 전 등록)</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<div class="cttCkNm">
+													<div class="ckbBx"></div>
+													<div class="txtBx">
+														<div class="tpNm">
+															<a href="#" class="tx">한국전력거래소</a>
+															<a href="#" class="ic" title="관심기업"></a>
+														</div>
+														<span class="otNm">산업통상자원부그룹</span>
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="cttCntArea">
+													<div class="txtBx">
+														<div class="tpNm">
+															<a href="/html/recruit/recruit_view.html" class="tx">asdfasfasdfasdfasdfasdfasdfasdfdasdfasfasdfasdfasdfasdfasdfasdfdasdfasfasdfasdfasdfasdfasdfasdfdasdfasfasdfasdfasdfasdfasdfasdfd</a>
+															<a href="#" class="ic active" title="스크랩"></a>
+														</div>
+														<div class="otNmArea">
+															<span class="otNm">#웹기획</span>
+															<span class="otNm">#웹디자인</span>
+															<span class="otNm">#웹퍼블리셔</span>
+															<span class="otNm">#산업</span>
+															<span class="otNm">#기획</span>
+														</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<!-- foreach:S -->
+												<div class="txsArea">
+													<span class="itx">경력3년</span>
+													<!-- "이상" 일때:S -->
+													<span class="ico gt"></span>
+													<!-- "이상" 일때:E -->
+												</div>
+												<div class="txsArea">
+													<span class="itx">대학교(4년)</span>
+													<!-- "이하" 일때:S -->
+													<span class="ico lt"></span>
+													<!-- "이하" 일때:E -->
+												</div>
+												<!-- foreach:E -->
+											</td>
+											<td>
+												<!-- foreach:S -->
+												<div class="txsArea">
+													<span class="itx">정규직</span>
+												</div>
+												<div class="txsArea">
+													<span class="itx">서울 강남구</span>
+												</div>
+												<!-- foreach:E -->
+											</td>
+											<td>
+												<a href="#;" class="cttBtns radius org block FWB">
+													<span class="icos check_7 white"></span>
+													<span class="VMIDDLE">입사지원</span>
+												</a>
+												<div class="txsArea tp2 MT05">
+													<span class="itx">~04/07(수)</span>
+												</div>
+												<div class="txsArea tp2">
+													<span class="itx cgray">(3분 전 등록)</span>
+												</div>
+											</td>
+										</tr>
+										<!-- foreach:E -->
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- 채용관련 테이블:E -->
+					</div>
+					<!-- 리스트:E -->
+
+
+
+					<!-- 페이징:S -->
+					<div class="pagingArea">
+						<strong>1</strong>
+						<a href="#">2</a>
+					</div>
+					<!-- 페이징:E -->
+				</div>
+			</div>
+
+			<!-- 채용정보 :E -->
+
+		</div>
+	</div>
+
+
+	<!-- FOOTER : S -->
+	<div id="footer" class="footer">
+		<script>
+			$(document).ready(function () {
+				$(this).include(true, [
+					['footer', {
+						target: '#footer',
+						url: '/html/include/footer.html',
+						get: true
+					}]
+				]);
+			});
+		</script>
+		<!-- /include/header.html -->
+	</div>
+	<!-- FOOTER : E -->
+
+</body>
+
+</html>
