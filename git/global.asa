@@ -1,0 +1,39 @@
+<SCRIPT LANGUAGE=VBScript RUNAT=Server> 
+
+ 'Asp application의 처음 페이지를 처음 사용자가 호출했을 때 발생한다.
+Sub Application_OnStart
+
+	Application("DBInfo")		= "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
+	Application("DBInfoJobLog") = "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=joblog"
+	
+	Application("DBInfo_REAL")	= "Provider=SQLOLEDB;Data Source='192.168.1.2';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
+
+	Application("DBInfo_ADM")	= "Provider=SQLOLEDB;Data Source='192.168.1.8';User ID='careernet';Password='zjfldjzkvp#00';Initial Catalog=careernet"
+
+	Application("DBInfo_ETC")	= "Provider=SQLOLEDB;Data Source='192.168.1.8';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
+
+	Application("DBInfo9")		= "Provider=SQLOLEDB;Data Source='192.168.1.9';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
+
+	Application("DBInfo_TEST")	= "Provider=SQLOLEDB;Data Source='218.145.70.176';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
+
+	Application("DB_SMS")		= "Provider=SQLOLEDB;Data Source='61.74.61.123';User ID='careersms';Password='careersms123pw!';Initial Catalog=SMS"
+
+End Sub
+
+'마지막 사용자가 session을 끝냈을 때 이벤트가 발생한다. 보통 웹 서버가 멈추었을 때 이벤트가 발생한다.
+'application이 멈춘 후 레코드를 삭제하거나 텍스트 파일에 정보를 쓰는 것과 같이 설정을 제거하는데 사용된다.
+Sub Application_OnEnd
+
+End Sub
+
+'ASP application에서 새로운 사용자가 사용자의 처음 페이지를 요청할 때마다 이 이벤트는 발생한다.
+Sub Session_OnStart
+
+End Sub
+
+'사용자가 session을 끝낼때 마다 이 이벤트가 발생한다. 사용자 session은 기본적으로 20분 동안 사용자의 요청이 없으면 끝난다.
+Sub Session_OnEnd
+
+End Sub
+
+</SCRIPT>
