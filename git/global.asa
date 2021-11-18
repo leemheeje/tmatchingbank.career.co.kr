@@ -3,20 +3,10 @@
  'Asp application의 처음 페이지를 처음 사용자가 호출했을 때 발생한다.
 Sub Application_OnStart
 
-	Application("DBInfo")		= "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
-	Application("DBInfoJobLog") = "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=joblog"
+	Application("DBInfo")			= "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=matchingbank"
 	
-	Application("DBInfo_REAL")	= "Provider=SQLOLEDB;Data Source='192.168.1.2';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
-
-	Application("DBInfo_ADM")	= "Provider=SQLOLEDB;Data Source='192.168.1.8';User ID='careernet';Password='zjfldjzkvp#00';Initial Catalog=careernet"
-
-	Application("DBInfo_ETC")	= "Provider=SQLOLEDB;Data Source='192.168.1.8';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
-
-	Application("DBInfo9")		= "Provider=SQLOLEDB;Data Source='192.168.1.9';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
-
-	Application("DBInfo_TEST")	= "Provider=SQLOLEDB;Data Source='218.145.70.176';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
-
-	Application("DB_SMS")		= "Provider=SQLOLEDB;Data Source='61.74.61.123';User ID='careersms';Password='careersms123pw!';Initial Catalog=SMS"
+	Application("DBInfo_career")	= "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
+	Application("DBInfoJobLog")		= "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=joblog"
 
 End Sub
 

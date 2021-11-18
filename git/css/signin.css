@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import url(./gnb.css);
+
+body[data-location-pathname^="/login/login"] .header{border-bottom: 1px solid #e6e6e6;}
+body[data-location-pathname^="/login/login"] .container{height: calc(100vh - 94px - 161px); min-height: 450px; padding-bottom: 0; position: relative;}
+html.fnHeaderMainContFixed body[data-location-pathname^="/login/login"] .header .headerMainTop .vhsBtn{display: none !important;}
+
+.signin{position: absolute; left: 0; width: 100%; text-align: center; top: 50%; margin-top: -260px; letter-spacing: -.63px;}
+.signin .signInBoxArea{max-width: 444px; display: block; margin-left: auto; margin-right: auto; text-align: left;}
+.signin .signInBoxArea .sgTit{font-size: 28px; font-family: 'Noto Sans KR',-apple-system-font, "Apple SD Gothic Neo", sans-serif; font-weight: 800; color: #333; line-height: 30px;}
+.signin .signInBoxArea .sgsTit{font-size: 15px; font-family: 'Noto Sans KR',-apple-system-font, "Apple SD Gothic Neo", sans-serif; color: #333; line-height: 20px; margin-top: 10px;}
+.signin .signInBoxArea .sgsTit .poi{color: #1564fb;}
+.signin .signInBoxArea .sgsTit a.poi:hover{text-decoration: underline;}
+.signin .signInBoxArea .sgBoxWrap{position: relative; padding-right: 0;}
+.signin .signInBoxArea .sgBoxWrap .sgBanBox{position: absolute; right: 0; top: 0; width: 305px; display: none;}
+.signin .signInBoxArea .sgBoxWrap .sgFormArea{position: relative;}
+.signin .signInBoxArea .sgBoxWrap .sgFormArea .inputGr{margin-right: 140px; display: block;}
+.signin .signInBoxArea .sgBoxWrap .sgFormArea .inputGr input{border: 1px solid #cbd0da; height: 50px; font-size: 14px; text-indent: 20px; font-size: 14px; width: 100%; position: relative; border-radius: 0;}
+.signin .signInBoxArea .sgBoxWrap .sgFormArea .inputGr input+input{margin-top: -1px;}
+.signin .signInBoxArea .sgBoxWrap .sgFormArea .inputGr input:focus{outline: none; border-color: #000; z-index: 1;}
+.signin .signInBoxArea .sgBoxWrap .sgFormArea .chkGr{}
+.signin .signInBoxArea .sgBoxWrap .sgFormArea .lic{font-size: 13px; color: #333; line-height: 18px;;}
+.signin .signInBoxArea .sgBoxWrap .sgFormArea .lic.poi{color: #1564fb; font-weight: bold;}
+.signin .signInBoxArea .sgBoxWrap .sgFormArea .lic:hover{text-decoration: underline;}
+.signin .signInBoxArea .sgBoxWrap .sgFormArea .inBtn{height: 99px; background: #1564fb; color: #fff; font-weight: bold; font-size: 15px; position: absolute; right: 0; top: 0; border: none; width: 120px;}
+.signin .sgHr{height: 9px; display: block; width: 100%; background: repeat url(../images/common/pattern.png);}
+.signin .sgSnsGroup{display: inline-block; position: relative; padding-left: 143px; min-height: 20px;}
+.signin .sgSnsGroup .sgTitle{font-size: 16px; text-align: left; position: absolute; left: 0; top: 50%; margin-top: -10px; line-height: 20px;}
+.signin .sgSnsGroup .snsArea{}
+.signin .sgSnsGroup .snsArea .snsBt{border: 1px solid #e9e9e9; width: 30px; height: 30px; border-radius: 50%; background: #fff; margin: 1px; background: no-repeat center center; }
+.signin .sgSnsGroup .snsArea .snsBt.naver{background-image: url(../images/common/snsTp1_60_60.png); background-size: 12px;}
+.signin .sgSnsGroup .snsArea .snsBt.facebook{background-image: url(../images/common/snsTp2_60_60.png); background-size: 9px;}
+.signin .sgSnsGroup .snsArea .snsBt.kakao{background-image: url(../images/common/snsTp3_60_60.png); background-size: 16px;}
+.signin .sgSnsGroup .snsArea .snsBt.google{background-image: url(../images/common/snsTp4_60_60.png); background-size: 14px;}
+.signin .sgArtList{font-size: 13px; line-height: 26px; line-height: 26px; position: relative; padding-left: 66px; margin-top: 13px;;}
+.signin .sgArtList .sgTitle{display: block; width: 66px; position: absolute; color: #1564fb; font-weight: bold; left: 0; top: 0;}
+.signin .sgArtList .sgTitle:after{content: ''; width: 1px; height: 12px; position: absolute; right: 0; top: 50%; margin-top: -6px; background: #d6d6d6;;}
+.signin .sgArtList .sgArea{padding-left: 15px;}
+.signin .sgArtList .sgArea .txt{display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #333;}
+.signin .sgArtList .sgArea .txt:hover{text-decoration: underline;}
+.signin .compMsg{display: block; margin-top: 16px; line-height: 18px; text-align: center; font-size: 16px; color: #333; margin-bottom: -21px;}
+
+
+/*공통탭 로그인시 변경*/
+.signin .cmmStateStepType2Wrap.tp2 .cssTp .cssTpBox{background: #eef2f7;}
+.signin .cmmStateStepType2Wrap.tp2 .cssTp .cssTit{color: #afb6c0;}
+.signin .cmmStateStepType2Wrap.tp2 .cssTp.active .cssTit{color: #333; font-weight: 800;}
+
+[data-layerpop="dialogLoginArea"] .signin{position: static; margin-top: 0;}
+[data-layerpop="dialogLoginArea"] .signin .signInBoxArea .sgBoxWrap{padding-right: 0;}
+[data-layerpop="dialogLoginArea"] .signin .signInBoxArea .sgBoxWrap .sgBanBox{display: none;}
+[data-layerpop="dialogLoginArea"] .signin .signInBoxArea{width: 100%;}
+.laypopWarp.dialogLoginArea .laypopIn .laypopCont{padding-bottom: 0;}
+.laypopWarp.dialogLoginArea.tp3 .laypopIn{padding: 50px 70px; border-radius: 20px;}
+.laypopWarp.dialogLoginArea.tp3 .laypopIn .laypopTit .layClosebtn{top: -30px; right: -50px;}
+.laypopWarp.dialogLoginArea.tp3 .signin .sgSnsGroup{margin-bottom: 5px;}

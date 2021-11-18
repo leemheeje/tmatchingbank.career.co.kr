@@ -1,8 +1,9 @@
 @charset "utf-8";
-@import url('slick.css');
-@import url('jquery.mCustomScrollbar.css');
-@import url('r_font.css');
-@import url('cmm.css');
+@import url('./jquery-ui.min.css');
+@import url('./slick.css');
+@import url('./jquery.mCustomScrollbar.css');
+@import url('./r_font.css');
+@import url('./cmm.css');
 
 /* Reset */
 html{-webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;}
@@ -45,7 +46,9 @@ input[type='text'],input[type='password'],input[type='image'],input[type='search
 #skipnavigation a:active{display:block;width:100%;height:36px;color:#fff;background:#000;line-height:36px;text-decoration:underline !important;font-size:14px;}
 
 .innerWrap{min-width: 1260px; width: 1260px; margin-left: auto; margin-right: auto;}
-.container{padding-bottom: 150px;}
+.container{padding-bottom: 150px; min-height: calc(100vh - 200px - 115px);}
+.container.gray{background-color: #eef1f6;}
+.container.paddingbottom0{padding-bottom: 0;}
 
 .header{}
 .header .headerInner{border-bottom: 1px solid #cad6e2;}

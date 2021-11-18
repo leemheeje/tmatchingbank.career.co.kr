@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>고용노동부 대체인력뱅크</title>
+	<meta name="keywords" content="대체인력뱅크, 취업관리시스템, 히든챔피언, hidden, champion, hidden champion, 고졸채용, highschool, rhwhf, rhwhfcodyd 커리어, career, career.co.kr, CAREER, zjfldj, 취업, 사람, 구인, 구직, 구직정보, 구인정보, 이력서 , resume, dlfurtj, 아르바이트, 알바, alba, dkfmqkdlxm, dkfqk, 헤드헌팅, 서치펌, 고용, 고용정보, 취업정보, 취업뉴스, 취업 뉴스, 취업속보, 취업 속보, 공채속보, 공채 속보, 공채, 취업포털, 채용포털, 채용, 채용정보, 취업사이트, 구직사이트, 구인사이트, 인터넷채용시스템, 인터넷취업시스템, 고용정보, 취업교육, 대기업, 중견기업, 중소기업, 일반기업, 일자리, 벤처기업, 워크, work, 잡, job, 재취업, 여성취업, cnldjq, rndls, rnwlr, 전직, 재취업, 정보통신취업, it취업, 임원, ceo, 리쿠르트,  리크루트, 헤드헌팅 파견.대행, 아웃소싱, 인재파견, 채용대행, 위탁도급, 파견임시, 취업박람회, 채용박람회, 일자리박람회, 박람회, 취업교육, 취업교육센터, 교육, 교육과정, 교육정보, 교육기관, 외국계기업, 외국인업체, 외국인기업, 자원봉사, 프리랜서, 취업상담실, 해외취업, 취업성공, 성공취업, joblink, jobsns, jobfair, work, recruit, saram, tkfka, pay, cnldjq, zjfldj" />
+	<meta name="description" content="대체인력뱅크, 취업관리시스템, 구인, 구직, 구인검색, 구직검색, 취업정보, 채용정보, 구직정보, 구인정보, 취업가이드, 경력관리, 커리어, CAEEER, Career, 헤드헌팅, 파견.대행, 아웃소싱, 인재파견, 채용대행, 교육과정, 교육정보, 취업박람회, 채용박람회, 박람회, 기업정보, 상세기업정보, 취업뉴스, 해외취업, 아르바이트, 알바, 이력서, 대학전산망" />
+	<meta name="author" content="희망을 전하는 취업포털 커리어 old.career.co.kr" />
+	<meta name="copyright" content="희망을 전하는 취업포털 커리어 old.career.co.kr" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="imagetoolbar" content="no" />
+
+
+
+
+
+
+
+	<link rel="stylesheet"href="/css/r_common.css">
+	<script src="/js/ui/libs/jquery-1.11.1.min.js"></script>
+	<script src="/js/ui/libs/jquery.mCustomScrollbar.js"></script>
+	<script src="/js/ui/libs/jquery-ui.min.js"></script>
+	<script src="/js/ui/libs/slick.min.js"></script>
+	<script src="/js/ui/design.utils.js"></script>
+	<script src="/js/ui/design.plugin.js"></script>
+	<script src="/js/ui/customTags.js"></script>
+	<script src="/js/ui/_cl.js"></script>
+	<script src="/js/ui/common.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(this).customTags();
+		});
+	</script>
+	<!-- 어드민페이지에서 사용:S -->
+	<link rel="stylesheet"href="/css/r_admin.css">
+	<script src="/js/ui/admCustomTags.js"></script>
+	<!-- 어드민페이지에서 사용:E -->
+</head>
+
+<body>
+    <!-- Skip Nav : S -->
+    <div id="skipnavigation">
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#search">검색 바로가기</a>
+        <a href="#container">본문내용 바로가기</a>
+    </div>
+    <!-- Skip Nav : E -->
+    <!-- HEADER : S -->
+    <div id="header" class="header admin headerFixed"></div>
+    <!-- HEADER : E -->
+    <!-- CONTAINER : S -->
+    <script>
+    $(document).ready(function(){
+        //헤더 인크루드
+        $(this).include(true, [['헤더-관리자', { target: '#header.admin', url: '/html/admin/header/header_admin_template.html', get: true }]]);
+        //lnb 인크루드
+        $(this).include(true, [['lnb-관리자', { target: '#rlnb.admin', url: '/html/admin/lnb/lnb_admin_template.html', get: true }]]);
+        $(this).admCustomTags();
+    });
+    </script>
+    <div id="container" class="container paddingbottom0">
+        <div class="contents">
+            <div class="admin subpage">
+                <!-- LNB :S -->
+                <div id="rlnb" class="rlnb admin"></div>
+                <!-- LNB :E -->
+                <div class="admContents">
+                    <div class="admInnerWrap">
+
+                        <!-- 페이징:S -->
+                        <div class="pagination MT15">
+                            <div class="ptp contr prev"><a href="#" class="txt"></a></div>
+                            <div class="ptp active"><a href="#" class="txt">1</a></div>
+                            <div class="ptp"><a href="#" class="txt">2</a></div>
+                            <div class="ptp contr next"><a href="#" class="txt"></a></div>
+                        </div>
+                        <!-- 페이징:E -->
+                        <!-- 페이지경로 :S -->
+                        <div class="admBreadMaps">
+                            <span class="txl">Home</span>
+                            <span class="txl">메인관리</span>
+                            <span class="txl">Main Manager PC</span>
+                            <span class="txl">콘텐츠 관리</span>
+                            <span class="txl">자소서 컬설팅</span>
+                        </div>
+                        <!-- 페이지경로 :E -->
+                        <!-- 관리자사이트 타이틀 : S -->
+                        <div class="admCmmTit">자소서 컨설팅</div>
+                        <!-- 관리자사이트 타이틀 : E -->
+                        <!-- 관리자사이트 sub 타이틀 : S -->
+                        <div class="admCmmStit">* 자소서 컨설팅은 6개 최신 컨텐츠를 유지해컨설팅은 6개 최신 컨텐츠를 유지해컨설팅은 6개 최신 컨텐츠를 유지해컨설팅은 6개 최신 컨텐츠를 유지해컨설팅은 6개 최신 컨텐츠를 유지해 주세요. </div>
+                        <div class="admCmmStit">* 컨설팅이 완료된 컨텐츠를 입력해 주세요. <span class="colorRed FWB">(컨설팅이 진행중인 컨텐츠 절대 등록 불가)</span></div>
+                        <div class="admCmmStit">* 요청사항은 40자 이내로 요청자의 원하는 사항만 입력해 주세요.</div>
+                        <!-- 관리자사이트 sub 타이틀 : E -->
+
+                        <div class="admTabs MT20">
+                            <div class="admTabsLi">
+                                <div class="tp active">
+                                    <a href="#" class="txt">최근 시작 공채</a>
+                                </div>
+                                <div class="tp">
+                                    <a href="#" class="txt">인기 채용 정보</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- formBox :S -->
+                        <div class="admFormBox">
+                            <div class="admFormInner">
+                                <div class="row">
+                                    <div class="col8">
+                                        <!-- 인풋파일:S -->
+                                        <div class="fidForm file fnAdmFileImageViewWrapping">
+                                            <span class="cmmFileUpload">
+                                                <span class="cmmInputFile">
+                                                    <input type="file" id="" name="" value="" />
+                                                </span>
+                                            </span>
+                                            <input type="text" placeholder="col8" readonly />
+                                            <span class="btn">File Browser</span>
+                                        </div>
+                                        <!-- 인풋파일:E -->
+                                    </div>
+                                    <div class="col2">
+                                        <!-- 셀렉트박스:S -->
+                                        <div class="fidForm">
+                                            <select class="customSelect">
+                                                <option value="">값1</option>
+                                                <option value="">값2</option>
+                                                <option value="">값3</option>
+                                                <option value="">값4</option>
+                                                <option value="">값5</option>
+                                            </select>
+                                        </div>
+                                        <!-- 셀렉트박스:E -->
+                                    </div>
+                                    <div class="col3">
+                                        <!-- 인풋text 날짜검색:S -->
+                                        <div class="fidForm">
+                                            <input type="text" placeholder="YYYY-MM-DD" class="fnDatepicker" readonly/>
+                                        </div>
+                                        <!-- 인풋text 날짜검색:E -->
+                                    </div>
+                                    <div class="col7">
+                                        <!-- 기본 인풋TEXT:S -->
+                                        <div class="fidForm">
+                                            <input type="text" placeholder="col8" id="" name="" value="" />
+                                        </div>
+                                        <!-- 기본 인풋TEXT:E -->
+                                    </div>
+                                    <div class="col8">
+                                        <!-- 기본 인풋TEXT:S -->
+                                        <div class="fidForm">
+                                            <input type="text" placeholder="col8" id="" name="" value="" />
+                                        </div>
+                                        <!-- 기본 인풋TEXT:E -->
+                                    </div>
+                                    <div class="col4">
+                                        <div class="fidForm">
+                                            <input type="text" placeholder="col4" id="" name="" value="" />
+                                        </div>
+                                    </div>
+                                    <div class="col12">
+                                        <!-- 기본 TEXTAREA:S -->
+                                        <div class="fidForm">
+                                            <textarea class="textarea" placeholder="col12"></textarea>
+                                        </div>
+                                        <!-- 기본 TEXTAREA:E -->
+                                    </div>
+                                    <div class="col12">
+                                        <!-- 체크박스:S -->
+                                        <div class="fidForm">
+                                            <label>
+                                                <input type="checkbox" id="" name="" value="" />
+                                                <span class="lb">체크박스</span>
+                                            </label>
+                                        </div>
+                                        <!-- 체크박스:E -->
+                                    </div>
+                                    <div class="col12">
+                                        <!-- 라디오버튼:S -->
+                                        <div class="fidForm">
+                                            <label>
+                                                <input type="radio" id="" name="A" value="" />
+                                                <span class="lb">라디오1</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" id="" name="A" value="" />
+                                                <span class="lb">라디오1</span>
+                                            </label>
+                                        </div>
+                                        <!-- 라디오버튼:E -->
+                                    </div>
+                                    <div class="col12">
+                                        <div class="fidForm inline">
+                                            <input type="text" placeholder="YYYY-MM-DD" class="fnDatepicker" readonly="">
+                                        </div>
+                                        <div class="fidForm inline">
+                                            <select class="customSelect">
+                                                <option value="">00</option>
+                                                <option value="">01</option>
+                                            </select>
+                                        </div>
+                                        <div class="fidForm inline">
+                                            <select class="customSelect">
+                                                <option value="">00</option>
+                                                <option value="">01</option>
+                                            </select>
+                                        </div>
+                                        <span class="VMIDDLE">~</span>
+                                        <div class="fidForm inline">
+                                            <input type="text" placeholder="YYYY-MM-DD" class="fnDatepicker" readonly="">
+                                        </div>
+                                        <div class="fidForm inline">
+                                            <select class="customSelect">
+                                                <option value="">00</option>
+                                                <option value="">01</option>
+                                            </select>
+                                        </div>
+                                        <div class="fidForm inline">
+                                            <select class="customSelect">
+                                                <option value="">00</option>
+                                                <option value="">01</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col12">
+                                        <div class="fidForm">
+                                            <input type="text" placeholder="col12" id="" name="" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="admFormAside">
+                                <span class="nums"></span>
+                                <div class="fbBtnsWrap">
+                                    <button class="btn add fnAdmFormAreaAddButton" title="추가"></button>
+                                    <button class="btn remove fnAdmFormAreaRemoveButton" title="삭제"></button>
+                                    <button class="btn reload fnAdmFormAreaRestoreButton" title="내용초기화"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- formBox :E -->
+                        <div class="admFormBoxWrap fnAdmFormBoxWrapping">
+                            <!-- 이미지 미리보기 있는 폼 :S -->
+                            <div class="admFormBox isPreview fnThumbPreviewTargetWrapping">
+                                <div class="admFormPreview">
+                                    <!-- foreach:S -->
+                                    <div class="imgWrap logo fnThumbPreviewTargetDiv001" style="width: 180px; height: 72px; line-height: 72px;">
+                                        <img src="" alt="" class="thumb fnThumbNodeImg" />
+                                        <!-- 등록된 이미지 없을때:S -->
+                                        <div class="noResult fnNoResult" >
+                                            <span class="inTxt">
+                                                Logo Preview<br />180 x 72
+                                            </span>
+                                        </div>
+                                        <!-- 등록된 이미지 없을때:E -->
+                                    </div>
+                                    <div class="imgWrap bann fnThumbPreviewTargetDiv002" style="width: 314px; height: 219px; line-height: 219px;">
+                                        <img src="" alt="" class="thumb fnThumbNodeImg" />
+                                        <!-- 등록된 이미지 없을때:S -->
+                                        <div class="noResult fnNoResult" >
+                                            <span class="inTxt">
+                                                image Preview<br />314 x 219
+                                            </span>
+                                        </div>
+                                        <!-- 등록된 이미지 없을때:E -->
+                                    </div>
+                                    <!-- foreach:E -->
+                                </div>
+                                <div class="admFormInner">
+                                    <div class="row">
+                                        <div class="col12">
+                                            <!-- 라디오버튼:S -->
+                                            <div class="fidForm">
+                                                <span class="admCmmStit noindent FWB MR15">노출여부</span>
+                                                <label>
+                                                    <input type="radio" id="" name="fnAdmFormExposType001" value="1" checked/>
+                                                    <span class="lb">즉시</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" id="" name="fnAdmFormExposType001" value="9" />
+                                                    <span class="lb">예약</span>
+                                                </label>
+                                            </div>
+                                            <!-- 라디오버튼:E -->
+                                        </div>
+                                        <div class="col12 fnAdmFormExposType" data-showhide="!">
+                                            <div class="fidForm inline WIDTH130">
+                                                <input type="text" placeholder="YYYY-MM-DD" class="fnDatepicker" readonly="">
+                                            </div>
+                                            <div class="fidForm inline">
+                                                <select class="customSelect">
+                                                    <option value="">00</option>
+                                                    <option value="">01</option>
+                                                </select>
+                                            </div>
+                                            <div class="fidForm inline">
+                                                <select class="customSelect">
+                                                    <option value="">00</option>
+                                                    <option value="">01</option>
+                                                </select>
+                                            </div>
+                                            <span class="VMIDDLE">~</span>
+                                            <div class="fidForm inline MT05 WIDTH130">
+                                                <input type="text" placeholder="YYYY-MM-DD" class="fnDatepicker" readonly="">
+                                            </div>
+                                            <div class="fidForm inline MT05">
+                                                <select class="customSelect">
+                                                    <option value="">00</option>
+                                                    <option value="">01</option>
+                                                </select>
+                                            </div>
+                                            <div class="fidForm inline MT05">
+                                                <select class="customSelect">
+                                                    <option value="">00</option>
+                                                    <option value="">01</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col8">
+                                            <!-- 인풋파일:S -->
+                                            <div class="fidForm file fnAdmFileImageViewWrapping" data-params='{"thumbTarget" : ".fnThumbPreviewTargetDiv001"}'>
+                                                <span class="cmmFileUpload">
+                                                    <span class="cmmInputFile">
+                                                        <input type="file" id="" name="" value="" />
+                                                    </span>
+                                                </span>
+                                                <input type="text" placeholder="col8" readonly />
+                                                <span class="btn">File Browser</span>
+                                            </div>
+                                            <!-- 인풋파일:E -->
+                                        </div>
+                                        <div class="col2">
+                                            <!-- 셀렉트박스:S -->
+                                            <div class="fidForm">
+                                                <select class="customSelect">
+                                                    <option value="">값1</option>
+                                                    <option value="">값2</option>
+                                                    <option value="">값3</option>
+                                                    <option value="">값4</option>
+                                                    <option value="">값5</option>
+                                                </select>
+                                            </div>
+                                            <!-- 셀렉트박스:E -->
+                                        </div>
+                                        <div class="col3">
+                                            <!-- 인풋text 날짜검색:S -->
+                                            <div class="fidForm">
+                                                <input type="text" placeholder="YYYY-MM-DD" class="fnDatepicker" readonly/>
+                                            </div>
+                                            <!-- 인풋text 날짜검색:E -->
+                                        </div>
+                                        <div class="col7">
+                                            <!-- 기본 인풋TEXT:S -->
+                                            <div class="fidForm">
+                                                <input type="text" placeholder="col8" id="" name="" value="" />
+                                            </div>
+                                            <!-- 기본 인풋TEXT:E -->
+                                        </div>
+                                        <div class="col8">
+                                            <!-- 기본 인풋TEXT:S -->
+                                            <div class="fidForm">
+                                                <input type="text" placeholder="col8" id="" name="" value="" />
+                                            </div>
+                                            <!-- 기본 인풋TEXT:E -->
+                                        </div>
+                                        <div class="col4">
+                                            <div class="fidForm">
+                                                <input type="text" placeholder="col4" id="" name="" value="" />
+                                            </div>
+                                        </div>
+                                        <div class="col12">
+                                            <!-- 기본 TEXTAREA:S -->
+                                            <div class="fidForm">
+                                                <textarea class="textarea" placeholder="col12"></textarea>
+                                            </div>
+                                            <!-- 기본 TEXTAREA:E -->
+                                        </div>
+                                        <div class="col12">
+                                            <!-- 체크박스:S -->
+                                            <div class="fidForm">
+                                                <label>
+                                                    <input type="checkbox" id="" name="" value="" />
+                                                    <span class="lb">체크박스</span>
+                                                </label>
+                                            </div>
+                                            <!-- 체크박스:E -->
+                                        </div>
+                                        <div class="col12">
+                                            <!-- 라디오버튼:S -->
+                                            <div class="fidForm">
+                                                <label>
+                                                    <input type="radio" id="" name="A" value="" />
+                                                    <span class="lb">라디오1</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" id="" name="A" value="" />
+                                                    <span class="lb">라디오1</span>
+                                                </label>
+                                            </div>
+                                            <!-- 라디오버튼:E -->
+                                        </div>
+                                        <div class="col12">
+                                            <div class="fidForm">
+                                                <input type="text" placeholder="col12" id="" name="" value="" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="admFormAside">
+                                    <span class="nums"></span>
+                                    <div class="fbBtnsWrap">
+                                        <button class="btn add fnAdmFormAreaAddButton" title="추가"></button>
+                                        <button class="btn remove fnAdmFormAreaRemoveButton" title="삭제"></button>
+                                        <button class="btn reload fnAdmFormAreaRestoreButton" title="내용초기화"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 이미지 미리보기 있는 폼 :E -->
+                        </div>
+                        <!-- 테이블 리스트:S -->
+                        <div class="admTableTop MB10">
+                            <div class="inner">
+                                <div class="searchArea">
+                                    <div class="fidForm">
+                                        <input type="text" />
+                                    </div>
+                                    <button class="admBtns">검색하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admTable">
+                            <table>
+                                <colgroup>
+                                    <col width="5%" />
+                                    <col width="5%" />
+                                    <col width="15%" />
+                                    <col width="*" />
+                                    <col width="15%" />
+                                    <col width="5%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="fidForm">
+                                                <label class="basic">
+                                                    <input type="checkbox" id="" name="" value="" />
+                                                    <span class="lb"></span>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        <th>번호</th>
+                                        <th>이미지</th>
+                                        <th>자료제목</th>
+                                        <th>등록일</th>
+                                        <th>상단노출</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- foreach:S -->
+                                    <tr>
+                                        <td>
+                                            <div class="fidForm">
+                                                <label class="basic">
+                                                    <input type="checkbox" id="" name="" value="" />
+                                                    <span class="lb"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="tbThumb">
+                                                <img src="" alt="" />
+                                            </div>
+                                        </td>
+                                        <td class="TXTL">
+                                            <a href="#" class="FONT16 FWB colorGry-1 HOVER_UNDERLINE">2021년 상반기 커리어 채용동향</a>
+                                        </td>
+                                        <td>2021-06-25</td>
+                                        <td>
+                                            <div class="fidForm">
+                                                <label class="basic">
+                                                    <input type="radio" id="" name="" value="" />
+                                                    <span class="lb"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- foreach:E -->
+                                    <!-- 리스트없을때:S -->
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="cmmNoResult">데이타가 없습니다.</div>
+                                        </td>
+                                    </tr>
+                                    <!-- 리스트없을때:E -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 테이블 리스트:E -->
+                        <!-- 취업자료실 폼:S -->
+                        <div class="admFormBox paddingright0">
+                            <div class="admFormInner">
+                                <div class="row">
+                                    <div class="col12">
+                                        <div class="fidForm">
+                                            <label>
+                                                <input type="radio" name="radioA" checked/>
+                                                <span class="lb">기업자료</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="radioA" />
+                                                <span class="lb">개인자료</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col8">
+                                        <div class="fidForm">
+                                            <input type="text" placeholder="제목"/>
+                                        </div>
+                                    </div>
+                                    <div class="col10">
+                                        <div class="fidForm">
+                                            <textarea class="textarea" placeholder="내용 요약"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col12">
+                                        <div class="admCmmStit lg FWB">ㆍ목차 및 주제</div>
+                                        <div class="admAddRmvForm number MT10">
+                                            <!-- foreach:S -->
+                                            <div class="adrItem">
+                                                <span class="num">1.</span>
+                                                <div class="cont">
+                                                    <div class="fidForm">
+                                                        <input type="text" placeholder="제목"/>
+                                                    </div>
+                                                </div>
+                                                <div class="adGroup">
+                                                    <div class="fbBtnsWrap">
+                                                        <button class="btn add fnAdmFormAreaAddButton" title="추가"></button>
+                                                        <button class="btn lgray remove fnAdmFormAreaRemoveButton" title="삭제"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- foreach:E -->
+                                        </div>
+                                    </div>
+                                    <div class="col12">
+                                        <div class="admCmmStit lg FWB">ㆍ이미지 자료 첨부</div>
+                                        <div class="admAddRmvForm tp2 MT10">
+                                            <!-- foreach:S -->
+                                            <div class="adrItem fnThumbPreviewTargetWrapping">
+                                                <div class="formchk">
+                                                    <div class="fidForm">
+                                                        <label class="basic">
+                                                            <input type="radio" name="radioB"/>
+                                                            <span class="lb"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="cont">
+                                                    <div class="isPreview">
+                                                        <div class="thumbsArea">
+                                                            <!-- foreach:S -->
+                                                            <div class="imgWrap fnThumbPreviewTargetDiv001" style="width: 100%; height: 91px; line-height: 91px;">
+                                                                <img src="" alt="" class="thumb fnThumbNodeImg">
+                                                                <!-- 등록된 이미지 없을때:S -->
+                                                                <div class="noResult fnNoResult">
+                                                                    <span class="inTxt">
+                                                                        Thumbnail Preview
+                                                                    </span>
+                                                                </div>
+                                                                <!-- 등록된 이미지 없을때:E -->
+                                                            </div>
+                                                            <!-- foreach:E -->
+                                                        </div>
+                                                        <!-- 인풋파일:S -->
+                                                        <div class="fidForm file fnAdmFileImageViewWrapping" data-params='{"thumbTarget": ".fnThumbPreviewTargetDiv001"}'>
+                                                            <span class="cmmFileUpload">
+                                                                <span class="cmmInputFile">
+                                                                    <input type="file" id="" name="" value="" />
+                                                                </span>
+                                                            </span>
+                                                            <input type="text" placeholder="Thumbnail 이미지 등록" readonly />
+                                                            <span class="btn">File Browser</span>
+                                                        </div>
+                                                        <!-- 인풋파일:E -->
+                                                        <!-- 인풋파일:S -->
+                                                        <div class="fidForm file MT05 fnAdmFileImageViewWrapping">
+                                                            <span class="cmmFileUpload">
+                                                                <span class="cmmInputFile">
+                                                                    <input type="file" id="" name="" value="" />
+                                                                </span>
+                                                            </span>
+                                                            <input type="text" placeholder="상세 이미지 등록" readonly />
+                                                            <span class="btn">File Browser</span>
+                                                        </div>
+                                                        <!-- 인풋파일:E -->
+                                                    </div>
+                                                </div>
+                                                <div class="adGroup">
+                                                    <div class="fbBtnsWrap">
+                                                        <button class="btn lgray remove fnAdmFormAreaRemoveButton" title="삭제"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- foreach:E -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 취업자료실 폼:E -->
+                        <!-- 버튼들:S -->
+                        <br />좌측정렬<br />
+                        <div class="btnsWrap">
+                            <div class="FLOATL">
+                                <a href="#" class="admBtns">default</a>
+                                <a href="#" class="admBtns org">primary</a>
+                            </div>
+                        </div>
+                        <br />우측정렬<br />
+                        <div class="btnsWrap">
+                            <div class="FLOATR">
+                                <a href="#" class="admBtns">default</a>
+                                <a href="#" class="admBtns org">primary</a>
+                            </div>
+                        </div>
+
+
+                        <br />좌우정렬<br />
+                        <div class="btnsWrap">
+                            <div class="FLOATL">
+                                <a href="#" class="admBtns">default</a>
+                            </div>
+                            <div class="FLOATR">
+                                <a href="#" class="admBtns org">primary</a>
+                            </div>
+                        </div>
+                        <br />중앙정렬<br />
+                        <div class="btnsWrap">
+                            <a href="#" class="admBtns">default</a>
+                            <a href="#" class="admBtns org">primary</a>
+                        </div>
+                        <!-- 버튼들:E -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTAINER : E -->
+
+</body>
+</html>

@@ -45,14 +45,14 @@
 
 .admContents .admLoginArea{background: no-repeat left top url(../images/admin/loginBg.jpg); background-size: 100% 100%; min-height: 100vh; position: relative; }
 .admContents .admLoginArea .formBoxWrap{width: 960px; position: absolute; left: 50%; top: 50%; margin-left: -480px; margin-top: -280px;}
-.admContents .admLoginArea .logo{display: inline-block; width: 150px; height: 25px; background: no-repeat left top url(../images/logo.png); background-size: cover; margin-bottom: 20px;}
+.admContents .admLoginArea .logo{display: inline-block; width: 195px; height: 45px; background: no-repeat left top url(../images/logo.png); background-size: cover; margin-bottom: 20px;}
 .admContents .admLoginArea .inBox{position: relative; padding-left: 480px; height: 496px; background: #fff; box-shadow: 0 25px 55px rgba(0,0,0,0.3);}
 .admContents .admLoginArea .inBox .imgBx{position: absolute; left: 0; top: 0; height: 100%;}
 .admContents .admLoginArea .inBox .imgBx img{min-height: 100%;}
 .admContents .admLoginArea .fidForm input[type="text"],
 .admContents .admLoginArea .fidForm input[type="password"]{border: 1px solid #d0d0d0; height: 55px; font-size: 15px; color: #333; text-indent: 22px; width: 100%;}
 .admContents .admLoginArea .formArea{padding: 60px 65px;}
-.admContents .admLoginArea .formArea .tit{text-indent: -999em; display: inline-block; width: 142px; height: 41px; background: no-repeat left top url(../images/admin/txtLogin.png);}
+.admContents .admLoginArea .formArea .tit{font-size: 20px; font-weight: 800;}
 .admContents .admLoginArea .formArea .fidForm .icShwPass{width: 60px; height: 19px; position: absolute; right: 0; top: 18px; background: no-repeat center center url(../images/admin/icosGrayEye_19.png);}
 .admContents .admLoginArea .formArea .fidForm .errMsg{padding-left: 20px; position: relative; font-size: 13px; text-align: left; color: #ff0000; line-height: 14px; margin-top: 5px; display: none;}
 .admContents .admLoginArea .formArea .fidForm .errMsg:before{content: ''; width: 14px; height: 100%; position: absolute; left: 0; top: 0; background: no-repeat left center url(../images/common/icosErrorCircle_14.png);}
@@ -106,15 +106,14 @@
 .admContents .admFormBox.isPreview .admFormPreview .imgWrap .thumb{position: absolute; left: 0; top: 0;}
 .admContents .admFormBox.isPreview .admFormPreview .noResult{text-align: center; display: block; background: #aeb0bb;}
 .admContents .admFormBox.isPreview .admFormPreview .noResult .inTxt{line-height: 1.3; font-size: 14px; color: #fff; font-weight: 300; display: inline-block; vertical-align: middle;}
-.admContents .admFormBox.isPreview.isPreviewType1{padding-right: 90px; padding-left: 370px;}/* 320 * 228*/
-.admContents .admFormBox.isPreview.isPreviewType2{padding-right: 90px; padding-left: 298px;}
-.admContents .admFormBox.isPreview.isPreviewType3{padding-right: 90px; padding-left: 364px;}
-.admContents .admFormBox.isPreview.isPreviewType4{padding-right: 90px; padding-left: 350px;}
-.admContents .admFormBox.isPreview.isPreviewType1 .imgWrap.bann{width: 320px; height: 228px; line-height: 228px;}
-.admContents .admFormBox.isPreview.isPreviewType2 .imgWrap.bann{width: 248px; height: 208px; line-height: 208px;}
-.admContents .admFormBox.isPreview.isPreviewType3 .imgWrap.bann{width: 314px; height: 114px; line-height: 114px;}
-.admContents .admFormBox.isPreview.isPreviewType4 .imgWrap.bann{width: 300px; height: 395px; line-height: 395px;}
-.admContents .admFormBox.isPreview.isPreviewType4 .admFormInner{min-height: 395px;}
+.admContents .admFormBox.isPreview.isPreviewType1{padding-right: 90px; padding-left: 320px;}/* 320 * 228*/
+.admContents .admFormBox.isPreview.isPreviewType2{padding-right: 90px; padding-left: 320px;}
+.admContents .admFormBox.isPreview.isPreviewType3{padding-right: 90px; padding-left: 320px;}
+.admContents .admFormBox.isPreview.isPreviewType4{padding-right: 90px; padding-left: 390px;}
+.admContents .admFormBox.isPreview.isPreviewType1 .imgWrap.bann{width: 270px; height: 140px; line-height: 140px;}
+.admContents .admFormBox.isPreview.isPreviewType2 .imgWrap.bann{width: 270px; height: 140px; line-height: 140px;}
+.admContents .admFormBox.isPreview.isPreviewType3 .imgWrap.bann{width: 270px; height: 140px; line-height: 140px;}
+.admContents .admFormBox.isPreview.isPreviewType4 .imgWrap.bann{width: 340px; height: 150px; line-height: 150px;}
 .admContents .admFormBox.isPreview.rowPreview{padding-left: 25px;}
 .admContents .admFormBox.isPreview.rowPreview .admFormPreview{position: static;}
 .admContents .admAddRmvForm{}
@@ -181,16 +180,15 @@
 .admContents .row .col11{width: 92%;}
 .admContents .row .col115{width: 95.833%;}
 .admContents .row .col12{width: 100%;}
-.admContents .admFormBox .row{margin: -2.5px;}
+.admContents .admFormBox .row{margin: -2.5px; clear: both;}
 .admContents .admFormBox .row [class^="col"]{padding: 2.5px;}
 
 .admContents .admFormListWrap{border-top: 1px solid #dadbdd;}
-.admContents .admFormListWrap .admFormList{padding: 20px; padding-left: 115px; padding-right: 95px; border-bottom: 1px solid #dadbdd; position: relative;}
+.admContents .admFormListWrap .admFormList{padding: 20px; padding-right: 95px; border-bottom: 1px solid #dadbdd; position: relative;}
 .admContents .admFormListWrap .admFormList .admFormLside{width: 75px; position: absolute; left: 20px; top: 20px;}
 .admContents .admFormListWrap .admFormList .admFormInner{position: relative; padding-left: 200px; min-height: 235px;}
 .admContents .admFormListWrap .admFormList .admFormAside{width: 65px; position: absolute; right: 20px; top: 20px;}
 .admContents .admFormListWrap .admFormList .admFormInner .thumbImg{position: absolute; width: 100%; max-width: 178px; left: 0; top: 0;}
-.admContents .admFormListWrap .admFormList .admFormInner .thumbImg .mainPluBannerArea{zoom: .593;}
 .admContents .admFormListWrap .admFormList .admFormInner .thumbImg .mainPluBannerArea{display: block;}
 .admContents .admFormListWrap .admFormList .admFormInner .txArea{position: relative; padding-bottom: 50px; min-height: 234px; text-align: left;}
 .admContents .admFormListWrap .admFormList .admFormInner .txArea .cmNm{font-size: 18px; line-height: 30px; color: #333;}
@@ -223,14 +221,14 @@
 .header.admin .headerTop .rt{top: 50%; margin-top: -17px;}
 .header.admin .innerWrap{width: 100%;}
 .header.admin{background: #fff; background: rgba(255,255,255,.9); letter-spacing: -.63px;}
-.header.admin .headerInner{padding: 0; padding-left: 250px; padding-right: 300px;}
+.header.admin .headerInner{padding: 0; padding-left: 250px; padding-right: 300px; height: 83px;}
 .header.admin .headerInner .lt{position: absolute; left: 0; top: 0; width: 250px; text-align: center; background: #40466b; height: 100%; border-bottom: 1px solid #40466b; box-sizing: content-box;}
 .header.admin .headerInner .rt{position: absolute; right: 25px; top: 50%; width: 300px; text-align: right; margin-top: -15px;}
 .header.admin .headerInner .rt .stt{color: #333; font-size: 16px; line-height: 31px; display: inline-block; vertical-align: top;}
 .header.admin .headerInner .rt .stt .poi{color: #0066ff;}
 .header.admin .headerInner .rt .btn{min-width: 90px; color: #fff; text-align: center; background: #c1c1c1; height: 31px; line-height: 31px; margin-left: 15px; display: inline-block; vertical-align: top; font-size: 14px;}
 .header.admin .headerInner .lt .inner{}
-.header.admin .headerTop .logo{display: block; height: 100%; background: no-repeat center center url(../images/logo_admin.png); width: 100%;}
+.header.admin .headerTop .logo{display: block; height: 100%; background: no-repeat center center url(../images/logo.png); width: 100%;}
 .header.admin .headerTop{border: none; border-bottom: 1px solid #e5e5e5;}
 .header.admin .gnb{display: block; padding: 21px 60px 23px; }
 .header.admin .gnb .lst{text-align: left; min-height: 37px;}
@@ -243,10 +241,9 @@
 
 
 
-.rlnb.admin{position: fixed; left: 0; top: 62px; bottom: 0; border-right: 1px solid #eef1f6; background: #fff; z-index: 2;}
+.rlnb.admin{position: fixed; left: 0; top: 83px; bottom: 0; border-right: 1px solid #eef1f6; background: #fff; z-index: 2;}
 .rlnb.admin .lnbInner{position: relative; width: 310px; height: 100%; height: calc(100% - 0px); overflow-y: auto; padding: 0 2px;}
 .rlnb.admin .lnbInner.tp2{height: 100%;}
-.rlnb.admin .lnbInner .mCSB_inside > .mCSB_container{margin-right: 10px;}
 .rlnb.admin .lbTit{font-size: 24px; color: #1564fb; font-weight: 800; text-align: left; padding: 25px; padding-top: 20px; margin-top: 20px;}
 .rlnb.admin .lnbLst{padding: 0 13px 15px; }
 .rlnb.admin .lnbLst>.tp{}
@@ -265,7 +262,7 @@
 .rlnb.admin .dp2>.tp>.txt:hover{background: #e6f8fc; color: #1564fb;}
 
 
-.rlnb.admin{top: 82px; background: #2c304c;}
+.rlnb.admin{background: #2c304c;}
 .rlnb.admin .lnbInner{width: 250px; padding: 0;}
 .rlnb.admin .admSubName{box-shadow: inset 0 3px 10px rgba(0,0,0,0.1); height: 135px; line-height: 135px; background: #353b5e; display: block; text-align: center; border-bottom: 1px solid #444a6e;}
 .rlnb.admin .admSubName .inner{display: inline-block; vertical-align: middle; line-height: 22px; font-size: 20px; color: #fff; padding-top: 62px; position: relative; background: no-repeat center top;}

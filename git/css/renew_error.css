@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+
+html{-webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;}
+*{margin:0;padding:0; box-sizing: border-box;}
+img{max-width: 100%; vertical-align: top;}
+.erroWrap{font-family:"Malgun Gothic","dotum",-apple-system-font, "Apple SD Gothic Neo", sans-serif; letter-spacing: -.73px; position: absolute; left: 50%; top: 50%; margin-left: -500px; margin-top: -300px; width: 100%; max-width: 1000px;}
+.erroWrap .inner{border: 1px solid #cfcfcf; border-left: none; border-right: none;}
+.erroWrap .slog{padding: 30px 0; text-align: center;}
+.erroWrap .slog .img{display: inline-block;}
+.erroWrap .slog img{}
+.erroWrap .scont{background: #f6f6f6; min-height: 387px; padding: 73px 0 0; padding-bottom: 78px; padding-left: 297px; position: relative; }
+.erroWrap .scont .scImgs{position: absolute; left: 0; top: 78px; width: 297px; text-align: right;}
+.erroWrap .scont .scImgs img{display: inline; ;}
+.erroWrap .scont .scTxts{text-align: left; padding-left: 50px;}
+.erroWrap .scont .scTxts .tit{font-size: 28px; font-weight: bold; line-height: 40px; color: #000; letter-spacing: -2.3px;}
+.erroWrap .scont .scTxts .stit{font-size: 15px; font-weight: normal; line-height: 20px; margin-top: 30px; color: #666;}
+.erroWrap .scont .scTxts .stit+.stit{margin-top: 16px;}
+.erroWrap .scbot{padding: 40px 0; text-align: center;}
+.erroWrap .scbot .sbtns{min-width: 253px; height: 60px; line-height: 60px; padding: 0 20px; border-radius: 5px; background: #0669f9; display: inline-block; text-align: center; color: #fff;}
+.erroWrap .scbot .sbtns .t{font-size: 17px; color: #fff; font-weight: bold; display: inline-block; vertical-align: top;}
+.erroWrap .scbot .sbtns .ic{width: 16px; height: 100%; display: inline-block; vertical-align: top; background: no-repeat right center url(./ic.png); margin-left: 5px;}

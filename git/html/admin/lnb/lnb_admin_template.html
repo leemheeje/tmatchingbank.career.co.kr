@@ -1,0 +1,52 @@
+<script>
+	$(document).ready(function () {
+		//LNB메뉴 선택체크
+		var $this = $(this);
+		var $wrapping = $this.find('.rlnb.admin .lnbInner');
+		var $lst = $wrapping.find('.lnbLst>.tp>.txt');
+		$wrapping.cmmInnerScroll();
+		$lst.on('click', function () {
+			var $this = $(this);
+			var $parent = $this.closest('.tp');
+			if ($parent.is('.active')) {
+				$parent.removeClass('active');
+			} else {
+				$parent.addClass('active');
+			}
+		});
+	});
+</script>
+<div class="lnbInner tp2">
+	<ul class="lnbLst">
+		<li class="tp active">
+			<a href="#;" class="txt">Banner관리</a>
+		</li>
+		<li class="tp">
+			<a href="#;" class="txt">공고관리</a>
+		</li>
+		<li class="tp">
+			<a href="#;" class="txt">구직신청서</a>
+		</li>
+		<li class="tp">
+			<a href="#;" class="txt">구인신청서</a>
+		</li>
+		<li class="tp">
+			<a href="#;" class="txt">소양교육</a>
+		</li>
+		<li class="tp">
+			<a href="#;" class="txt">기업회원 관리</a>
+		</li>
+		<li class="tp">
+			<a href="#;" class="txt">개인회원 관리</a>
+		</li>
+		<li class="tp">
+			<a href="#;" class="txt">공지사항</a>
+		</li>
+		<li class="tp">
+			<a href="#;" class="txt">취업후기</a>
+		</li>
+		<li class="tp">
+			<a href="#;" class="txt">FAQ 관리</a>
+		</li>
+	</ul>
+</div>

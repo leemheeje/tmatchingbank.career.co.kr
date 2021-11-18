@@ -1,0 +1,46 @@
+<script>
+    $(document).ready(function(){
+        //LNB메뉴 선택체크
+		var $this = $(this);
+        var $wrapping = $this.find('.rlnb.admin .lnbInner');
+        var $lst = $wrapping.find('.lnbLst>.tp>.txt');
+		var $togButton = $wrapping.find('.lnbLst>.tp>.arBt');
+        $wrapping.cmmInnerScroll();
+        $lst.on('click', function(){
+            var $this = $(this);
+            var $parent = $this.closest('.tp');
+            if($parent.is('.active')){
+                $parent.removeClass('active');
+            }else{
+                $parent.addClass('active');
+            }
+        });
+		$togButton.on('click', function(){
+			var $this = $(this);
+			var $parent = $this.closest('.tp');
+			if($parent.is('.on')){
+				$parent.removeClass('on');
+			}else{
+				$parent.addClass('on');
+			}
+		});
+    });
+</script>
+<div class="lnbInner tp2">
+    <div class="admSubName">
+        <div class="inner tp5">
+            취업자료
+        </div>
+    </div>
+    <ul class="lnbLst">
+        <li class="tp tp1 on">
+            <a href="#;" class="txt">취업뉴스</a>
+            <ul class="dp2">
+                <li class="tp active"> <a href="#;" class="txt">취업/경제뉴스 상단관리</a></li>
+                <li class="tp"> <a href="#;" class="txt">시사상식 카드뉴스 관리</a></li>
+                <li class="tp"> <a href="#;" class="txt">커리어 보도자료 관리</a></li>
+            </ul>
+            <a href="#;" class="arBt" title="하위메뉴보기"></a>
+        </li>
+    </ul>
+</div>

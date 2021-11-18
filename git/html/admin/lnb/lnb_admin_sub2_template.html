@@ -1,0 +1,102 @@
+<script>
+    $(document).ready(function(){
+        //LNB메뉴 선택체크
+		var $this = $(this);
+        var $wrapping = $this.find('.rlnb.admin .lnbInner');
+        var $lst = $wrapping.find('.lnbLst>.tp>.txt');
+		var $togButton = $wrapping.find('.lnbLst>.tp>.arBt');
+        $wrapping.cmmInnerScroll();
+        $lst.on('click', function(){
+            var $this = $(this);
+            var $parent = $this.closest('.tp');
+            if($parent.is('.active')){
+                $parent.removeClass('active');
+            }else{
+                $parent.addClass('active');
+            }
+        });
+		$togButton.on('click', function(){
+			var $this = $(this);
+			var $parent = $this.closest('.tp');
+			if($parent.is('.on')){
+				$parent.removeClass('on');
+			}else{
+				$parent.addClass('on');
+			}
+		});
+    });
+</script>
+<div class="lnbInner tp2">
+    <div class="admSubName">
+        <div class="inner tp2">
+            유료상품
+        </div>
+    </div>
+    <ul class="lnbLst">
+        <li class="tp tp1 on">
+            <a href="#;" class="txt">Main Banner 관리 - PC</a>
+            <ul class="dp2">
+                <li class="tp active"> <a href="#;" class="txt">플래티넘 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">플래티넘 클래스</a></li>
+                <li class="tp"> <a href="#;" class="txt">플래티넘</a></li>
+                <li class="tp"> <a href="#;" class="txt">프리미엄 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">프리미엄 클래스</a></li>
+                <li class="tp"> <a href="#;" class="txt">프리미엄</a></li>
+                <li class="tp"> <a href="#;" class="txt">프라임 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">프라임 클래스</a></li>
+                <li class="tp"> <a href="#;" class="txt">프라임</a></li>
+                <li class="tp"> <a href="#;" class="txt">포커스</a></li>
+                <li class="tp"> <a href="#;" class="txt">플러스</a></li>
+                <li class="tp"> <a href="#;" class="txt">해외 취업 채용공고</a></li>
+                <li class="tp"> <a href="#;" class="txt">베스트 교육정보</a></li>
+            </ul>
+            <a href="#;" class="arBt" title="하위메뉴보기"></a>
+        </li>
+        <li class="tp tp1 on">
+            <a href="#;" class="txt">Sub Banner 관리 - PC</a>
+            <ul class="dp2">
+                <li class="tp"> <a href="#;" class="txt">Good 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">파워채용 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">Plus 스페셜 (무료)</a></li>
+                <li class="tp"> <a href="#;" class="txt">지역 TOP</a></li>
+                <li class="tp"> <a href="#;" class="txt">지역 HOT</a></li>
+                <li class="tp"> <a href="#;" class="txt">직무 TOP</a></li>
+                <li class="tp"> <a href="#;" class="txt">직무 HOT</a></li>
+            </ul>
+            <a href="#;" class="arBt" title="하위메뉴보기"></a>
+        </li>
+    </ul>
+    <ul class="lnbLst tp2">
+        <li class="tp tp1 on">
+            <a href="#;" class="txt">Main Banner 관리 - M</a>
+            <ul class="dp2">
+                <li class="tp active"> <a href="#;" class="txt">M 플래티넘 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">M 플래티넘 클래스</a></li>
+                <li class="tp"> <a href="#;" class="txt">M 프리미엄 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">M 프리미엄 클래스</a></li>
+                <li class="tp"> <a href="#;" class="txt">M 프라임 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">M 프라임 클래스</a></li>
+                <li class="tp"> <a href="#;" class="txt">해외 취업 채용공고</a></li>
+                <li class="tp"> <a href="#;" class="txt">베스트 교육정보</a></li>
+            </ul>
+            <a href="#;" class="arBt" title="하위메뉴보기"></a>
+        </li>
+        <li class="tp tp1 on">
+            <a href="#;" class="txt">Sub Banner 관리 - M</a>
+            <ul class="dp2">
+                <li class="tp"> <a href="#;" class="txt">M 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">M 클래스</a></li>
+                <li class="tp"> <a href="#;" class="txt">M 베스트</a></li>
+                <li class="tp"> <a href="#;" class="txt">채용속보 M 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">채용속보 M  Speed</a></li>
+                <li class="tp"> <a href="#;" class="txt">학력별/기업별 M 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">학력별/기업별 M 클래스</a></li>
+                <li class="tp"> <a href="#;" class="txt">지역 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">직무 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">직무 스페셜</a></li>
+                <li class="tp"> <a href="#;" class="txt">직무 클래스</a></li>
+            </ul>
+            <a href="#;" class="arBt" title="하위메뉴보기"></a>
+        </li>
+    </ul>
+</div>

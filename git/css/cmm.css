@@ -1746,3 +1746,292 @@ html:not(.fnHeaderMainContFixed) .searchPennelBox .cmmAutoSearchWrap.tp2 .cmmAut
 .cmmTblTp.recruit col.col4{width: 120px;}
 .cmmTblTp.recruit col.col5{width: 150px;}
 .cmmTblTp.recruit col.col6{width: 140px;}
+
+
+
+
+
+
+
+
+/*
+.signup{}
+.signup .innerWrap{max-width: 720px; width: 100%;}
+.signup .innerWrap.inherit{max-width: 1260px;}
+.signup .signTop{padding-top: 40px;}
+.signup .signCont{}
+.signup .signCont .signContInner{}
+.signup .loginWrap{position: relative; padding-right: 270px; display: inline-block; margin-left: auto; margin-right: auto; max-width: 880px; display: block;}
+.signup .loginWrap.paddingnone{padding-right: 0;}
+.signup .loginWrap .logLt{}
+.signup .loginWrap .logRt{width: 250px; position: absolute; right: 0; top: 0;}
+.signup .loginWrap .loginForm{position: relative; padding-right: 150px;}
+.signup .loginWrap .loginForm .loginInput{}
+.signup .loginWrap .loginForm .loginButton{position: absolute; right: 0; width: 140px; top: 0;}
+.signup .loginWrap .loginForm .loginButton .btns{height: 100%; height: 92px; line-height: 92px;} */
+.signupHeader.header .headerMainTop{padding-top: 13px; padding-bottom: 15px; border-bottom: 1px solid #e6e6e6;}
+.signupHeader.header .headerMainTop .headerTopInner{padding-right: 0; padding-left: 130px;}
+.signupHeader.header .headerMainTop .lts{left: 0;}
+.signupHeader.header .headerMainTop .gnb{text-align: right;}
+.signupHeader.header .headerMainTop .gnb>.tp>.txt{font-size: 14px; color: #333; font-weight: bold;}
+.signupHeader.header .headerMainTop .gnb>.tp.active>.txt{color: #1788fc;}
+.signupHeader.header .headerMainTop .conts{padding-left: 0;}
+.signupHeader.header .innerWrap{max-width: 700px;}
+body[data-location-pathname^="/search/find_id"] .header .headerMainTop .gnb>.tp[data-params="findid"]>.txt{color: #1788fc;}
+body[data-location-pathname^="/search/find_pw"] .header .headerMainTop .gnb>.tp[data-params="findpw"]>.txt{color: #1788fc;}
+body[data-location-pathname^="/signup/join"] .header .headerMainTop .gnb>.tp[data-params="signup"]>.txt{color: #1788fc;}
+
+.signup{padding-top: 50px;  letter-spacing: -.63px;}
+.signup .innerWrap{min-width: 700px; max-width: 700px;}
+.signup .signUpBoxArea{background: #fff; padding: 67px 100px; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);}
+.signup .signUpBoxArea .sgTitNm{font-size: 28px; line-height: 35px; color: #333; font-weight: 800; font-family: 'Noto Sans KR',-apple-system-font, "Apple SD Gothic Neo", sans-serif; text-align: center; display: block;}
+.signup .signUpBoxArea .sgFormGroup{}
+
+
+.signup .signUpBoxArea .abtn{ height: 58px; border-radius: 0; border: 1px solid #cbd0da; font-size: 13px; color: #333; background: #e8ebf2;}
+.signup .signUpBoxArea .abtn:disabled{color: #1564fb;}
+.signup .signUpBoxArea a.abtn{line-height: 56px; display: inline-block; text-align: center;}
+.signup .signUpBoxArea .abtn.blue{border-color: #1a61e7; background: #1a61e7; color: #fff;}
+.signup .signUpBoxArea .abtn.gray{border-color: #cbd0da; background: #e8ebf2; color: #333;}
+.signup .signUpBoxArea .abtn.block{display: block; width: 100%;}
+.signup .signUpBoxArea .abtn.lg{height: 65px; font-size: 17px; font-weight: bold;}
+.signup .signUpBoxArea a.abtn.lg{line-height: 63px;}
+
+.signup .signUpBoxArea .infMsg{text-align: left;}
+.signup .signUpBoxArea .infMsg .intx{font-size: 12px; color: #999; line-height: 16px;}
+.signup .signUpBoxArea .infMsg.tp2 .intx{color: #333; line-height: 24px; display: block; text-indent: -7px; padding-left: 7px;}
+.signup .signUpBoxArea .sgSnsGroup{}
+.signup .signUpBoxArea .sgSnsGroup .snsArea{text-align: center;}
+.signup .signUpBoxArea .sgSnsGroup .snsArea .snsBt{border: 1px solid #e9e9e9; width: 60px; height: 60px; border-radius: 50%; background: #fff; margin: 5px; background: no-repeat center center;}
+.signup .signUpBoxArea .sgSnsGroup .snsArea .snsBt.naver{background-image: url(../images/common/snsTp1_60_60.png);}
+.signup .signUpBoxArea .sgSnsGroup .snsArea .snsBt.facebook{background-image: url(../images/common/snsTp2_60_60.png);}
+.signup .signUpBoxArea .sgSnsGroup .snsArea .snsBt.kakao{background-image: url(../images/common/snsTp3_60_60.png);}
+.signup .signUpBoxArea .sgSnsGroup .snsArea .snsBt.google{background-image: url(../images/common/snsTp4_60_60.png);}
+.signup .signUpBoxArea .sgAgrGroup{}
+.signup .signUpBoxArea .sgAgrGroup .sgaTo{}
+.signup .signUpBoxArea .sgAgrGroup .sgaTo .cmmInput .lb{font-size: 18px; height: 21px; line-height: 21px;}
+.signup .signUpBoxArea .sgAgrGroup .sgaCt{}
+.signup .signUpBoxArea .sgAgrGroup .sgaCt .cmmInput{position: relative; padding-right: 80px;}
+.signup .signUpBoxArea .sgAgrGroup .sgaCt .cmmInput+.cmmInput{margin-top: 15px;}
+.signup .signUpBoxArea .sgAgrGroup .sgaCt .cmmInput .lb{font-size: 15px;}
+.signup .signUpBoxArea .sgAgrGroup .sgaCt .cmmInput .agTxtBtn{position: absolute; border: none; background: none; color: #5f9dff; font-size: 13px; right: 2px; padding-right: 20px; line-height: 18px; top: 0;}
+.signup .signUpBoxArea .sgAgrGroup .sgaCt .cmmInput .agTxtBtn:after{content: ''; width: 20px; height: 100%; background: no-repeat center center url(../images/icos/icoslBlueArrowNext_5_8.png); position: absolute; right: 0; top: 0;}
+.signup .signUpBoxArea .sgAgrGroup .sgaCt .cmmInput .agTxtBtn:hover{text-decoration: underline;}
+
+.signup .signUpBoxArea .btnsGroup{}
+.signup .signUpBoxArea .btnsGroup:after{content: ''; clear: both; display: table;}
+.signup .signUpBoxArea .btnsGroup .col6{float: left;}
+.signup .signUpBoxArea .btnsGroup .col6{width: 50%; padding-right: 5px;}
+.signup .signUpBoxArea .btnsGroup .col6+.col6{padding-left: 5px;}
+.signup .sgFormCompLay{}
+.signup .sgFormCompLay .titTxt{font-size: 12px; display: block; text-align: left; line-height: 26px;;}
+.signup .sgFormCompLay .titTxt .org{color: #ff5400;}
+.signup .sgFormCompLay .titTxt .blue{color: #1564fb;}
+.signup .sgFormCompLay .grid{margin: 0 -4px;}
+.signup .sgFormCompLay .grid .cbox{float: left; padding: 4px; width: 50%;}
+.signup .sgFormCompLay .grid .nm{display: block; line-height: 56px; height: 58px; border: 1px solid #cbd0da; text-align: left; text-indent: 20px; color: #333; font-size: 16px; position: relative; padding-right: 120px;}
+.signup .sgFormCompLay .grid .nm .dat{position: absolute; right: 20px; top: 50%; margin-top: -9px; font-size: 14px; line-height: 18px; color: #999;; text-align: right;;}
+.signup .signUpBoxArea .sgTit{font-size: 28px; font-family: 'Noto Sans KR',-apple-system-font, "Apple SD Gothic Neo", sans-serif; font-weight: 800; color: #333; line-height: 30px;}
+.signup .signUpBoxArea .sgsTit{font-size: 15px; font-family: 'Noto Sans KR',-apple-system-font, "Apple SD Gothic Neo", sans-serif; color: #333; line-height: 30px; margin-top: 5px;}
+.signup .signUpBoxArea .sgsTit.lg{font-size: 18px;}
+.signup .signUpBoxArea .sgsTit .poi{color: #1564fb;}
+.signup .signUpBoxArea .sgsTit .red{color: #fe1e00;}
+.signup .signUpBoxArea .sgsTit a.poi:hover{text-decoration: underline;}
+
+
+.signup .rxGroupBox{}
+.signup .rxGroupBox .rxBoxs{background: #eef2f7; border-radius: 10px; padding: 20px 25px; margin-bottom: 10px;}
+.signup .rxGroupBox .rxBoxs .inner{position: relative; padding-left: 90px;}
+.signup .rxGroupBox .rxBoxs .inner .lt{position: absolute; left: 0; top: 0;}
+.signup .rxGroupBox .rxBoxs .inner .lt .img{width: 90px; height: 90px; border-radius: 50%; background: #fff; overflow: hidden; display: block;}
+.signup .rxGroupBox .rxBoxs .inner .lt .img img{}
+.signup .rxGroupBox .rxBoxs .inner .cont{text-align: left; min-height: 90px;; padding-left: 20px;}
+.signup .rxGroupBox .rxBoxs .inner .cont .tit{font-size: 16px; color: #333; line-height: 22px;}
+.signup .rxGroupBox .rxBoxs .inner .cont .stit{font-size: 12px; color: #666; line-height: 20px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; height: 40px; margin-top: 3px;}
+.signup .rxGroupBox .rxBoxs .inner .cont .lkc{font-size: 12px; font-weight: bold; color: #1564fb; display: inline-block; position: relative; padding-right: 20px; margin-top: 10px;}
+.signup .rxGroupBox .rxBoxs .inner .cont .lkc:after{content: ''; width: 5px; height: 8px; position: absolute; right: 0; top: 50%; margin-top: -4px; background: no-repeat left top url(../images/icos/icosBBlueArrowNext_5_8.png);}
+.signup .rxGroupBox .rxBoxs .inner .cont .lkc:hover{text-decoration: underline;}
+
+/*공통탭 회원가입시 변경*/
+.signup .cmmStateStepType2Wrap.tp2 .cssTp .cssTpBox{background: #eef2f7;}
+.signup .cmmStateStepType2Wrap.tp2 .cssTp .cssTit{color: #afb6c0;}
+.signup .cmmStateStepType2Wrap.tp2 .cssTp.active .cssTit{color: #333; font-weight: 800;}
+
+
+
+/* 지원상태 */
+.cmmStateStepWrap{padding: 13px 0; border-bottom: 3px solid #dbdbdb;}
+.cmmStateStepWrap .cssTit{font-size: 30px; font-weight: 800; color: #656565; padding-right: 35px; position: relative; display: inline-block;}
+.cmmStateStepWrap .cssTit .cstlb{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 28px; height: 28px; line-height: 28px; border-radius: 28px; color: #fff; font-size: 14px; font-weight: 800; text-align: center;}
+.cmmStateStepWrap .cssTit .cstlb.tp1{background-color: #c4eef8;}
+.cmmStateStepWrap .cssTit .cstlb.tp2{background-color: #6096fc;}
+.cmmStateStepWrap .cssTit .cstlb.tp3{background-color: #88b0fd;}
+.cmmStateStepWrap .cssTit .cstlb.tp4{background-color: #94cafd;}
+.cmmStateStepType2Wrap{border-bottom: 3px solid #1564fb;}
+.cmmStateStepType2Wrap .cmmStateStepInner{margin-left: -2px; margin-right: -2px; font-size: 0;}
+.cmmStateStepType2Wrap .cssTpOpt{width: 145px; height: 50px; line-height: 48px; border-radius: 50px; background: #fff; border: 1px solid #c8cacb; position: absolute; left: 50%; margin-left: -77px; top: -36px;}
+.cmmStateStepType2Wrap .cssTpOpt .cstOIn{vertical-align: middle; display: inline-block; width: 100%; text-align: center; line-height: 16px;}
+.cmmStateStepType2Wrap .cssTpOpt .lb,
+.cmmStateStepType2Wrap .cssTpOpt .tx{font-size: 13px; font-weight: 700;}
+.cmmStateStepType2Wrap .cssTpOpt .lb{color: #ff0000;}
+.cmmStateStepType2Wrap .cssTpOpt .tx{color: #707070;}
+.cmmStateStepType2Wrap .cssTp{width: 20%; display: inline-block; vertical-align: top; padding-left: 2px; padding-right: 2px; position: relative;}
+.cmmStateStepType2Wrap.col8 .cssTp{width: 12.5%;}
+.cmmStateStepType2Wrap.col7 .cssTp{width: 14.285%;}
+.cmmStateStepType2Wrap.col6 .cssTp{width: 16.666%;}
+.cmmStateStepType2Wrap.col2 .cssTp{width: 50%;}
+.cmmStateStepType2Wrap.col3 .cssTp{width: 33.333%;}
+.cmmStateStepType2Wrap .cssTp .cssTpBox{display: block; padding: 10px; background: #e8ebee; border-top-left-radius: 8px; border-top-right-radius: 8px;}
+.cmmStateStepType2Wrap.col8 .cssTp{padding-left: 2px; padding-right: 2px;}
+.cmmStateStepType2Wrap .cssTp .cssTit{font-weight: 700; position: relative; padding: 8px 10px; padding-right: 40px; font-size: 26px; color: #b1b1b1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 36px; }
+.cmmStateStepType2Wrap .cssTp .cssTit.paddingnone{padding-right: 10px;}
+.cmmStateStepType2Wrap .cssTp .cssTit.required:after{content: '필수'; font-size: 14px; line-height: 1; margin-left: 5px;}
+.cmmStateStepType2Wrap .cssTp .cssTit .cstlb{position: absolute; right: 0; top: 50%; transform: translateY(-50%); min-width: 28px; height: 28px; line-height: 28px; border-radius: 28px; background:#fff;  color: #b1b1b1; font-size: 14px; font-weight: 800; text-align: center;}
+.cmmStateStepType2Wrap .cssTp.active .cssTpBox{background: #1564fb;}
+.cmmStateStepType2Wrap .cssTp.active .cssTpBox .cssTit{color: #fff;}
+.cmmStateStepType2Wrap .cssTp.active .cssTpBox .cssTit .cstlb{background: #fff; color: #1564fb;}
+.cmmStateStepType2Wrap.sm .cssTp .cssTpBox{padding-top: 6px; padding-bottom: 6px;}
+.cmmStateStepType2Wrap.sm .cssTp .cssTit{padding-top: 4px; padding-bottom: 4px;}
+.cmmStateStepType2Wrap.tp2{border-bottom: 1px solid #000;}
+.cmmStateStepType2Wrap.tp2 .cmmStateStepInner{margin-left: 0; margin-right: 0; border-right: 1px solid #ddd;}
+.cmmStateStepType2Wrap.tp2 .cssTp{padding: 0; position: relative; border-top: 1px solid #ddd; border-left: 1px solid #ddd;}
+.cmmStateStepType2Wrap.tp2 .cssTp.active{border-color: #000;}
+.cmmStateStepType2Wrap.tp2 .cssTp.active:after,
+.cmmStateStepType2Wrap.tp2 .cssTp.active:before{content: ''; position: absolute; }
+.cmmStateStepType2Wrap.tp2 .cssTp.active:after{right: -1px; background: #000; width: 1px; top: 0; height: 100%; top: calc(0% - 1px); height: calc(100% + 1px); z-index: 1;}
+.cmmStateStepType2Wrap.tp2 .cssTp.active:before{left: 0; bottom: -1px; background: #fff; width: 100%; height: 1px;}
+.cmmStateStepType2Wrap.tp2 .cssTp .cssTpBox{padding: 0; background: #fafafa; border-radius: 0; }
+.cmmStateStepType2Wrap.tp2 .cssTp .cssTit{font-size: 16px; color: #999; font-weight: normal; padding-right: 0; text-align: center; line-height: 55px; padding: 0; letter-spacing: -.45px;}
+.cmmStateStepType2Wrap.tp2 .cssTp.active .cssTit{background: #fff; color: #000; font-weight: 700;}
+.cmmStateStepType2Wrap.tp2.inline{}
+.cmmStateStepType2Wrap.tp2.inline .cmmStateStepInner{border-right: none;}
+.cmmStateStepType2Wrap.tp2.inline .cssTp:last-child{border-right: 1px solid #ddd;}
+.cmmStateStepType2Wrap.tp2.paddingright{position: relative;}
+.cmmStateStepType2Wrap.tp2.paddingright .ttright{position: absolute; right: 0; top: 0;}
+.cmmStateStepType2Wrap.tp3{border-bottom: none; border: 1px solid #ddd;}
+.cmmStateStepType2Wrap.tp3 .cmmStateStepInner{margin-left: 0; margin-right: 0;}
+.cmmStateStepType2Wrap.tp3 .cssTp{padding: 0;}
+.cmmStateStepType2Wrap.tp3 .cssTp+.cssTp{border-left: 1px solid #ddd;}
+.cmmStateStepType2Wrap.tp3 .cssTp .cssTpBox{display: block; border-radius: 0; padding: 0 7px; background: #fff; position: relative;}
+.cmmStateStepType2Wrap.tp3 .cssTp .cssTit{font-size: 13px; color: #333; letter-spacing: -.63px; text-align: center; display: block; font-weight: normal; padding: 0; line-height: 48px;}
+.cmmStateStepType2Wrap.tp3 .cssTp .cssTit .sml{font-size: 12px; color: #999; font-weight: normal;}
+.cmmStateStepType2Wrap.tp3 .cssTp.active .cssTpBox{background-color: #1770fc; outline: 1px solid #1770fc; z-index: 1;}
+/* .cmmStateStepType2Wrap.tp3 .cssTp.active .cssTpBox:after{content: ''; width: calc(100% + 2px); height: calc(100% + 2px); position: absolute; left: 0; top: 0; border: 1px solid #1770fc; z-index: 1; width: 100%; height: 100%;} */
+.cmmStateStepType2Wrap.tp3 .cssTp.active .cssTit{font-weight: 700; color: #fff;}
+.cmmStateStepType2Wrap.tp3 .cssTp.active .cssTit .sml{color: #fff;}
+
+.cmmStateStepType2Wrap.tp4{border: none;  letter-spacing: -.63px;}
+.cmmStateStepType2Wrap.tp4 .cmmStateStepInner{margin-left: 0; margin-right: 0;}
+.cmmStateStepType2Wrap.tp4.inline .cssTp{display: inline-block; width: auto; min-width: 180px; margin-right: 5px;}
+.cmmStateStepType2Wrap.tp4 .cssTp{padding: 0;}
+.cmmStateStepType2Wrap.tp4 .cssTp .cssTpBox{display: block; border-radius: 56px; padding: 0 30px; background: #cfd2d6; min-height: 56px; position: relative;}
+.cmmStateStepType2Wrap.tp4 .cssTp .cssTit{font-size: 16px; color: #fff; text-align: left; display: block; font-weight: normal; padding: 4px 0; line-height: 48px;}
+.cmmStateStepType2Wrap.tp4 .cssTp .cssTit .sml{font-size: 12px; color: #999; font-weight: normal;}
+.cmmStateStepType2Wrap.tp4 .cssTp.active .cssTpBox{background-color: #454545; outline: none; z-index: 1;}
+.cmmStateStepType2Wrap.tp4 .cssTp.active .cssTit{color: #fff;}
+.cmmStateStepType2Wrap.tp4 .cssTp.active .cssTit .sml{color: #fff;}
+.cmmStateStepType2Wrap.tp4 .cssTp .cssTit .cstlb,
+.cmmStateStepType2Wrap.tp4 .cssTp.active .cssTit .cstlb{font-weight: bold; color: #fff; background: none; width: auto; height: auto; font-size: 22px; min-width: 0; line-height: inherit;}
+
+.cmmStateStepType2Wrap.tp5{border: none;  letter-spacing: -.63px; background: #eef2f7; border-radius: 10px;}
+.cmmStateStepType2Wrap.tp5 .cmmStateStepInner{margin-left: 0; margin-right: 0; padding: 24px; padding-bottom: 19px;}
+.cmmStateStepType2Wrap.tp5.inline .cssTp{display: inline-block; width: auto; margin-right: 5px; margin-bottom: 5px;}
+.cmmStateStepType2Wrap.tp5 .cssTp{padding: 0;}
+.cmmStateStepType2Wrap.tp5 .cssTp .cssTpBox{display: block; border-radius: 36px; padding: 0 15px; background: #fff; position: relative; border: 1px solid #d6d6d6;}
+.cmmStateStepType2Wrap.tp5 .cssTp .cssTit{font-size: 13px; color: #666; text-align: left; display: block; font-weight: normal; padding: 0; line-height: 34px;}
+.cmmStateStepType2Wrap.tp5 .cssTp .cssTit .sml{font-size: 12px; color: #999; font-weight: normal;}
+.cmmStateStepType2Wrap.tp5 .cssTp.active .cssTpBox{background-color: #1770fc; border-color: #1770fc; outline: none; z-index: 1;}
+.cmmStateStepType2Wrap.tp5 .cssTp.active .cssTit{color: #fff;}
+.cmmStateStepType2Wrap.tp5 .cssTp.active .cssTit .sml{color: #fff;}
+.cmmStateStepType2Wrap.tp5 .cssTp .cssTit .cstlb,
+.cmmStateStepType2Wrap.tp5 .cssTp.active .cssTit .cstlb{font-weight: bold; color: #fff; background: none; width: auto; height: auto; font-size: 22px; min-width: 0; line-height: inherit;}
+
+
+
+/*회원가입쪽 폼요소들 */
+.sgFormGroup .sgForm{margin-bottom: 10px; position: relative;}
+.sgFormGroup .sgForm.inline{margin-bottom: 0; display: inline-block; vertical-align: top;}
+.sgFormGroup .sgRow{margin-left: -2.5px; margin-right: -2.5px;}
+.sgFormGroup .sgRow:after{content: ''; display: table; clear: both;}
+.sgFormGroup .sgRow [class^="sgCol"]{float: left; padding-left: 2.5px; padding-right: 2.5px;}
+.sgFormGroup .sgRow .sgCol00{width: auto;}
+.sgFormGroup .sgRow .sgCol05{width: 4.16%;}
+.sgFormGroup .sgRow .sgCol1{width: 8.3334%;}
+.sgFormGroup .sgRow .sgCol15{width: 12.5%;}
+.sgFormGroup .sgRow .sgCol2{width: 16.666%;}
+.sgFormGroup .sgRow .sgCol25{width: 20.833%;}
+.sgFormGroup .sgRow .sgCol3{width: 25%;}
+.sgFormGroup .sgRow .sgCol35{width: 29.166%;}
+.sgFormGroup .sgRow .sgCol4{width: 33.333%;}
+.sgFormGroup .sgRow .sgCol45{width: 37.5%;}
+.sgFormGroup .sgRow .sgCol5{width: 41.666%;}
+.sgFormGroup .sgRow .sgCol55{width: 45.83%;}
+.sgFormGroup .sgRow .sgCol6{width: 50%;}
+.sgFormGroup .sgRow .sgCol65{width: 54.166%;}
+.sgFormGroup .sgRow .sgCol7{width: 58.334%;}
+.sgFormGroup .sgRow .sgCol75{width: 62.5%;}
+.sgFormGroup .sgRow .sgCol8{width: 66.667%;}
+.sgFormGroup .sgRow .sgCol85{width: 70.833%;}
+.sgFormGroup .sgRow .sgCol9{width: 75%;}
+.sgFormGroup .sgRow .sgCol95{width: 79.166%;}
+.sgFormGroup .sgRow .sgCol10{width: 83.334%;}
+.sgFormGroup .sgRow .sgCol105{width: 87.5%;}
+.sgFormGroup .sgRow .sgCol11{width: 92%;}
+.sgFormGroup .sgRow .sgCol115{width: 95.833%;}
+.sgFormGroup .sgRow .sgCol12{width: 100%;}
+.sgFormGroup .sgForm.absBtn{padding-right: 123px;}
+.sgFormGroup .sgForm .svInput,
+.sgFormGroup .sgForm input[type="text"],
+.sgFormGroup .sgForm textarea,
+.sgFormGroup .sgForm input[type="number"],
+.sgFormGroup .sgForm input[type="password"],
+.sgFormGroup .sgForm select{ letter-spacing: -.63px; padding: 0; border: 1px solid #cbd0da; height: 58px; font-size: 16px; text-align: left; text-indent: 25px; background-color: #fff; width: 100%; color: #333; position: relative; border-radius: 0;}
+.sgFormGroup .sgForm input[type="text"]:focus,
+.sgFormGroup .sgForm input[type="password"]:focus,
+.sgFormGroup .sgForm textarea:focus,
+.sgFormGroup .sgForm select:focus{border-color: #000; outline: none;}
+.sgFormGroup .sgForm textarea.required,
+.sgFormGroup .sgForm input.required,
+.sgFormGroup .sgForm input:required{background-repeat: no-repeat; background-image: url(../images/icos/icosRedRequired_7_7.png); background-position: 10px 10px;}
+.sgFormGroup .sgForm select{background-position-x: calc(100% - 30px); padding-right: 30px;}
+.sgFormGroup .sgForm textarea{height: 200px; resize: vertical; text-indent: 0; padding: 10px; padding-left: 25px; line-height: 1.7;}
+.sgFormGroup .sgForm.absBtn .abs{position: absolute; right: 0; top: 0;}
+.sgFormGroup .sgForm.absBtn .abs .abtn{width: 123px; border-left: none;;}
+.sgFormGroup .sgForm.isInzNum input{padding-right: 100px;}
+.sgFormGroup .sgForm.isInzNum .svInput{padding-right: 100px;}
+.sgFormGroup .sgForm.isInzNum .inzNum{position: absolute; right: 10px; top: 50%; margin-top: -10px; line-height: 20px; font-size: 13px; color: #333;}
+.sgFormGroup .sgForm.isInzNum .inzNum.c999{color: #999;}
+.sgFormGroup .sgForm.isInzNum.absBtn .inzNum{right: 133px;}
+.sgFormGroup .sgForm .svInput{overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 56px;}
+.sgFormGroup .sgForm .svInput.readonly,
+.sgFormGroup .sgForm input[type="text"]:read-only{background-color: #F9F9F8;}
+.sgFormGroup .sgForm .warMsg{display: none; text-align: left; position: absolute; left: 0; top: 47px; padding: 6px 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.11); z-index: 1; font-size: 12px; line-height: 15px;}
+.sgFormGroup .sgForm .warMsg:after{content: ''; width: 11px; height: 7px; position: absolute; left: 41px; top: -7px; background: no-repeat left top;}
+.sgFormGroup .sgForm .warMsg .intx{font-size: 12px; line-height: 15px;}
+.sgFormGroup .sgForm .warMsg:not([data-params]){display: none !important;}
+.sgFormGroup .sgForm .warMsg[data-params="error"]{border: 1px solid #eb976f; background: #f4efe8; display: block; color: #eb773f;}
+.sgFormGroup .sgForm .warMsg[data-params="error"] .intx{color: #eb773f;}
+.sgFormGroup .sgForm .warMsg[data-params="error"]:after{background-image: url(../images/common/warMsgOrgArrow.png);}
+.sgFormGroup .sgForm .warMsg[data-params="success"]{border: 1px solid #8eb0db; background: #eef2f7; display: block; color: #74a0d7;}
+.sgFormGroup .sgForm .warMsg[data-params="success"] .intx{color: #74a0d7;}
+.sgFormGroup .sgForm .warMsg[data-params="success"]:after{background-image: url(../images/common/warMsgBlueArrow.png);}
+.sgFormGroup .sgTitle{font-size: 18px; line-height: 20px; text-align: left; color: #333; font-weight: normal; margin-bottom: 13px;}
+.sgFormGroup .sgTitle .poi{color: #1564fb;}
+.sgFormGroup .sgTitle .sm{font-size: 16px;}
+.sgFormGroup .sgTitle .sm:before{content: '-'; display: inline-block; margin-left: 3px; margin-right: 5px;}
+.sgFormGroup .sgTitle .org{color: #ff5400;}
+.signUpBoxArea .sgTitle{font-size: 18px; line-height: 20px; text-align: left; color: #333; font-weight: normal; margin-bottom: 13px;}
+.signUpBoxArea .sgTitle .poi{color: #1564fb;}
+.signUpBoxArea .sgTitle .sm{font-size: 16px;}
+.signUpBoxArea .sgTitle .sm:before{content: '-'; display: inline-block; margin-left: 3px; margin-right: 5px;}
+.signUpBoxArea .sgTitle .org{color: #ff5400;}
+
+
+/* 임시 */
+.signContInner .snsArea{}
+.signContInner .snsBt{width: 48%; height: 40px; border: 1px solid #ddd; background: #fff; border-radius: 3px; margin-bottom: 3px;}
+.signContInner .snsBt:after{font-size: 13px; font-weight: bold;}
+.signContInner .snsBt.naver:after{content: '네이버'}
+.signContInner .snsBt.facebook:after{content: '페이스북'}
+.signContInner .snsBt.kakao:after{content: '카카오'}
+.signContInner .snsBt.google:after{content: '구글'}

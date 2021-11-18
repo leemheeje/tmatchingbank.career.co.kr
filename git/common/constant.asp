@@ -38,11 +38,11 @@ Dim aesKeyValue : aesKeyValue = "2a57476371324036504e43242e736e63"
 Dim site_ceo_name, site_addr_info, site_callback_phone, site_helpdesk_mail, site_helpdesk_opertime, site_com_license, site_jobinfo_license, site_electro_license, site_com_name
 site_ceo_name			= "윤태운"
 site_addr_info			= "(08381)서울특별시 구로구 디지털로 273, 2층(구로동, 에이스트윈타워 2차)"
-site_callback_phone		= "1577-0221(수도권), 1577-8505(지방거점)"
+site_callback_phone		= "수도권 - 1577-0221, 지방거점 - 1577-8505"
 site_helpdesk_mail		= "matchingbank@matchingbank.kr"
 site_helpdesk_opertime	= "평일 09:00~18:00 (주말, 공휴일 휴무)"
 site_com_license		= "220-86-73547"
 site_jobinfo_license	= "서울관악 제 2010-10호"
 site_electro_license	= "2010-서울구로-0401"
-site_com_name			= "대체인력뱅크"
+site_com_name			= "고용노동부 대체인력뱅크"
 %>

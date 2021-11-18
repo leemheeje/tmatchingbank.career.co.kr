@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>고용노동부 대체인력뱅크</title>
+	<meta name="keywords" content="대체인력뱅크, 취업관리시스템, 히든챔피언, hidden, champion, hidden champion, 고졸채용, highschool, rhwhf, rhwhfcodyd 커리어, career, career.co.kr, CAREER, zjfldj, 취업, 사람, 구인, 구직, 구직정보, 구인정보, 이력서 , resume, dlfurtj, 아르바이트, 알바, alba, dkfmqkdlxm, dkfqk, 헤드헌팅, 서치펌, 고용, 고용정보, 취업정보, 취업뉴스, 취업 뉴스, 취업속보, 취업 속보, 공채속보, 공채 속보, 공채, 취업포털, 채용포털, 채용, 채용정보, 취업사이트, 구직사이트, 구인사이트, 인터넷채용시스템, 인터넷취업시스템, 고용정보, 취업교육, 대기업, 중견기업, 중소기업, 일반기업, 일자리, 벤처기업, 워크, work, 잡, job, 재취업, 여성취업, cnldjq, rndls, rnwlr, 전직, 재취업, 정보통신취업, it취업, 임원, ceo, 리쿠르트,  리크루트, 헤드헌팅 파견.대행, 아웃소싱, 인재파견, 채용대행, 위탁도급, 파견임시, 취업박람회, 채용박람회, 일자리박람회, 박람회, 취업교육, 취업교육센터, 교육, 교육과정, 교육정보, 교육기관, 외국계기업, 외국인업체, 외국인기업, 자원봉사, 프리랜서, 취업상담실, 해외취업, 취업성공, 성공취업, joblink, jobsns, jobfair, work, recruit, saram, tkfka, pay, cnldjq, zjfldj" />
+	<meta name="description" content="대체인력뱅크, 취업관리시스템, 구인, 구직, 구인검색, 구직검색, 취업정보, 채용정보, 구직정보, 구인정보, 취업가이드, 경력관리, 커리어, CAEEER, Career, 헤드헌팅, 파견.대행, 아웃소싱, 인재파견, 채용대행, 교육과정, 교육정보, 취업박람회, 채용박람회, 박람회, 기업정보, 상세기업정보, 취업뉴스, 해외취업, 아르바이트, 알바, 이력서, 대학전산망" />
+	<meta name="author" content="희망을 전하는 취업포털 커리어 old.career.co.kr" />
+	<meta name="copyright" content="희망을 전하는 취업포털 커리어 old.career.co.kr" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="imagetoolbar" content="no" />
+
+
+
+
+
+
+
+	<link rel="stylesheet" href="/css/r_common.css">
+	<script src="/js/ui/libs/jquery-1.11.1.min.js"></script>
+	<script src="/js/ui/libs/jquery.mCustomScrollbar.js"></script>
+	<script src="/js/ui/libs/jquery-ui.min.js"></script>
+	<script src="/js/ui/libs/slick.min.js"></script>
+	<script src="/js/ui/design.utils.js"></script>
+	<script src="/js/ui/design.plugin.js"></script>
+	<script src="/js/ui/customTags.js"></script>
+	<script src="/js/ui/_cl.js"></script>
+	<script src="/js/ui/common.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(this).customTags();
+		});
+	</script>
+	<!-- 어드민페이지에서 사용:S -->
+	<link rel="stylesheet" href="/css/r_admin.css">
+	<script src="/js/ui/admCustomTags.js"></script>
+	<!-- 어드민페이지에서 사용:E -->
+</head>
+
+<body>
+	<!-- Skip Nav : S -->
+	<div id="skipnavigation">
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#search">검색 바로가기</a>
+		<a href="#container">본문내용 바로가기</a>
+	</div>
+	<!-- Skip Nav : E -->
+	<!-- HEADER : S -->
+	<div id="header" class="header admin headerFixed"></div>
+	<!-- HEADER : E -->
+	<!-- CONTAINER : S -->
+	<script src="/js/ui/admCustomTags.js"></script>
+	<script>
+		$(document).ready(function () {
+			//헤더 인크루드
+			$(this).include(true, [
+				['헤더-관리자', {
+					target: '#header.admin',
+					url: '/html/admin/header/header_admin_template.html',
+					get: true
+				}]
+			]);
+			//lnb 인크루드
+			$(this).include(true, [
+				['lnb-관리자', {
+					target: '#rlnb.admin',
+					url: '/html/admin/lnb/lnb_admin_template.html',
+					get: true
+				}]
+			]);
+			$(this).admCustomTags();;
+			$('.fnVirPreviewButton').click(function () { //미리보기 버튼클릭
+				var $wrapping = $(this).closest('.fnThumbPreviewTargetWrapping');
+				var $inputfile = $wrapping.find('.fnAdmFileImageViewWrapping input[type="file"]');
+				if(!$inputfile.val()){
+					alert('파일을 선택 후 다시 저장해 주세요');
+					return false;
+				}
+				$wrapping.find('.fnMainPluBannerArea').show();
+				$wrapping.find('.fnBannerNoResult').hide();
+			});
+		});
+	</script>
+	<div id="container" class="container paddingbottom0">
+		<div class="contents">
+			<div class="admin subpage">
+				<!-- LNB :S -->
+				<div id="rlnb" class="rlnb admin"></div>
+				<!-- LNB :E -->
+				<div class="admContents">
+					<div class="admInnerWrap">
+
+						<div class="admCmmTit">Banner관리 - Main Visual</div>
+						<div class="admFormBoxWrap fnAdmFormBoxWrapping">
+
+
+
+							<!-- foreach:S -->
+
+							<!-- 이미지 미리보기 있는 폼 :S -->
+							<!-- 
+								배너CASE 클래스 추가 
+								* Main Visual : isPreviewType4
+								* 좌측상단 (Banner1) : isPreviewType1
+								* 좌측상단 (Banner2) : isPreviewType2
+								* 우측상단 (Banner3) : isPreviewType3
+							-->
+							<div class="admFormBox admBannerForm MT35 isPreview isPreviewType4 fnAdmFormWrapping fnThumbPreviewTargetWrapping">
+								<div class="admFormPreview">
+									<div class="imgWrap bann fnThumbPreviewTargetDiv001">
+										<!-- 최상단배너:S -->
+										<div class="mainPluBannerArea fnMainPluBannerArea">
+											<div class="inBg">
+												<img src="" alt="" class="thumb fnThumbNodeImg" />
+											</div>
+										</div>
+										<!-- 최상단배너:E -->
+										<!-- 등록된 이미지 없을때:S -->
+										<div class="noResult fnBannerNoResult">
+											<span class="inTxt">
+												Image Preview
+											</span>
+										</div>
+										<!-- 등록된 이미지 없을때:E -->
+									</div>
+								</div>
+								<div class="admFormInner">
+									<div class="row">
+										<div class="col12">
+											<!-- 인풋파일:S -->
+											<div class="fidForm file fnAdmFileImageViewWrapping" data-params='{"thumbTarget" : ".fnThumbPreviewTargetDiv001"}'>
+												<span class="cmmFileUpload">
+													<span class="cmmInputFile">
+														<input type="file" id="" name="" value="" />
+													</span>
+												</span>
+												<input type="text" placeholder="파일선택" readonly />
+												<span class="btn">File Browser</span>
+											</div>
+											<!-- 인풋파일:E -->
+										</div>
+										<div class="col12">
+											<div class="fidForm">
+												<input type="text" class="" placeholder="배너명칭 입력" />
+											</div>
+										</div>
+										<div class="col12">
+											<div class="fidForm">
+												<input type="text" class="" placeholder="바로가기URL 입력" />
+											</div>
+										</div>
+										<div class="col12">
+											<div class="fidForm">
+												<select class="customSelect">
+													<option value="">노출순서 선택</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+										</div>
+
+									</div>
+									<div class="absBottom">
+										<a href="#;" class="admBtns sm fnVirPreviewButton">미리보기</a>
+									</div>
+								</div>
+							</div>
+							<div class="admFormBox admBannerForm MT35 isPreview isPreviewType1 fnAdmFormWrapping fnThumbPreviewTargetWrapping">
+								<div class="admFormPreview">
+									<div class="imgWrap bann fnThumbPreviewTargetDiv001">
+										<!-- 최상단배너:S -->
+										<div class="mainPluBannerArea fnMainPluBannerArea">
+											<div class="inBg">
+												<img src="" alt="" class="thumb fnThumbNodeImg" />
+											</div>
+										</div>
+										<!-- 최상단배너:E -->
+										<!-- 등록된 이미지 없을때:S -->
+										<div class="noResult fnBannerNoResult">
+											<span class="inTxt">
+												Image Preview
+											</span>
+										</div>
+										<!-- 등록된 이미지 없을때:E -->
+									</div>
+								</div>
+								<div class="admFormInner">
+									<div class="row">
+										<div class="col12">
+											<!-- 인풋파일:S -->
+											<div class="fidForm file fnAdmFileImageViewWrapping" data-params='{"thumbTarget" : ".fnThumbPreviewTargetDiv001"}'>
+												<span class="cmmFileUpload">
+													<span class="cmmInputFile">
+														<input type="file" id="" name="" value="" />
+													</span>
+												</span>
+												<input type="text" placeholder="파일선택" readonly />
+												<span class="btn">File Browser</span>
+											</div>
+											<!-- 인풋파일:E -->
+										</div>
+										<div class="col12">
+											<div class="fidForm">
+												<input type="text" class="" placeholder="배너명칭 입력" />
+											</div>
+										</div>
+										<div class="col12">
+											<div class="fidForm">
+												<input type="text" class="" placeholder="바로가기URL 입력" />
+											</div>
+										</div>
+										<div class="col12">
+											<div class="fidForm">
+												<select class="customSelect">
+													<option value="">노출순서 선택</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+										</div>
+
+									</div>
+									<div class="absBottom">
+										<a href="#;" class="admBtns sm fnVirPreviewButton">미리보기</a>
+									</div>
+								</div>
+							</div>
+							<!-- 이미지 미리보기 있는 폼 :E -->
+
+							<!-- foreach:E -->
+
+
+
+
+						</div>
+						<div class="btnsWrap MT20">
+							<div class="FLOATL">
+								<a href="#;" class="admBtns org">저장</a>
+								<a href="#;" class="admBtns ML05">취소</a>
+							</div>
+							<div class="FLOATR">
+								<a href="#;" class="admBtns">목록</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- CONTAINER : E -->
+
+</body>
+
+</html>

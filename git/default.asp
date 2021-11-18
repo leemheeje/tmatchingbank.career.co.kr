@@ -1,6 +1,5 @@
 <!--#include virtual = "/common/common.asp"-->
 <!--#include virtual = "/wwwconf/function/db/DBConnection.asp"-->
-<!--#include virtual = "/common/mobile.asp"-->
 <%
 ConnectDB DBCon, Application("DBInfo")
 
@@ -10,33 +9,29 @@ DisconnectDB DBCon
 %>
 <!--#include virtual = "/common/header.asp"-->
 <script type="text/javascript">
-
+$(document).ready(function () {
+	var $this = $(this);
+	$this.find('.fnVisualSlideWrapping').uiSwiper({
+		slideObj: {
+			dots: true,
+		}
+	});
+});
 </script>
 </head>
 
 <body>
 
-
 	<!-- HEADER :S -->
-	<!--include virtual = "/common/gnb/gnb_main.asp"-->
+	<!--#include virtual = "/common/gnb/gnb_main.asp"-->
 	<!-- HEADER :E -->
 
 	<div id="container" class="container">
 		<div class="contetns">
 
-			<script>
-				$(document).ready(function () {
-					var $this = $(this);
-					$this.find('.fnVisualSlideWrapping').uiSwiper({
-						slideObj: {
-							dots: true,
-						}
-					});
-				});
-			</script>
-			<!-- ¸ÞÀÎ ÄÁÅÙÃ÷ : S -->
+			<!-- ë©”ì¸ ì»¨í…ì¸  : S -->
 			<div class="mainArea">
-				<!-- ¸ÞÀÎ ºñÁÖ¾ó ¿µ¿ª :S -->
+				<!-- ë©”ì¸ ë¹„ì£¼ì–¼ ì˜ì—­ :S -->
 				<div class="maVisBannArea">
 					<div class="innerWrap">
 
@@ -44,12 +39,12 @@ DisconnectDB DBCon
 							<div class="lts">
 								<div class="rcScp">
 									<a href="#" class="img">
-										<img src="/static/images/sample1.png" alt="">
+										<img src="/images/sample1.png" alt="">
 									</a>
 								</div>
 								<div class="rcScp">
 									<a href="#" class="img">
-										<img src="/static/images/sample2.png" alt="">
+										<img src="/images/sample2.png" alt="">
 									</a>
 								</div>
 							</div>
@@ -60,12 +55,12 @@ DisconnectDB DBCon
 											<!-- foreach:S -->
 											<div class="tp">
 												<a href="#" class="img">
-													<img src="/static/images/sample3.png" alt="">
+													<img src="/images/sample3.png" alt="">
 												</a>
 											</div>
 											<div class="tp">
 												<a href="#" class="img">
-													<img src="/static/images/sample3.png" alt="">
+													<img src="/images/sample3.png" alt="">
 												</a>
 											</div>
 											<!-- foreach:E -->
@@ -76,21 +71,21 @@ DisconnectDB DBCon
 							<div class="rts">
 								<div class="rcScp">
 									<a href="#" class="img">
-										<img src="/static/images/sample4.png" alt="">
+										<img src="/images/sample4.png" alt="">
 									</a>
 								</div>
 								<div class="rcScp">
 									<div class="rcNoti">
 										<div class="notcIns">
-											<div class="nts">°øÁö»çÇ×</div>
+											<div class="nts">ê³µì§€ì‚¬í•­</div>
 											<div class="ntlst">
 												<!-- foreach:S -->
-												<div class="tp"> <a href="#" class="txt">[ÀÌº¥Æ®] ÀÎ»ç´ã´çÀÚ´Ô È¸¿ø°¡ÀÔÀ» ÃàÇÏÇÕ´Ï..</a></div>
-												<div class="tp"> <a href="#" class="txt">[±³À°] ¿Â¶óÀÎ±³À°¼¾ÅÍ Àü °úÁ¤ ¹«·á!</a></div>
-												<div class="tp"> <a href="#" class="txt">[ÀÌº¥Æ®] ÆäÀÌ½ººÏ ¿ÀÇÂ ÀÌº¥Æ® Àâ¾Æ¶ó~!</a></div>
+												<div class="tp"> <a href="#" class="txt">[ì´ë²¤íŠ¸] ì¸ì‚¬ë‹´ë‹¹ìžë‹˜ íšŒì›ê°€ìž…ì„ ì¶•í•˜í•©ë‹ˆ..</a></div>
+												<div class="tp"> <a href="#" class="txt">[êµìœ¡] ì˜¨ë¼ì¸êµìœ¡ì„¼í„° ì „ ê³¼ì • ë¬´ë£Œ!</a></div>
+												<div class="tp"> <a href="#" class="txt">[ì´ë²¤íŠ¸] íŽ˜ì´ìŠ¤ë¶ ì˜¤í”ˆ ì´ë²¤íŠ¸ ìž¡ì•„ë¼~!</a></div>
 												<!-- foreach:E -->
 											</div>
-											<a href="/board/notice_list.asp" class="admr">´õº¸±â</a>
+											<a href="/board/notice_list.asp" class="admr">ë”ë³´ê¸°</a>
 										</div>
 									</div>
 								</div>
@@ -99,27 +94,23 @@ DisconnectDB DBCon
 					</div>
 
 				</div>
-				<!-- ¸ÞÀÎ ºñÁÖ¾ó ¿µ¿ª :E -->
+				<!-- ë©”ì¸ ë¹„ì£¼ì–¼ ì˜ì—­ :E -->
 
-				<!-- ¸ÞÀÎ º»¹® ¿µ¿ª :S -->
+				<!-- ë©”ì¸ ë³¸ë¬¸ ì˜ì—­ :S -->
 				<div class="maContArea MT30">
-					<!-- Ã¤¿ë°ø°í:S -->
+					<!-- ì±„ìš©ê³µê³ :S -->
 					<div class="recArea">
 						<div class="innerWrap">
-							<div class="maTit">´ëÃ¼ÀÎ·Â¹ðÅ© ÃÖ±Ù ½ÃÀÛ Ã¤¿ë°ø°í</div>
+							<div class="maTit">ëŒ€ì²´ì¸ë ¥ë±…í¬ ìµœê·¼ ì‹œìž‘ ì±„ìš©ê³µê³ </div>
 							<div class="recBoxArea">
-
-
 
 								<div class="cmmRecBoxGirdWrap prime MT15">
 									<div class="cmmRecBoxGirdInner">
 										<div class="gridBox">
 
-
-
 											<!-- foreach:S -->
 											<div class="gtp">
-												<!-- box¿µ¿ª:S -->
+												<!-- boxì˜ì—­:S -->
 												<div class="recBoxArea level1">
 													<div class="recBoxFrt">
 														<!-- <a href="#" class="img">
@@ -132,8 +123,8 @@ DisconnectDB DBCon
 															<img src="/images/sample37.png" alt="">
 														</div>
 														<div class="txtbx">
-															<span class="lbc">(ÁÖ)ÇÑÈ­</span>
-															<a href="#" class="tit" target="_blank">Á¾ÇÕ¿¬±¸¼Ò À§¼º ¾×Ã¼ Ãß·Â±â ½Ã½ºÅÛ ¾×Ã¼ Ãß·Â±â ½Ã°³¹ß(~11/7)</a>
+															<span class="lbc">(ì£¼)í•œí™”</span>
+															<a href="#" class="tit" target="_blank">ì¢…í•©ì—°êµ¬ì†Œ ìœ„ì„± ì•¡ì²´ ì¶”ë ¥ê¸° ì‹œìŠ¤í…œ ì•¡ì²´ ì¶”ë ¥ê¸° ì‹œê°œë°œ(~11/7)</a>
 															<span class="detDt">~11/07</span>
 														</div>
 														<div class="recBot">
@@ -142,13 +133,13 @@ DisconnectDB DBCon
 																<span class="tx">D-4</span>
 															</div>
 														</div>
-														<a href="#" class="detBtn" title="°ø°íº¸±â" target="_blank"></a>
+														<a href="#" class="detBtn" title="ê³µê³ ë³´ê¸°" target="_blank"></a>
 													</div>
 												</div>
-												<!-- box¿µ¿ª:E -->
+												<!-- boxì˜ì—­:E -->
 											</div>
 											<div class="gtp">
-												<!-- box¿µ¿ª:S -->
+												<!-- boxì˜ì—­:S -->
 												<div class="recBoxArea level1">
 													<div class="recBoxFrt">
 														<!-- <a href="#" class="img">
@@ -161,8 +152,8 @@ DisconnectDB DBCon
 															<img src="/images/sample37.png" alt="">
 														</div>
 														<div class="txtbx">
-															<span class="lbc">(ÁÖ)ÇÑÈ­</span>
-															<a href="#" class="tit" target="_blank">Á¾ÇÕ¿¬±¸¼Ò À§¼º ¾×Ã¼ Ãß·Â±â ½Ã½ºÅÛ °³¹ß(~11/7)</a>
+															<span class="lbc">(ì£¼)í•œí™”</span>
+															<a href="#" class="tit" target="_blank">ì¢…í•©ì—°êµ¬ì†Œ ìœ„ì„± ì•¡ì²´ ì¶”ë ¥ê¸° ì‹œìŠ¤í…œ ê°œë°œ(~11/7)</a>
 															<span class="detDt">~11/07</span>
 														</div>
 														<div class="recBot">
@@ -171,13 +162,13 @@ DisconnectDB DBCon
 																<span class="tx">D-4</span>
 															</div>
 														</div>
-														<a href="#" class="detBtn" title="°ø°íº¸±â" target="_blank"></a>
+														<a href="#" class="detBtn" title="ê³µê³ ë³´ê¸°" target="_blank"></a>
 													</div>
 												</div>
-												<!-- box¿µ¿ª:E -->
+												<!-- boxì˜ì—­:E -->
 											</div>
 											<div class="gtp">
-												<!-- box¿µ¿ª:S -->
+												<!-- boxì˜ì—­:S -->
 												<div class="recBoxArea level1">
 													<div class="recBoxFrt">
 														<!-- <a href="#" class="img">
@@ -190,8 +181,8 @@ DisconnectDB DBCon
 															<img src="/images/sample37.png" alt="">
 														</div>
 														<div class="txtbx">
-															<span class="lbc">(ÁÖ)ÇÑÈ­</span>
-															<a href="#" class="tit" target="_blank">Á¾ÇÕ¿¬±¸¼Ò À§¼º ¾×Ã¼ Ãß·Â±â ½Ã½ºÅÛ °³¹ß(~11/7)</a>
+															<span class="lbc">(ì£¼)í•œí™”</span>
+															<a href="#" class="tit" target="_blank">ì¢…í•©ì—°êµ¬ì†Œ ìœ„ì„± ì•¡ì²´ ì¶”ë ¥ê¸° ì‹œìŠ¤í…œ ê°œë°œ(~11/7)</a>
 															<span class="detDt">~11/07</span>
 														</div>
 														<div class="recBot">
@@ -200,13 +191,13 @@ DisconnectDB DBCon
 																<span class="tx">D-4</span>
 															</div>
 														</div>
-														<a href="#" class="detBtn" title="°ø°íº¸±â" target="_blank"></a>
+														<a href="#" class="detBtn" title="ê³µê³ ë³´ê¸°" target="_blank"></a>
 													</div>
 												</div>
-												<!-- box¿µ¿ª:E -->
+												<!-- boxì˜ì—­:E -->
 											</div>
 											<div class="gtp">
-												<!-- box¿µ¿ª:S -->
+												<!-- boxì˜ì—­:S -->
 												<div class="recBoxArea level1">
 													<div class="recBoxFrt">
 														<!-- <a href="#" class="img">
@@ -219,8 +210,8 @@ DisconnectDB DBCon
 															<img src="/images/sample37.png" alt="">
 														</div>
 														<div class="txtbx">
-															<span class="lbc">(ÁÖ)ÇÑÈ­</span>
-															<a href="#" class="tit" target="_blank">Á¾ÇÕ¿¬±¸¼Ò À§¼º ¾×Ã¼ Ãß·Â±â ½Ã½ºÅÛ °³¹ß(~11/7)</a>
+															<span class="lbc">(ì£¼)í•œí™”</span>
+															<a href="#" class="tit" target="_blank">ì¢…í•©ì—°êµ¬ì†Œ ìœ„ì„± ì•¡ì²´ ì¶”ë ¥ê¸° ì‹œìŠ¤í…œ ê°œë°œ(~11/7)</a>
 															<span class="detDt">~11/07</span>
 														</div>
 														<div class="recBot">
@@ -229,13 +220,13 @@ DisconnectDB DBCon
 																<span class="tx">D-4</span>
 															</div>
 														</div>
-														<a href="#" class="detBtn" title="°ø°íº¸±â" target="_blank"></a>
+														<a href="#" class="detBtn" title="ê³µê³ ë³´ê¸°" target="_blank"></a>
 													</div>
 												</div>
-												<!-- box¿µ¿ª:E -->
+												<!-- boxì˜ì—­:E -->
 											</div>
 											<div class="gtp">
-												<!-- box¿µ¿ª:S -->
+												<!-- boxì˜ì—­:S -->
 												<div class="recBoxArea level1">
 													<div class="recBoxFrt">
 														<!-- <a href="#" class="img">
@@ -248,8 +239,8 @@ DisconnectDB DBCon
 															<img src="/images/sample37.png" alt="">
 														</div>
 														<div class="txtbx">
-															<span class="lbc">(ÁÖ)ÇÑÈ­</span>
-															<a href="#" class="tit" target="_blank">Á¾ÇÕ¿¬±¸¼Ò À§¼º ¾×Ã¼ Ãß·Â±â ½Ã½ºÅÛ °³¹ß(~11/7)</a>
+															<span class="lbc">(ì£¼)í•œí™”</span>
+															<a href="#" class="tit" target="_blank">ì¢…í•©ì—°êµ¬ì†Œ ìœ„ì„± ì•¡ì²´ ì¶”ë ¥ê¸° ì‹œìŠ¤í…œ ê°œë°œ(~11/7)</a>
 															<span class="detDt">~11/07</span>
 														</div>
 														<div class="recBot">
@@ -258,13 +249,13 @@ DisconnectDB DBCon
 																<span class="tx">D-4</span>
 															</div>
 														</div>
-														<a href="#" class="detBtn" title="°ø°íº¸±â" target="_blank"></a>
+														<a href="#" class="detBtn" title="ê³µê³ ë³´ê¸°" target="_blank"></a>
 													</div>
 												</div>
-												<!-- box¿µ¿ª:E -->
+												<!-- boxì˜ì—­:E -->
 											</div>
 											<div class="gtp">
-												<!-- box¿µ¿ª:S -->
+												<!-- boxì˜ì—­:S -->
 												<div class="recBoxArea level1">
 													<div class="recBoxFrt">
 														<!-- <a href="#" class="img">
@@ -277,8 +268,8 @@ DisconnectDB DBCon
 															<img src="/images/sample37.png" alt="">
 														</div>
 														<div class="txtbx">
-															<span class="lbc">(ÁÖ)ÇÑÈ­</span>
-															<a href="#" class="tit" target="_blank">Á¾ÇÕ¿¬±¸¼Ò À§¼º ¾×Ã¼ Ãß·Â±â ½Ã½ºÅÛ °³¹ß(~11/7)</a>
+															<span class="lbc">(ì£¼)í•œí™”</span>
+															<a href="#" class="tit" target="_blank">ì¢…í•©ì—°êµ¬ì†Œ ìœ„ì„± ì•¡ì²´ ì¶”ë ¥ê¸° ì‹œìŠ¤í…œ ê°œë°œ(~11/7)</a>
 															<span class="detDt">~11/07</span>
 														</div>
 														<div class="recBot">
@@ -287,13 +278,13 @@ DisconnectDB DBCon
 																<span class="tx">D-4</span>
 															</div>
 														</div>
-														<a href="#" class="detBtn" title="°ø°íº¸±â" target="_blank"></a>
+														<a href="#" class="detBtn" title="ê³µê³ ë³´ê¸°" target="_blank"></a>
 													</div>
 												</div>
-												<!-- box¿µ¿ª:E -->
+												<!-- boxì˜ì—­:E -->
 											</div>
 											<div class="gtp">
-												<!-- box¿µ¿ª:S -->
+												<!-- boxì˜ì—­:S -->
 												<div class="recBoxArea level1">
 													<div class="recBoxFrt">
 														<!-- <a href="#" class="img">
@@ -306,8 +297,8 @@ DisconnectDB DBCon
 															<img src="/images/sample37.png" alt="">
 														</div>
 														<div class="txtbx">
-															<span class="lbc">(ÁÖ)ÇÑÈ­</span>
-															<a href="#" class="tit" target="_blank">Á¾ÇÕ¿¬±¸¼Ò À§¼º ¾×Ã¼ Ãß·Â±â ½Ã½ºÅÛ °³¹ß(~11/7)</a>
+															<span class="lbc">(ì£¼)í•œí™”</span>
+															<a href="#" class="tit" target="_blank">ì¢…í•©ì—°êµ¬ì†Œ ìœ„ì„± ì•¡ì²´ ì¶”ë ¥ê¸° ì‹œìŠ¤í…œ ê°œë°œ(~11/7)</a>
 															<span class="detDt">~11/07</span>
 														</div>
 														<div class="recBot">
@@ -316,106 +307,97 @@ DisconnectDB DBCon
 																<span class="tx">D-4</span>
 															</div>
 														</div>
-														<a href="#" class="detBtn" title="°ø°íº¸±â" target="_blank"></a>
+														<a href="#" class="detBtn" title="ê³µê³ ë³´ê¸°" target="_blank"></a>
 													</div>
 												</div>
-												<!-- box¿µ¿ª:E -->
+												<!-- boxì˜ì—­:E -->
 											</div>
 											<!-- foreach:E -->
-
-
-
 										</div>
 									</div>
 								</div>
-
-
-
-
 							</div>
 						</div>
 					</div>
-					<!-- Ã¤¿ë°ø°í:E -->
-
-
+					<!-- ì±„ìš©ê³µê³ :E -->
 
 					<div class="infsArea MT70">
 						<div class="infsBanner">
 							<div class="innerWrap">
-								<div class="stit">´ëÃ¼ÀÎ·Â¹ðÅ©´Â °í¿ë³ëµ¿ºÎ¿Í ÇÔ²²ÇÕ´Ï´Ù.</div>
+								<div class="stit">ëŒ€ì²´ì¸ë ¥ë±…í¬ëŠ” ê³ ìš©ë…¸ë™ë¶€ì™€ í•¨ê»˜í•©ë‹ˆë‹¤.</div>
 								<div class="tit JALNAN">
-									´ëÃ¼ÀÎ·Â¹ðÅ©¶õ? <span class="poi">FAQ¿¡¼­ ±Ã±ÝÁõ ÇØ°á!</span>
+									ëŒ€ì²´ì¸ë ¥ë±…í¬ëž€? <span class="poi">FAQì—ì„œ ê¶ê¸ˆì¦ í•´ê²°!</span>
 								</div>
 								<a href="/board/list.asp?gubun=2" class="bt">
-									<span class="int">¹Ù·Î°¡±â</span>
+									<span class="int">ë°”ë¡œê°€ê¸°</span>
 									<span class="ic"></span>
 								</a>
 							</div>
 						</div>
 						<div class="infsCont ">
 							<div class="innerWrap">
-								<div class="maTit">´ëÃ¼ÀÎ·Â¹ðÅ© Ãë¾÷¼º°ø ¼ö±â</div>
+								<div class="maTit">ëŒ€ì²´ì¸ë ¥ë±…í¬ ì·¨ì—…ì„±ê³µ ìˆ˜ê¸°</div>
 								<div class="grdArea MT30">
 									<!-- foreach:S -->
 									<div class="tp">
 										<a href="/board/jobclass_list.asp" class="gInns">
-											<span class="glb">Àå (¿©, 40¼¼)</span>
+											<span class="glb">ìž¥ (ì—¬, 40ì„¸)</span>
 											<div class="txts">
 												<div class="ttit">
-													´«À» ¶°º¸´Ï ¾î´À³¯ Ãë¾÷ÀÌ µÇ¾ú
+													ëˆˆì„ ë– ë³´ë‹ˆ ì–´ëŠë‚  ì·¨ì—…ì´ ë˜ì—ˆ
 												</div>
 												<div class="sttit">
-													¼º°øÃë¾÷Àº ´ëÃ¼ÀÎ·Â¹ðÅ©¸¦ ÅëÇØ¼­¶ó´Â ¸»
+													ì„±ê³µì·¨ì—…ì€ ëŒ€ì²´ì¸ë ¥ë±…í¬ë¥¼ í†µí•´ì„œë¼ëŠ” ë§
 												</div>
 											</div>
-											<span class="adm">ÀÚ¼¼È÷ º¸±â</span>
+											<span class="adm">ìžì„¸ížˆ ë³´ê¸°</span>
 										</a>
 									</div>
 									<div class="tp">
 										<a href="/board/jobclass_list.asp" class="gInns">
-											<span class="glb">ÀåÈ­È«·Ã (¿©, 40¼¼)</span>
+											<span class="glb">ìž¥í™”í™ë ¨ (ì—¬, 40ì„¸)</span>
 											<div class="txts">
 												<div class="ttit">
-													´«À» ¶°º¸´Ï ¾î´À³¯ Ãë¾÷ÀÌ µÇ¾ú
-													´Ù! ´ëÃ¼ÀÎ·Â¹ðÅ© °í¸¿½À´Ï´Ù.
+													ëˆˆì„ ë– ë³´ë‹ˆ ì–´ëŠë‚  ì·¨ì—…ì´ ë˜ì—ˆ
+													ë‹¤! ëŒ€ì²´ì¸ë ¥ë±…í¬ ê³ ë§™ìŠµë‹ˆë‹¤.
 												</div>
 												<div class="sttit">
-													¼º°øÃë¾÷Àº ´ëÃ¼ÀÎ·Â¹ðÅ©¸¦ ÅëÇØ¼­¶ó´Â ¸»
-													ÀÌ ÀÖ½À´Ï´Ù. Àý¸ÁÀû ÀÎ »óÈ²¿¡¼­ ³»°Ô ¼Õ¼­ ³»°Ô ¼­ ³»°Ô ¼­ ³»°Ô
+													ì„±ê³µì·¨ì—…ì€ ëŒ€ì²´ì¸ë ¥ë±…í¬ë¥¼ í†µí•´ì„œë¼ëŠ” ë§
+													ì´ ìžˆìŠµë‹ˆë‹¤. ì ˆë§ì  ì¸ ìƒí™©ì—ì„œ ë‚´ê²Œ ì†ì„œ ë‚´ê²Œ ì„œ ë‚´ê²Œ ì„œ ë‚´ê²Œ
 												</div>
 											</div>
-											<span class="adm">ÀÚ¼¼È÷ º¸±â</span>
+											<span class="adm">ìžì„¸ížˆ ë³´ê¸°</span>
 										</a>
 									</div>
 									<div class="tp">
 										<a href="/board/jobclass_list.asp" class="gInns">
-											<span class="glb">ÀåÈ­È«·Ã (¿©, 40¼¼)</span>
+											<span class="glb">ìž¥í™”í™ë ¨ (ì—¬, 40ì„¸)</span>
 											<div class="txts">
 												<div class="ttit">
-													´«À» ¶°º¸´Ï ¾î´À³¯ Ãë¾÷ÀÌ µÇ¾ú
-													´Ù! ´ëÃ¼ÀÎ·Â¹ðÅ© °í¸¿½À´Ï´Ù.
+													ëˆˆì„ ë– ë³´ë‹ˆ ì–´ëŠë‚  ì·¨ì—…ì´ ë˜ì—ˆ
+													ë‹¤! ëŒ€ì²´ì¸ë ¥ë±…í¬ ê³ ë§™ìŠµë‹ˆë‹¤.
 												</div>
 												<div class="sttit">
-													¼º°øÃë¾÷Àº ´ëÃ¼ÀÎ·Â¹ðÅ©¸¦ ÅëÇØ¼­¶ó´Â ¸»
-													ÀÌ ÀÖ½À´Ï´Ù. Àý¸ÁÀû ÀÎ »óÈ²¿¡¼­ ³»°Ô ¼Õ¼­ ³»°Ô ¼­ ³»°Ô ¼­ ³»°Ô
+													ì„±ê³µì·¨ì—…ì€ ëŒ€ì²´ì¸ë ¥ë±…í¬ë¥¼ í†µí•´ì„œë¼ëŠ” ë§
+													ì´ ìžˆìŠµë‹ˆë‹¤. ì ˆë§ì  ì¸ ìƒí™©ì—ì„œ ë‚´ê²Œ ì†ì„œ ë‚´ê²Œ ì„œ ë‚´ê²Œ ì„œ ë‚´ê²Œ
 												</div>
 											</div>
-											<span class="adm">ÀÚ¼¼È÷ º¸±â</span>
+											<span class="adm">ìžì„¸ížˆ ë³´ê¸°</span>
 										</a>
 									</div>
 									<div class="tp">
 										<a href="/board/jobclass_list.asp" class="gInns">
-											<span class="glb">ÀåÈ­È«·Ã (¿©, 40¼¼)</span>
+											<span class="glb">ìž¥í™”í™ë ¨ (ì—¬, 40ì„¸)</span>
 											<div class="txts">
 												<div class="ttit">
-													´«À» ¶°º¸´Ï ¾î´À³¯ Ãë¾÷ÀÌ µÇ¾ú
+													ëˆˆì„ ë– ë³´ë‹ˆ ì–´ëŠë‚  ì·¨ì—…ì´ ë˜ì—ˆ
 												</div>
 												<div class="sttit">
-													¼º°øÃë¾÷Àº ´ëÃ¼ÀÎ·Â¹ðÅ©¸¦ ÅëÇØ¼­¶ó´Â ¸»
-													ÀÌ ÀÖ½À´Ï´Ù. Àý¸ÁÀû ÀÎ »óÈ²¿¡¼­ ³»°Ô ¼Õ¼­ ³»°Ô ¼­ ³»°Ô ¼­ ³»°Ô
+													ì„±ê³µì·¨ì—…ì€ ëŒ€ì²´ì¸ë ¥ë±…í¬ë¥¼ í†µí•´ì„œë¼ëŠ” ë§
+													ì´ ìžˆìŠµë‹ˆë‹¤. ì ˆë§ì  ì¸ ìƒí™©ì—ì„œ ë‚´ê²Œ ì†ì„œ ë‚´ê²Œ ì„œ ë‚´ê²Œ ì„œ ë‚´ê²Œ
 												</div>
 											</div>
-											<span class="adm">ÀÚ¼¼È÷ º¸±â</span>
+											<span class="adm">ìžì„¸ížˆ ë³´ê¸°</span>
 										</a>
 									</div>
 									<!-- foreach:E -->
@@ -424,21 +406,16 @@ DisconnectDB DBCon
 						</div>
 					</div>
 				</div>
-				<!-- ¸ÞÀÎ º»¹® ¿µ¿ª :E -->
+				<!-- ë©”ì¸ ë³¸ë¬¸ ì˜ì—­ :E -->
 			</div>
-			<!-- ¸ÞÀÎ ÄÁÅÙÃ÷ : E -->
-
-
+			<!-- ë©”ì¸ ì»¨í…ì¸  : E -->
 
 		</div>
 	</div>
-
 
 	<!-- FOOTER : S -->
 	<!--#include virtual = "/common/footer_main.asp"-->
 	<!-- FOOTER : E -->
 
 </body>
-
-
 </html>
