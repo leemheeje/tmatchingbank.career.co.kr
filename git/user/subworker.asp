@@ -34,7 +34,7 @@
 					$this.include(true, [
 						['희망직무', {
 							target: '.cmmMainSearchPageArea[data-params="catjc"]',
-							url: '/html/template/search_main_catjc.html',
+							url: '/user/Desire_Jc_Inc.asp',
 							get: true
 						}]
 					]);

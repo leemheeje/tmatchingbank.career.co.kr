@@ -67,7 +67,6 @@ Next
 							
 							<div class="ccol95 fnInnerScrollSearchColsResult">
 								<!-- 선택영역이 있을때 :S -->
-								<%Response.write "test " & UBound(arrListArea1)%>
 								<% For i=0 To UBound(arrListArea1) %>
 								<div class="crow sm">
 									<!-- foreach:S -->

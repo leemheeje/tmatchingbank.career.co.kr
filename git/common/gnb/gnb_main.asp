@@ -73,6 +73,7 @@
 			</div>
 			<div class="gnbArea">
 				<a href="/" class="logo"></a>
+
 				<!-- gnb:S -->
 				<div class="gnb">
 					<ul class="lst">
@@ -88,7 +89,7 @@
 							</ul>
 						</li>
 						<li class="tp">
-							<a href="#" class="txt">대체인력 채용정보</a>
+							<a href="/jobs/list.asp" class="txt">대체인력 채용정보</a>
 						</li>
 						<li class="tp">
 							<a href="#" class="txt">온라인 교육센터</a>
@@ -123,19 +124,19 @@
 									<a href="#" class="txt">노무상담 FAQ</a>
 								</li>
 								<li class="stp">
-									<a href="#" class="txt">성공취업 Tool</a>
+									<a href="/tools/calc_char.asp" class="txt">성공취업 Tool</a>
 								</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
-				<!-- gnb:E -->
+				
+				<!-- gnAsd:S -->
 				<div class="gnAsd">
 					<div class="gnaInner">
 						<div class="boxs">
 							<a href="#" class="txt">구직자</a>
 							<ul class="dtpd">
-								<!-- foreach:S -->
 								<li class="stp ">
 									<a href="#" class="txt">구직신청</a>
 								</li>
@@ -154,13 +155,11 @@
 								<li class="stp">
 									<a href="#" class="txt">관심기업 공고</a>
 								</li>
-								<!-- foreach:E -->
 							</ul>
 						</div>
 						<div class="boxs">
 							<a href="#" class="txt">참여기업</a>
 							<ul class="dtpd">
-								<!-- foreach:S -->
 								<li class="stp ">
 									<a href="#" class="txt">구인신청</a>
 								</li>
@@ -176,7 +175,6 @@
 								<li class="stp">
 									<a href="#" class="txt">스크랩 인재</a>
 								</li>
-								<!-- foreach:E -->
 							</ul>
 						</div>
 					</div>
