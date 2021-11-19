@@ -3,10 +3,10 @@
  'Asp application의 처음 페이지를 처음 사용자가 호출했을 때 발생한다.
 Sub Application_OnStart
 
-	Application("DBInfo")			= "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=matchingbank"
-	
-	Application("DBInfo_career")	= "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
-	Application("DBInfoJobLog")		= "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=joblog"
+	Application("DBInfo_match")	= "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=matchingbank"
+
+	Application("DBInfo")		= "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=daumwith"
+	Application("DBInfoJobLog")	= "Provider=SQLOLEDB;Data Source='192.168.1.205';User ID='daumwithdba';Password='fnzl@boa';Initial Catalog=joblog"
 
 End Sub
 

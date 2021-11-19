@@ -17,284 +17,210 @@
 
 
 
-	<link rel="stylesheet"href="/static/css/r_common.css">
-	<script src="/static/js/libs/jquery-1.11.1.min.js"></script>
-	<script src="/static/js/libs/jquery.mCustomScrollbar.js"></script>
-	<script src="/static/js/libs/jquery-ui.min.js"></script>
-	<script src="/static/js/libs/slick.min.js"></script>
-	<script src="/static/js/design.utils.js"></script>
-	<script src="/static/js/design.plugin.js"></script>
-	<script src="/static/js/customTags.js"></script>
-	<script src="/static/js/_cl.js"></script>
-	<script src="/static/js/common.js"></script>
+	<link rel="stylesheet" href="/css/r_common.css">
+	<script src="/js/ui/libs/jquery-1.11.1.min.js"></script>
+	<script src="/js/ui/libs/jquery.mCustomScrollbar.js"></script>
+	<script src="/js/ui/libs/jquery-ui.min.js"></script>
+	<script src="/js/ui/libs/slick.min.js"></script>
+	<script src="/js/ui/design.utils.js"></script>
+	<script src="/js/ui/design.plugin.js"></script>
+	<script src="/js/ui/customTags.js"></script>
+	<script src="/js/ui/_cl.js"></script>
+	<script src="/js/ui/common.js"></script>
 	<script>
 		$(document).ready(function () {
 			$(this).customTags();
 		});
 	</script>
 	<!-- 어드민페이지에서 사용:S -->
-	<link rel="stylesheet"href="/static/css/r_admin.css">
-	<script src="/static/js/admCustomTags.js"></script>
+	<link rel="stylesheet" href="/css/r_admin.css">
+	<script src="/js/ui/admCustomTags.js"></script>
 	<!-- 어드민페이지에서 사용:E -->
 </head>
 
 <body>
-    <!-- Skip Nav : S -->
-    <div id="skipnavigation">
-        <a href="#gnb">주메뉴 바로가기</a>
-        <a href="#search">검색 바로가기</a>
-        <a href="#container">본문내용 바로가기</a>
-    </div>
-    <!-- Skip Nav : E -->
-    <!-- HEADER : S -->
-    <div id="header" class="header admin headerFixed"></div>
-    <!-- HEADER : E -->
-    <!-- CONTAINER : S -->
-    <script src="/static/js/admCustomTags.js"></script>
-    <script>
-    $(document).ready(function(){
-        //헤더 인크루드
-        $(this).include(true, [['헤더-관리자', { target: '#header.admin', url: '/html/admin/header/header_admin_template.html', get: true }]]);
-        //lnb 인크루드
-        $(this).include(true, [['lnb-관리자', { target: '#rlnb.admin', url: '/html/admin/lnb/lnb_admin_template.html', get: true }]]);
-        $(this).admCustomTags();
-        $('[name="radioA"]').change(function(){
-            var $this = $(this);
-            var value = $this.val();
-            if(value == 'N'){
-                $('.fnSearchSortBarWrapping').addClass('show');
-            }else{
-                $('.fnSearchSortBarWrapping').removeClass('show');
-            }
-        });
-    });
-    </script>
-    <div id="container" class="container paddingbottom0">
-        <div class="contents">
-            <div class="admin subpage">
-                <!-- LNB :S -->
-                <div id="rlnb" class="rlnb admin"></div>
-                <!-- LNB :E -->
-                <div class="admContents">
-                    <div class="admInnerWrap">
-
-                        <!-- 페이지경로 :S -->
-                        <div class="admBreadMaps">
-                            <span class="txl">Home</span>
-                            <span class="txl">메인관리</span>
-                            <span class="txl">Main Manager (PC)</span>
-                            <span class="txl">Banner 관리</span>
-                            <span class="txl">최상단 Banner</span>
-                        </div>
-                        <!-- 페이지경로 :E -->
-                        <div class="admCmmTit">최상단 Banner</div>
-                        <!-- 관리자사이트 sub 타이틀 : S -->
-                        <div class="admCmmStit">* 최상단 배너는 최대 10개까지 등록 가능합니다. - 기업영업팀 6구좌, 채용솔루션팀 2구좌, 엑스포팀 2구좌</div>
-                        <!-- 관리자사이트 sub 타이틀 : E -->
-                        <div class="admTableTop MT20">
-                            <div class="inner">
-                                <div class="FLOATL">
-                                    <div class="fidForm MT25">
-                                        <label>
-                                            <input type="radio" name="radioA" value="Y" checked/>
-                                            <span class="lb">진행중</span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="radioA" value="N" />
-                                            <span class="lb">마감</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="FLOATR">
-                                    <a href="#" class="admBtns org">Banner 등록</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="admFormBox MT20 fnSearchSortBarWrapping" data-showhide="!">
-                            <div class="admFormInner">
-                                <div class="row">
-                                    <div class="col00">
-                                        <div class="dtBtnArea">
-                                            <a href="#;" class="admBtns llgray md active">1개월</a>
-                                            <a href="#;" class="admBtns llgray md">2개월</a>
-                                            <a href="#;" class="admBtns llgray md">3개월</a>
-                                        </div>
-                                        <div class="fidForm inline WIDTH130 ML05">
-                                            <input type="text" class="fnDatepicker" placeholder="날짜선택" readonly />
-                                        </div>
-                                        ~
-                                        <div class="fidForm inline WIDTH130">
-                                            <input type="text" class="fnDatepicker" placeholder="날짜선택" readonly />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col3">
-                                        <div class="fidForm">
-                                            <select class="customSelect">
-                                                <option value="">전체</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col9">
-                                        <div class="searchArea panel">
-                                            <div class="fidForm">
-                                                <input type="text" placeholder="공고제목, 기업명 검색">
-                                            </div>
-                                            <a href="#;" class="scBtn">검색</a>
-                                            <a href="#;" class="lrBtn">초기화</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 목록테이블:S -->
-                        <div class="admFormListWrap MT20">
-                            <!-- foreach:S -->
-                            <div class="admFormList">
-                                <div class="admFormLside">
-                                    <div class="fidForm">
-                                        <select class="customSelect">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="admFormInner">
-                                    <div class="thumbImg">
-                                        <!-- 최상단배너:S -->
-                                        <div class="mainPluBannerArea">
-                                            <div class="inBg">
-                                                <img src="/static/images/sample27.png" alt="" class="thumb" />
-                                            </div>
-                                            <div class="conts">
-                                                <div class="lbw">
-                                                    <span class="tx">
-                                                        회사명회사명
-                                                    </span>
-                                                </div>
-                                                <div class="titw ">공고명</div>
-                                                <span class="date ">마감날짜</span>
-                                                <div class="sxtxt"><span class="FWB">접수방법</span> : <span class="">접수방법데이타데이타</span></div>
-                                            </div>
-                                        </div>
-                                        <!-- 최상단배너:E -->
-                                    </div>
-                                    <div class="txArea">
-                                        <span class="cmNm">LG전자</span>
-                                        <div class="recNm">LG전자 신입사원 모집 <span class="mg">(~2021.05.31 / 홈페이지)</span></div>
-                                        <ul class="txaLst">
-                                            <li class="tp">
-                                                <span class="dt">구분</span> : 채용공고
-                                            </li>
-                                            <li class="tp">
-                                                <span class="dt">등록일</span> : 2020-06-16
-                                            </li>
-                                            <li class="tp">
-                                                <span class="dt">게재기간</span> : 2021년 05월 16일 13:00 ~ 2021년 05월21일 23:59
-                                            </li>
-                                            <li class="tp">
-                                                <span class="dt">클릭 수</span> : <span class="FWB colorRed">5,487</span>
-                                            </li>
-                                        </ul>
-                                        <div class="btnsWrap">
-                                            <a href="#" class="admBtns sm">수정</a>
-                                            <a href="#" class="admBtns gray sm ML05">마감</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="admFormAside">
-                                    <div class="fidForm switch">
-                                        <label>
-                                            <input type="checkbox" checked/>
-                                            <span class="lb"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="admFormList">
-                                <div class="admFormLside">
-                                    <div class="fidForm">
-                                        <select class="customSelect">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="admFormInner">
-                                    <div class="thumbImg">
-                                        <!-- 최상단배너:S -->
-                                        <div class="mainPluBannerArea">
-                                            <div class="inBg">
-                                                <img src="/static/images/sample27.png" alt="" class="thumb" />
-                                            </div>
-                                            <div class="conts">
-                                                <div class="lbw">
-                                                    <span class="tx">
-                                                        회사명회사명
-                                                    </span>
-                                                </div>
-                                                <div class="titw ">공고명</div>
-                                                <span class="date ">마감날짜</span>
-                                                <div class="sxtxt"><span class="FWB">접수방법</span> : <span class="">접수방법데이타데이타</span></div>
-                                            </div>
-                                        </div>
-                                        <!-- 최상단배너:E -->
-                                    </div>
-                                    <div cl
-                                    <div class="txArea">
-                                        <span class="cmNm">LG전자</span>
-                                        <div class="recNm">LG전자 신입사원 모집 <span class="mg">(~2021.05.31 / 홈페이지)</span></div>
-                                        <ul class="txaLst">
-                                            <li class="tp">
-                                                <span class="dt">구분</span> : 채용공고
-                                            </li>
-                                            <li class="tp">
-                                                <span class="dt">등록일</span> : 2020-06-16
-                                            </li>
-                                            <li class="tp">
-                                                <span class="dt">게재기간</span> : 2021년 05월 16일 13:00 ~ 2021년 05월21일 23:59
-                                            </li>
-                                            <li class="tp">
-                                                <span class="dt">클릭 수</span> : <span class="FWB colorRed">5,487</span>
-                                            </li>
-                                        </ul>
-                                        <div class="btnsWrap">
-                                            <a href="#" class="admBtns sm">수정</a>
-                                            <a href="#" class="admBtns gray sm ML05">마감</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="admFormAside">
-                                    <div class="fidForm switch">
-                                        <label>
-                                            <input type="checkbox"/>
-                                            <span class="lb"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- foreach:E -->
-                        </div>
-                        <!-- 목록테이블:E -->
+	<!-- Skip Nav : S -->
+	<div id="skipnavigation">
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#search">검색 바로가기</a>
+		<a href="#container">본문내용 바로가기</a>
+	</div>
+	<!-- Skip Nav : E -->
+	<!-- HEADER : S -->
+	<div id="header" class="header admin headerFixed"></div>
+	<!-- HEADER : E -->
+	<!-- CONTAINER : S -->
+	<script src="/js/ui/admCustomTags.js"></script>
+	<script>
+		$(document).ready(function () {
+			//헤더 인크루드
+			$(this).include(true, [
+				['헤더-관리자', {
+					target: '#header.admin',
+					url: '/html/admin/header/header_admin_template.html',
+					get: true
+				}]
+			]);
+			//lnb 인크루드
+			$(this).include(true, [
+				['lnb-관리자', {
+					target: '#rlnb.admin',
+					url: '/html/admin/lnb/lnb_admin_template.html',
+					get: true
+				}]
+			]);
+			$(this).admCustomTags();;
+		});
+	</script>
+	<div id="container" class="container paddingbottom0">
+		<div class="contents">
+			<div class="admin subpage">
+				<!-- LNB :S -->
+				<div id="rlnb" class="rlnb admin"></div>
+				<!-- LNB :E -->
+				<div class="admContents">
+					<div class="admInnerWrap">
+						<div class="admCmmTit">소양교육</div>
+						<div class="admTable admTview MT20">
+							<table>
+								<colgroup>
+									<col width="12%">
+									<col width="*">
+									<col width="12%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>제목</th>
+										<td>
+											<div class="fidForm">
+												<input type="text" class="" placeholder="이름 또는 아이디 입력">
+											</div>
+										</td>
+										<th>모집기간</th>
+										<td>
+											<div class="row">
+												<div class="col55">
+													<div class="fidForm">
+														<input type="text" class="fnDatepicker" placeholder="YYYY-MM-DD">
+													</div>
+												</div>
+												<div class="col1 TXTC MT10">~</div>
+												<div class="col55">
+													<div class="fidForm">
+														<input type="text" class="fnDatepicker" placeholder="YYYY-MM-DD">
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- CONTAINER : E -->
+
+						<div class="btnsWrap MT15">
+							<div class="FLOATR">
+								<a href="#" class="admBtns sm">초기화</a>
+								<a href="#" class="admBtns sm org">검색</a>
+							</div>
+						</div>
+
+						<div class="admTableTop MT30">
+							<div class="inner">
+								<div class="FLOATL MT20">
+									<span class="admCmmStit noindent FWB ">전체 0,000건</span>
+								</div>
+								<div class="FLOATR">
+									<div class="fidForm inline MINWIDTH150 ML10">
+										<select>
+											<option value="">선택</option>
+											<option value="">진행</option>
+											<option value="">종료</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="admTable MT10">
+							<table>
+								<colgroup>
+									<col width="10%">
+									<col width="*">
+									<col width="20%">
+									<col width="15%">
+									<col width="10%">
+									<col width="15%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>No</th>
+										<th>제목</th>
+										<th>모집기간</th>
+										<th>교육일자</th>
+										<th>신청자수 </th>
+										<th>등록일</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- foreach:S -->
+									<tr>
+										<td>100</td>
+										<td class="colorBlue">
+											취업을 향한 이미지 메이킹
+										</td>
+										<td>
+											<!-- <span class="colorBlue">[진행]</span> -->
+											<!-- <span class="colorRed">[종료]</span> -->
+											<span class="colorBlue">[진행]</span><br>
+											2021-11-01 ~ 2021-11-20
+										</td>
+										<td>
+											2021-11-25
+										</td>
+										<td>
+											<span class="colorRed">000</span>
+										</td>
+										<td>2021-10-30 </td>
+									</tr>
+									<!-- foreach:E -->
+									<!-- 리스트없을때:S -->
+									<tr>
+										<td colspan="6">
+											<div class="cmmNoResult">검색결과가 없습니다.</div>
+										</td>
+									</tr>
+									<!-- 리스트없을때:E -->
+								</tbody>
+							</table>
+						</div>
+						<div class="btnsWrap MT20">
+							<div class="FLOATR">
+								<a href="#" class="admBtns org">소양교육 등록</a>
+							</div>
+						</div>
+						<!-- 페이징:S -->
+						<div class="pagination MT15">
+							<div class="ptp contr prev"><a href="#" class="txt"></a></div>
+							<div class="ptp active"><a href="#" class="txt">1</a></div>
+							<div class="ptp"><a href="#" class="txt">2</a></div>
+							<div class="ptp contr next"><a href="#" class="txt"></a></div>
+						</div>
+						<!-- 페이징:E -->
+
+
+						
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- CONTAINER : E -->
 
 </body>
+
 </html>

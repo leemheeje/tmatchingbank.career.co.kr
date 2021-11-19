@@ -17,134 +17,153 @@
 
 
 
-	<link rel="stylesheet"href="/static/css/r_common.css">
-	<script src="/static/js/libs/jquery-1.11.1.min.js"></script>
-	<script src="/static/js/libs/jquery.mCustomScrollbar.js"></script>
-	<script src="/static/js/libs/jquery-ui.min.js"></script>
-	<script src="/static/js/libs/slick.min.js"></script>
-	<script src="/static/js/design.utils.js"></script>
-	<script src="/static/js/design.plugin.js"></script>
-	<script src="/static/js/customTags.js"></script>
-	<script src="/static/js/_cl.js"></script>
-	<script src="/static/js/common.js"></script>
+	<link rel="stylesheet" href="/css/r_common.css">
+	<script src="/js/ui/libs/jquery-1.11.1.min.js"></script>
+	<script src="/js/ui/libs/jquery.mCustomScrollbar.js"></script>
+	<script src="/js/ui/libs/jquery-ui.min.js"></script>
+	<script src="/js/ui/libs/slick.min.js"></script>
+	<script src="/js/ui/design.utils.js"></script>
+	<script src="/js/ui/design.plugin.js"></script>
+	<script src="/js/ui/customTags.js"></script>
+	<script src="/js/ui/_cl.js"></script>
+	<script src="/js/ui/common.js"></script>
 	<script>
 		$(document).ready(function () {
 			$(this).customTags();
 		});
 	</script>
 	<!-- 어드민페이지에서 사용:S -->
-	<link rel="stylesheet"href="/static/css/r_admin.css">
-	<script src="/static/js/admCustomTags.js"></script>
+	<link rel="stylesheet" href="/css/r_admin.css">
+	<script src="/js/ui/admCustomTags.js"></script>
 	<!-- 어드민페이지에서 사용:E -->
 </head>
 
 <body>
-    <!-- Skip Nav : S -->
-    <div id="skipnavigation">
-        <a href="#gnb">주메뉴 바로가기</a>
-        <a href="#search">검색 바로가기</a>
-        <a href="#container">본문내용 바로가기</a>
-    </div>
-    <!-- Skip Nav : E -->
-    <!-- HEADER : S -->
-    <div id="header" class="header admin headerFixed"></div>
-    <!-- HEADER : E -->
-    <!-- CONTAINER : S -->
-    <script>
-    $(document).ready(function(){
-        //헤더 인크루드
-        $(this).include(true, [['헤더-관리자', { target: '#header.admin', url: '/html/admin/header/header_admin_template.html', get: true }]]);
-        //lnb 인크루드
-        $(this).include(true, [['lnb-관리자', { target: '#rlnb.admin', url: '/html/admin/lnb/lnb_admin_template.html', get: true }]]);
-        $(this).admCustomTags();
-    });
-    </script>
-    <div id="container" class="container paddingbottom0">
-        <div class="contents">
-            <div class="admin subpage">
-                <!-- LNB :S -->
-                <div id="rlnb" class="rlnb admin"></div>
-                <!-- LNB :E -->
-                <div class="admContents">
-                    <div class="admInnerWrap">
+	<!-- Skip Nav : S -->
+	<div id="skipnavigation">
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#search">검색 바로가기</a>
+		<a href="#container">본문내용 바로가기</a>
+	</div>
+	<!-- Skip Nav : E -->
+	<!-- HEADER : S -->
+	<div id="header" class="header admin headerFixed"></div>
+	<!-- HEADER : E -->
+	<!-- CONTAINER : S -->
+	<script src="/js/ui/admCustomTags.js"></script>
+	<script>
+		$(document).ready(function () {
+			//헤더 인크루드
+			$(this).include(true, [
+				['헤더-관리자', {
+					target: '#header.admin',
+					url: '/html/admin/header/header_admin_template.html',
+					get: true
+				}]
+			]);
+			//lnb 인크루드
+			$(this).include(true, [
+				['lnb-관리자', {
+					target: '#rlnb.admin',
+					url: '/html/admin/lnb/lnb_admin_template.html',
+					get: true
+				}]
+			]);
+			$(this).admCustomTags();;
+		});
+	</script>
+	<div id="container" class="container paddingbottom0">
+		<div class="contents">
+			<div class="admin subpage">
+				<!-- LNB :S -->
+				<div id="rlnb" class="rlnb admin"></div>
+				<!-- LNB :E -->
+				<div class="admContents">
+					<div class="admInnerWrap">
+						<div class="admCmmTit">소양교육</div>
 
-                        <!-- 페이지경로 :S -->
-                        <div class="admBreadMaps">
-                            <span class="txl">Home</span>
-                            <span class="txl">메인관리</span>
-                            <span class="txl">Main Manager (PC)</span>
-                            <span class="txl">Banner 관리</span>
-                            <span class="txl">우측 상 Banner</span>
-                        </div>
-                        <!-- 페이지경로 :E -->
-                        <div class="admCmmTit">우측 상 Banner</div>
-                        <!-- 관리자사이트 sub 타이틀 : S -->
-                        <div class="admCmmStit">* 우측상단 배너는 최대 3개까지 등록 가능합니다.</div>
-                        <div class="admCmmStit">* 내부 프로모션 및 컨텐츠 영역으로 다른 팀에서 활용할 수 없습니다.</div>
-                        <!-- 관리자사이트 sub 타이틀 : E -->
-                        <div class="admFormBoxWrap fnAdmFormBoxWrapping">
-                            <!-- 이미지 미리보기 있는 폼 :S -->
-                            <div class="admFormBox MT35 isPreview rowPreview fnAdmFormWrapping fnThumbPreviewTargetWrapping">
-                                <div class="admFormPreview">
-                                    <!-- foreach:S -->
-                                    <div class="imgWrap fnThumbPreviewTargetDiv001" style="width: 230px; height: 60px; line-height: 60px;">
-                                        <img src="" alt="" class="thumb fnThumbNodeImg" />
-                                        <!-- 등록된 이미지 없을때:S -->
-                                        <div class="noResult fnNoResult" >
-                                            <span class="inTxt">
-                                                Image Preview<br />230 x 60
-                                            </span>
-                                        </div>
-                                        <!-- 등록된 이미지 없을때:E -->
-                                    </div>
-                                    <!-- foreach:E -->
-                                </div>
-                                <div class="admFormInner">
-                                    <div class="row">
-                                        <div class="col12">
-                                            <!-- 인풋파일:S -->
-                                            <div class="fidForm file fnAdmFileImageViewWrapping" data-params='{"thumbTarget" : ".fnThumbPreviewTargetDiv001"}'>
-                                                <span class="cmmFileUpload">
-                                                    <span class="cmmInputFile">
-                                                        <input type="file" id="" name="" value="" />
-                                                    </span>
-                                                </span>
-                                                <input type="text" placeholder="Image (우측 상 배너) 를 첨부" readonly />
-                                                <span class="btn">File Browser</span>
-                                            </div>
-                                            <!-- 인풋파일:E -->
-                                        </div>
-                                        <div class="col12">
-                                            <div class="fidForm">
-                                                <input type="text" placeholder="배너명칭입력" />
-                                            </div>
-                                        </div>
-                                        <div class="col12">
-                                            <div class="fidForm">
-                                                <input type="text" placeholder="바로가기 URL 입력" />
-                                            </div>
-                                        </div>
-                                    </div>
+						<div class="admTable admTview MT30">
+							<table>
+								<colgroup>
+									<col width="15%">
+									<col width="*">
+									<col width="15%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>제목</th>
+										<td>
+											<div class="fidForm">
+												<input type="text" class="" placeholder="제목입력">
+											</div>
+										</td>
+										<th>모집기간</th>
+										<td>
+											<div class="row">
+												<div class="col55">
+													<div class="fidForm">
+														<input type="text" class="fnDatepicker" placeholder="YYYY-MM-DD">
+													</div>
+												</div>
+												<div class="col1 TXTC MT10">~</div>
+												<div class="col55">
+													<div class="fidForm">
+														<input type="text" class="fnDatepicker" placeholder="YYYY-MM-DD">
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>교육일자</th>
+										<td>
+											<div class="fidForm">
+												<input type="text" class="fnDatepicker" placeholder="YYYY-MM-DD">
+											</div>
+										</td>
+										<th>등록일</th>
+										<td>
+											2021-00-00
+										</td>
+									</tr>
+									<tr>
+										<th>배너등록</th>
+										<td colspan="3">
+											<div class="fidForm file fnAdmFileImageViewWrapping">
+												<span class="cmmFileUpload">
+													<span class="cmmInputFile">
+														<input type="file" id="" name="" value="" />
+													</span>
+												</span>
+												<input type="text" placeholder="파일선택" readonly />
+												<span class="btn">File Browser</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="MT30">
+							<div class="fidForm smtedt">
+								<textarea class="textarea"></textarea>
+							</div>
+						</div>
+						<div class="btnsWrap MT40">
+							<a href="#" class="admBtns org">등록</a>
+							<a href="#" class="admBtns">취소</a>
+						</div>
 
-                                </div>
-                                <div class="admFormAside">
-                                    <span class="nums"></span>
-                                    <div class="fbBtnsWrap">
-                                        <button class="btn reload fnAdmFormAreaRestoreButton" title="내용초기화"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 이미지 미리보기 있는 폼 :E -->
-                        </div>
-                        <div class="btnsWrap TXTC MT30">
-                            <a href="#;" class="admBtns org">우측 상 Banner 저장</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- CONTAINER : E -->
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- CONTAINER : E -->
 
 </body>
+
 </html>

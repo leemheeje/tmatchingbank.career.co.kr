@@ -12,7 +12,7 @@
 ' 로그인 상태 접근 제한
 Dim strLink : strLink = "/"
 If g_LoginChk<>"0" Then
-		Call FN_alertLink("로그인 상태에서는 해당 페이지에 접근할 수 없습니다.\n로그아웃 후 이용 바랍니다.",strLink)
+	Call FN_alertLink("로그인 상태에서는 해당 페이지에 접근할 수 없습니다.\n로그아웃 후 이용 바랍니다.",strLink)
 End If
 
 ' 공통파일 함수 호출 > /wwwconf_renew/function/common/common_function.asp
@@ -1165,7 +1165,7 @@ arrBizScale = FN_arrCode_C0007() ' 기업 형태 배열
 	body { background: none !important; }
 	</style>
 	<!-- 상단 -->
-	<!--#include virtual = "/common/gnb/gnb_signup.asp"-->
+	<!--#include virtual = "/common/gnb/gnb_main.asp"-->
 	<link rel="stylesheet" href="/css/signup.css">
 
 	<!-- 본문 -->
@@ -1451,19 +1451,19 @@ arrBizScale = FN_arrCode_C0007() ' 기업 형태 배열
 'EXEC dbo.USP_PRIVACY_POLICY_VIEW '2','2','2','1','1','' -- 이용약관> 기업
 'EXEC dbo.USP_PRIVACY_POLICY_VIEW '3','0','2','1','1','' -- 개인정보수집 및 이용동의> 공통
 
-ConnectDB DBCon, Application("DBInfo_REAL") ' 관리자단(통합 메인관리> 개인정보 처리방침) 제어 대상이라 192.168.1.2 서버 테이블 정보 호출 처리
-
-	Dim param(5)
-	param(0) = makeParam("@Gubun", adInteger, adParamInput, 4, "2")
-	param(1) = makeParam("@SubGubun", adInteger, adParamInput, 4, "1")
-	param(2) = makeParam("@Sitecode", adInteger, adParamInput, 4, "2")
-	param(3) = makeParam("@Page", adInteger, adParamInput, 4, "1")
-	param(4) = makeParam("@PageSize", adInteger, adParamInput, 4, "1")
-	param(5) = makeParam("@TotalCnt", adInteger, adParamOutput, 4, "")
-
-	sp_result_agr1 = arrGetRsSP(DBCon, "USP_PRIVACY_POLICY_VIEW", param, "", "")
-
-DisconnectDB DBCon
+'ConnectDB DBCon, Application("DBInfo_REAL") ' 관리자단(통합 메인관리> 개인정보 처리방침) 제어 대상이라 192.168.1.2 서버 테이블 정보 호출 처리
+'
+'	Dim param(5)
+'	param(0) = makeParam("@Gubun", adInteger, adParamInput, 4, "2")
+'	param(1) = makeParam("@SubGubun", adInteger, adParamInput, 4, "1")
+'	param(2) = makeParam("@Sitecode", adInteger, adParamInput, 4, "2")
+'	param(3) = makeParam("@Page", adInteger, adParamInput, 4, "1")
+'	param(4) = makeParam("@PageSize", adInteger, adParamInput, 4, "1")
+'	param(5) = makeParam("@TotalCnt", adInteger, adParamOutput, 4, "")
+'
+'	sp_result_agr1 = arrGetRsSP(DBCon, "USP_PRIVACY_POLICY_VIEW", param, "", "")
+'
+'DisconnectDB DBCon
 
 If isArray(sp_result_agr1) Then
 	Response.write sp_result_agr1(4,0)
@@ -1478,19 +1478,19 @@ End If
     <div class="cmm_layerpop signupDialog" data-layerpop="dialogagr2">
         <div class="fnCmmInnerScrollJoinAgree">
 <%
-ConnectDB DBCon, Application("DBInfo_REAL") ' 관리자단(통합 메인관리> 개인정보 처리방침) 제어 대상이라 192.168.1.2 서버 테이블 정보 호출 처리
-
-	Dim param2(5)
-	param2(0) = makeParam("@Gubun", adInteger, adParamInput, 4, "3")
-	param2(1) = makeParam("@SubGubun", adInteger, adParamInput, 4, "0")
-	param2(2) = makeParam("@Sitecode", adInteger, adParamInput, 4, "2")
-	param2(3) = makeParam("@Page", adInteger, adParamInput, 4, "1")
-	param2(4) = makeParam("@PageSize", adInteger, adParamInput, 4, "1")
-	param2(5) = makeParam("@TotalCnt", adInteger, adParamOutput, 4, "")
-
-	sp_result_agr2 = arrGetRsSP(DBCon, "USP_PRIVACY_POLICY_VIEW", param2, "", "")
-
-DisconnectDB DBCon
+'ConnectDB DBCon, Application("DBInfo_REAL") ' 관리자단(통합 메인관리> 개인정보 처리방침) 제어 대상이라 192.168.1.2 서버 테이블 정보 호출 처리
+'
+'	Dim param2(5)
+'	param2(0) = makeParam("@Gubun", adInteger, adParamInput, 4, "3")
+'	param2(1) = makeParam("@SubGubun", adInteger, adParamInput, 4, "0")
+'	param2(2) = makeParam("@Sitecode", adInteger, adParamInput, 4, "2")
+'	param2(3) = makeParam("@Page", adInteger, adParamInput, 4, "1")
+'	param2(4) = makeParam("@PageSize", adInteger, adParamInput, 4, "1")
+'	param2(5) = makeParam("@TotalCnt", adInteger, adParamOutput, 4, "")
+'
+'	sp_result_agr2 = arrGetRsSP(DBCon, "USP_PRIVACY_POLICY_VIEW", param2, "", "")
+'
+'DisconnectDB DBCon
 
 If isArray(sp_result_agr2) Then
 	Response.write sp_result_agr2(4,0)

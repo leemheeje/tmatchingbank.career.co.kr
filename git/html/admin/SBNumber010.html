@@ -80,9 +80,8 @@
 				<!-- LNB :E -->
 				<div class="admContents">
 					<div class="admInnerWrap">
-						<div class="admCmmTit">소양교육</div>
-
-						<div class="admTable admTview MT30">
+						<div class="admCmmTit">구인신청서</div>
+						<div class="admTable admTview MT20">
 							<table>
 								<colgroup>
 									<col width="15%">
@@ -92,75 +91,49 @@
 								</colgroup>
 								<tbody>
 									<tr>
-										<th>제목</th>
+										<th>기업명/담당자명</th>
 										<td>
 											<div class="fidForm">
-												<input type="text" class="" placeholder="제목입력">
+												<input type="text" class="" placeholder="기업명 또는 담당자 명 입력">
 											</div>
 										</td>
-										<th>모집기간</th>
+										<th>연락처</th>
 										<td>
-											<div class="row">
-												<div class="col55">
-													<div class="fidForm">
-														<input type="text" class="fnDatepicker" placeholder="YYYY-MM-DD">
-													</div>
-												</div>
-												<div class="col1 TXTC MT10">~</div>
-												<div class="col55">
-													<div class="fidForm">
-														<input type="text" class="fnDatepicker" placeholder="YYYY-MM-DD">
-													</div>
-												</div>
+											<div class="fidForm">
+												<input type="text" class="" placeholder="연락처 입력 (“-” 제외)">
 											</div>
 										</td>
 									</tr>
 									<tr>
-										<th>교육일자</th>
+										<th>사업자번호</th>
 										<td>
 											<div class="fidForm">
-												<input type="text" class="fnDatepicker" placeholder="YYYY-MM-DD">
+												<input type="text" class="" placeholder="사업자 번호 입력 (“-”제외)">
 											</div>
 										</td>
-										<th>등록일</th>
+										<th>이메일</th>
 										<td>
-											2021-00-00
-										</td>
-									</tr>
-									<tr>
-										<th>배너등록</th>
-										<td colspan="3">
-											<div class="fidForm file fnAdmFileImageViewWrapping">
-												<span class="cmmFileUpload">
-													<span class="cmmInputFile">
-														<input type="file" id="" name="" value="" />
-													</span>
-												</span>
-												<input type="text" placeholder="파일선택" readonly />
-												<span class="btn">File Browser</span>
+											<div class="fidForm">
+												<input type="text" class="" placeholder="이메일 입력">
 											</div>
 										</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
-						<div class="MT30">
-							<div class="fidForm smtedt">
-								<textarea class="textarea"></textarea>
+
+
+						<div class="btnsWrap MT15">
+							<div class="FLOATR">
+								<a href="#" class="admBtns sm">초기화</a>
+								<a href="#" class="admBtns sm org">검색</a>
 							</div>
 						</div>
-						<div class="btnsWrap MT40">
-							<a href="#" class="admBtns org">수정</a>
-							<a href="#" class="admBtns">취소</a>
-						</div>
-
-
-
 
 						<div class="admTableTop MT30">
 							<div class="inner">
 								<div class="FLOATL">
-									<span class="admCmmStit noindent FWB ">소양교육 신청자 수  <span class="colorRed">00</span>명</span>
+									<span class="admCmmStit noindent FWB ">전체 0,000건</span>
 								</div>
 							</div>
 						</div>
@@ -169,34 +142,71 @@
 							<table>
 								<colgroup>
 									<col width="10%">
+									<col width="15%">
+									<col width="15%">
 									<col width="*">
-									<col width="20%">
-									<col width="20%">
-									<col width="20%">
+									<col width="15%">
+									<col width="12%">
+									<col width="15%">
 								</colgroup>
 								<thead>
 									<tr>
 										<th>No</th>
-										<th>이름</th>
-										<th>생년월일/나이/성별</th>
+										<th>구인기업</th>
+										<th>담당자</th>
 										<th>연락처</th>
-										<th>E-mail</th>
+										<th>채용 희망직무</th>
+										<th>경력</th>
+										<th>학력</th>
 									</tr>
 								</thead>
 								<tbody>
 									<!-- foreach:S -->
 									<tr>
 										<td>100</td>
-										<td>탁동일</td>
-										<td>780816 / 00 / 남자</td>
-										<td>010-0000-0000 </td>
-										<td>ditak@career.co.kr</td>
+										<td class="colorBlue">
+											㈜커리어넷<br>
+											220-00-00000
+										</td>
+										<td>
+											홍길동
+										</td>
+										<td>
+											ditak@career.co.kr<br>
+											010-0000-0000
+										</td>
+										
+										<td>
+											웹 기획, 웹 마케팅, 웹 개발, 서비스 기획
+										</td>
+										<td>경력 5년</td>
+										<td>고등학교 미만</td>
 									</tr>
 									<!-- foreach:E -->
+									<!-- 리스트없을때:S -->
+									<tr>
+										<td colspan="7">
+											<div class="cmmNoResult">검색결과가 없습니다.</div>
+										</td>
+									</tr>
+									<!-- 리스트없을때:E -->
 								</tbody>
 							</table>
 						</div>
 
+
+						
+						<!-- 페이징:S -->
+						<div class="pagination MT15">
+							<div class="ptp contr prev"><a href="#" class="txt"></a></div>
+							<div class="ptp active"><a href="#" class="txt">1</a></div>
+							<div class="ptp"><a href="#" class="txt">2</a></div>
+							<div class="ptp contr next"><a href="#" class="txt"></a></div>
+						</div>
+						<!-- 페이징:E -->
+
+
+						
 
 
 					</div>

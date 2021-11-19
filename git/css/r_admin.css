@@ -64,7 +64,7 @@
 .admContents .btnsWrap{font-size: 0; text-align: center;}
 .admContents .btnsWrap:after, .admContents .btnsWrap:before{content: ' '; display: table;}
 .admContents .btnsWrap:after{clear: both;}
-.admContents .admBtns{padding: 0 45px; line-height: 50px; text-align: center; font-size: 18px; color: #fff; font-weight: bold; background: #3f4047; display: inline-block; border: none;}
+.admContents .admBtns{padding: 0 45px; line-height: 50px; text-align: center; font-size: 18px; color: #fff; font-weight: bold; background: #3f4047; display: inline-block; border: none; white-space: nowrap;}
 .admContents .admBtns+.admBtns{margin-left: 10px;}
 .admContents .admBtns.black{background: #3f4047;}
 .admContents .admBtns.org{background: #ff4e00;}
@@ -72,7 +72,9 @@
 .admContents .admBtns.lgray{background: #686971;}
 .admContents .admBtns.llgray{background: #cfcfd1;}
 .admContents .admBtns.sm{padding: 0 33px; line-height: 40px; font-size: 14px;}
+.admContents .admBtns.ssm{padding: 0 12px; line-height: 40px; font-size: 12px; font-weight: normal;}
 .admContents .admBtns.md{padding: 0 33px; line-height: 43px; font-size: 16px;}
+.admContents .admBtns.input{padding: 0 20px; line-height: 46px; font-size: 13px; font-weight: normal;}
 
 .admContents .pagination .ptp .txt{border-color: #cfcfcf; color: #999;}
 .admContents .pagination .ptp.active .txt{border-color: #6a6b73; color: #6a6b73;}
@@ -139,6 +141,9 @@
 .admContents .admTable table td{color: #999; text-align: center; padding: 10px; font-size: 14px; border-bottom: 1px solid #cfcfcf;}
 .admContents .admTable table td .tbThumb{display: block; height: 80px; background: #aeb0bb;  overflow: hidden; position: relative;}
 .admContents .admTable table td .tbThumb img{max-height: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.admContents .admTable.admTview{border-top: 1px solid #cfcfcf;; border-right: 1px solid #cfcfcf;;}
+.admContents .admTable.admTview table th{background: #f9f9f9; border: 1px solid #cfcfcf; border-top: none; color: #333; font-weight: normal;}
+.admContents .admTable.admTview table td{text-align: left; color: #555;}
 .admContents .admTableTop{}
 .admContents .admTableTop .inner{position: relative; text-align: right;}
 .admContents .admTableTop .inner:after,.admContents .admTableTop .inner:before{content: ''; display: table;}

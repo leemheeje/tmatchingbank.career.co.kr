@@ -17,24 +17,24 @@
 
 
 
-	<link rel="stylesheet"href="/static/css/r_common.css">
-	<script src="/static/js/libs/jquery-1.11.1.min.js"></script>
-	<script src="/static/js/libs/jquery.mCustomScrollbar.js"></script>
-	<script src="/static/js/libs/jquery-ui.min.js"></script>
-	<script src="/static/js/libs/slick.min.js"></script>
-	<script src="/static/js/design.utils.js"></script>
-	<script src="/static/js/design.plugin.js"></script>
-	<script src="/static/js/customTags.js"></script>
-	<script src="/static/js/_cl.js"></script>
-	<script src="/static/js/common.js"></script>
+	<link rel="stylesheet" href="/css/r_common.css">
+	<script src="/js/ui/libs/jquery-1.11.1.min.js"></script>
+	<script src="/js/ui/libs/jquery.mCustomScrollbar.js"></script>
+	<script src="/js/ui/libs/jquery-ui.min.js"></script>
+	<script src="/js/ui/libs/slick.min.js"></script>
+	<script src="/js/ui/design.utils.js"></script>
+	<script src="/js/ui/design.plugin.js"></script>
+	<script src="/js/ui/customTags.js"></script>
+	<script src="/js/ui/_cl.js"></script>
+	<script src="/js/ui/common.js"></script>
 	<script>
 		$(document).ready(function () {
 			$(this).customTags();
 		});
 	</script>
 	<!-- 어드민페이지에서 사용:S -->
-	<link rel="stylesheet"href="/static/css/r_admin.css">
-	<script src="/static/js/admCustomTags.js"></script>
+	<link rel="stylesheet" href="/css/r_admin.css">
+	<script src="/js/ui/admCustomTags.js"></script>
 	<!-- 어드민페이지에서 사용:E -->
 </head>
 
@@ -50,7 +50,7 @@
 	<div id="header" class="header admin headerFixed"></div>
 	<!-- HEADER : E -->
 	<!-- CONTAINER : S -->
-	<script src="/static/js/admCustomTags.js"></script>
+	<script src="/js/ui/admCustomTags.js"></script>
 	<script>
 		$(document).ready(function () {
 			//헤더 인크루드
@@ -70,26 +70,6 @@
 				}]
 			]);
 			$(this).admCustomTags();;
-			(function () {
-				var $fnUseStateInputTarget = $('.fnUseStateInputTarget'); //입력노드
-				$fnUseStateInputTarget.on('change', function () {
-					var $this = $(this);
-					var params = $this.data('params');
-					var value = $this.val();
-					if ($this.is('select')) {
-						value = $this.find('option[value="' + value + '"]').text();
-					}
-					$('.fnUseStateNodeTarget[data-params="' + params + '"]').text(value);
-				});
-			})();
-			$('.fnVirPreviewButton').click(function () { //미리보기 버튼클릭
-				$('.fnMainPluBannerArea').show();
-				$('.fnBannerNoResult').hide();
-			});
-			$('.fnAdmFormAreaRestoreButton').click(function () { //리셋버튼클릭
-				$('.fnMainPluBannerArea').hide();
-				$('.fnBannerNoResult').show();
-			});
 		});
 	</script>
 	<div id="container" class="container paddingbottom0">
@@ -100,201 +80,126 @@
 				<!-- LNB :E -->
 				<div class="admContents">
 					<div class="admInnerWrap">
+						<div class="admCmmTit">구인신청서</div>
 
-						<!-- 페이지경로 :S -->
-						<div class="admBreadMaps">
-							<span class="txl">Home</span>
-							<span class="txl">메인관리</span>
-							<span class="txl">Main Manager (PC)</span>
-							<span class="txl">Banner 관리</span>
-							<span class="txl">최상단 Banner</span>
+						<div class="admCmmStit noindent FWB lg MT30">구인신청서 기본정보</div>
+						<div class="admTable admTview MT10">
+							<table>
+								<colgroup>
+									<col width="15%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>기업명</th>
+										<td>
+											㈜커리어넷
+										</td>
+									</tr>
+									<tr>
+										<th>사업자등록번호</th>
+										<td>
+											220-86-73547
+										</td>
+									</tr>
+									<tr>
+										<th>대표자명</th>
+										<td>
+											홍길동
+										</td>
+									</tr>
+									<tr>
+										<th>회사주소</th>
+										<td>
+											(00000) 서울 구로구 디지털로 273, 2층 205호
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<!-- 페이지경로 :E -->
-						<div class="admCmmTit">최상단 Banner</div>
-						<!-- 관리자사이트 sub 타이틀 : S -->
-						<div class="admCmmStit">* 최상단 배너는 최대 10개까지 등록 가능합니다.</div>
-						<div class="admCmmStit">* 기업영업팀 6구좌, 채용솔루션팀 2구좌, 엑스포팀 2구좌 </div>
-						<!-- 관리자사이트 sub 타이틀 : E -->
-						<div class="admFormBoxWrap fnAdmFormBoxWrapping">
-							<!-- 이미지 미리보기 있는 폼 :S -->
-							<div class="admFormBox admBannerForm MT35 isPreview isPreviewType4 fnAdmFormWrapping fnThumbPreviewTargetWrapping">
-								<div class="admFormPreview">
-									<!-- foreach:S -->
-									<div class="imgWrap bann fnThumbPreviewTargetDiv001">
-										<!-- 최상단배너:S -->
-										<div class="mainPluBannerArea fnMainPluBannerArea">
-											<div class="inBg">
-												<img src="" alt="" class="thumb fnThumbNodeImg" />
-											</div>
-											<div class="conts">
-												<div class="lbw">
-													<span class="tx fnUseStateNodeTarget" data-params="label">
-														<!-- 텍스트텍스트 -->
-													</span>
-												</div>
-												<div class="titw fnUseStateNodeTarget" data-params="title">
-													<!-- 텍스트텍스트 -->
-												</div>
-												<span class="date fnUseStateNodeTarget" data-params="date">
-													<!-- 텍스트텍스트 --></span>
-												<div class="sxtxt"><span class="FWB">접수방법</span> : <span class="fnUseStateNodeTarget" data-params="type">
-														<!-- 텍스트텍스트 --></span></div>
-												<span class="imBtn">
-													<span class="txt">상세내용보기</span>
-												</span>
-											</div>
-										</div>
-										<!-- 최상단배너:E -->
-										<!-- 등록된 이미지 없을때:S -->
-										<div class="noResult fnBannerNoResult">
-											<span class="inTxt">
-												Image Preview<br />300 x 395
-											</span>
-										</div>
-										<!-- 등록된 이미지 없을때:E -->
-									</div>
-									<!-- foreach:E -->
-								</div>
-								<div class="admFormInner">
-									<div class="row">
-										<div class="col3">
-											<div class="fidForm">
-												<select class="customSelect">
-													<option value="1">채용공고</option>
-													<option value="2">박람회</option>
-													<option value="3">공고</option>
-													<option value="9">기타</option>
-												</select>
-											</div>
-										</div>
-										<div class="col7">
-											<div class="fidForm">
-												<input type="text" class="fnUseStateInputTarget" data-params="label" placeholder="기업명을 입력해 주세요" />
-											</div>
-										</div>
-										<div class="col12">
-											<div class="fidForm">
-												<input type="text" class="fnUseStateInputTarget" data-params="title" placeholder="채용공고 제목을 입력해 주세요" />
-											</div>
-										</div>
-										<div class="col6">
-											<div class="fidForm">
-												<input type="text" class="fnUseStateInputTarget" data-params="date" placeholder="마감일시 (MM-DD 00:00) 입력" />
-											</div>
-										</div>
-										<div class="col3">
-											<div class="fidForm">
-												<select class="customSelect fnUseStateInputTarget" data-params="type">
-													<option value="1">홈페이지</option>
-													<option value="2">커리어 입사지원</option>
-													<option value="9">기타 지원</option>
-												</select>
-											</div>
-										</div>
-										<div class="col12">
-											<div class="fidForm">
-												<input type="text" placeholder="상세 내용보기 URL" />
-											</div>
-										</div>
-										<div class="col12">
-											<!-- 인풋파일:S -->
-											<div class="fidForm file fnAdmFileImageViewWrapping" data-params='{"thumbTarget" : ".fnThumbPreviewTargetDiv001"}'>
-												<span class="cmmFileUpload">
-													<span class="cmmInputFile">
-														<input type="file" id="" name="" value="" />
-													</span>
-												</span>
-												<input type="text" placeholder="Image (최상단 배너) 를 첨부" readonly />
-												<span class="btn">File Browser</span>
-											</div>
-											<!-- 인풋파일:E -->
-											<!-- 인풋파일:S -->
-											<div class="fidForm file fnAdmFileImageViewWrapping" data-object-params='{"accept" : "*", "size" : "*", "multiple": true}'>
-												<span class="cmmFileUpload">
-													<span class="cmmInputFile">
-														<input type="file" id="" name="" value="" />
-													</span>
-												</span>
-												<input type="text" placeholder="Image (최상단 배너) 를 첨부" readonly />
-												<span class="btn">File Browser</span>
-											</div>
-											<!-- 인풋파일:E -->
-										</div>
-										<div class="col12">
-											<!-- 라디오버튼:S -->
-											<div class="fidForm">
-												<label>
-													<input type="radio" id="" name="fnAdmFormExposType001" value="1" checked />
-													<span class="lb">즉시노출</span>
-												</label>
-												<label>
-													<input type="radio" id="" name="fnAdmFormExposType001" value="9" />
-													<span class="lb">예약노출</span>
-												</label>
-											</div>
-											<!-- 라디오버튼:E -->
-										</div>
-										<div class="col12 fnAdmFormExposType" data-showhide="!">
-											<div class="fidForm inline WIDTH130">
-												<input type="text" placeholder="날짜선택" class="fnDatepicker" readonly="">
-											</div>
-											<div class="fidForm inline ">
-												<select class="customSelect">
-													<option value="">00</option>
-													<option value="">01</option>
-												</select>
-											</div>
-											<div class="fidForm inline">
-												<select class="customSelect">
-													<option value="">00</option>
-													<option value="">01</option>
-												</select>
-											</div>
-											<span class="VMIDDLE">~</span>
-											<div class="fidForm inline WIDTH130">
-												<input type="text" placeholder="날짜선택" class="fnDatepicker" readonly="">
-											</div>
-											<div class="fidForm inline">
-												<select class="customSelect">
-													<option value="">00</option>
-													<option value="">01</option>
-												</select>
-											</div>
-											<div class="fidForm inline">
-												<select class="customSelect">
-													<option value="">00</option>4
-													<option value="">01</option>
-												</select>
-											</div>
-										</div>
-									</div>
-									<div class="absBottom">
-										<a href="#;" class="admBtns sm fnVirPreviewButton">미리보기</a>
-										<div class="fidForm switch inline ML10">
-											<label>
-												<input type="checkbox" checked />
-												<span class="lb"></span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="admFormAside">
-									<div class="fbBtnsWrap">
-										<button class="btn reload fnAdmFormAreaRestoreButton" title="내용초기화"></button>
-									</div>
-								</div>
-							</div>
-							<!-- 이미지 미리보기 있는 폼 :E -->
+						<div class="admCmmStit noindent FWB lg MT30">구인자 희망 근무조건</div>
+						<div class="admTable admTview MT10">
+							<table>
+								<colgroup>
+									<col width="15%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>희망 직무</th>
+										<td>
+											웹 기획, 웹 개발, 웹 디자인, 웹 퍼블리셔
+										</td>
+									</tr>
+									<tr>
+										<th>희망 경력</th>
+										<td>
+											경력 / 00년
+										</td>
+									</tr>
+									<tr>
+										<th>희망 학력</th>
+										<td>
+											고등학교 미만
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<div class="btnsWrap MT20">
+						<div class="admCmmStit noindent FWB lg MT30">담당자 정보</div>
+						<div class="admTable admTview MT10">
+							<table>
+								<colgroup>
+									<col width="15%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>담당자</th>
+										<td>
+											홍길동
+										</td>
+									</tr>
+									<tr>
+										<th>연락처/이메일</th>
+										<td>
+											010-0000-0000 / ditak@career.co.kr
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="admCmmStit noindent FWB lg MT30">담당 컨설턴트</div>
+						<div class="admTable admTview MT10">
+							<table>
+								<colgroup>
+									<col width="15%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>컨설턴트</th>
+										<td>
+											<div class="fidForm inline MINWIDTH200">
+												<select>
+													<option value="">선택</option>
+												</select>
+											</div>
+											<button class="admBtns input org ML05">저장</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="btnsWrap MT40">
 							<div class="FLOATL">
-								<a href="#;" class="admBtns org">저장</a>
-								<a href="#;" class="admBtns ML05">취소</a>
-							</div>
-							<div class="FLOATR">
-								<a href="#;" class="admBtns">목록</a>
+								<a href="#" class="admBtns">목록</a>
 							</div>
 						</div>
+
+
+
+
 					</div>
 				</div>
 			</div>

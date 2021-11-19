@@ -17,80 +17,158 @@
 
 
 
-	<link rel="stylesheet"href="/static/css/r_common.css">
-	<script src="/static/js/libs/jquery-1.11.1.min.js"></script>
-	<script src="/static/js/libs/jquery.mCustomScrollbar.js"></script>
-	<script src="/static/js/libs/jquery-ui.min.js"></script>
-	<script src="/static/js/libs/slick.min.js"></script>
-	<script src="/static/js/design.utils.js"></script>
-	<script src="/static/js/design.plugin.js"></script>
-	<script src="/static/js/customTags.js"></script>
-	<script src="/static/js/_cl.js"></script>
-	<script src="/static/js/common.js"></script>
+	<link rel="stylesheet" href="/css/r_common.css">
+	<script src="/js/ui/libs/jquery-1.11.1.min.js"></script>
+	<script src="/js/ui/libs/jquery.mCustomScrollbar.js"></script>
+	<script src="/js/ui/libs/jquery-ui.min.js"></script>
+	<script src="/js/ui/libs/slick.min.js"></script>
+	<script src="/js/ui/design.utils.js"></script>
+	<script src="/js/ui/design.plugin.js"></script>
+	<script src="/js/ui/customTags.js"></script>
+	<script src="/js/ui/_cl.js"></script>
+	<script src="/js/ui/common.js"></script>
 	<script>
 		$(document).ready(function () {
 			$(this).customTags();
 		});
 	</script>
 	<!-- 어드민페이지에서 사용:S -->
-	<link rel="stylesheet"href="/static/css/r_admin.css">
-	<script src="/static/js/admCustomTags.js"></script>
+	<link rel="stylesheet" href="/css/r_admin.css">
+	<script src="/js/ui/admCustomTags.js"></script>
 	<!-- 어드민페이지에서 사용:E -->
 </head>
 
 <body>
-    <!-- Skip Nav : S -->
-    <div id="skipnavigation">
-        <a href="#gnb">주메뉴 바로가기</a>
-        <a href="#search">검색 바로가기</a>
-        <a href="#container">본문내용 바로가기</a>
-    </div>
-    <!-- Skip Nav : E -->
-    <!-- HEADER : S -->
-    <div id="header" class="header admin headerFixed"></div>
-    <!-- HEADER : E -->
-    <!-- CONTAINER : S -->
-    <script src="/static/js/admCustomTags.js"></script>
-    <script>
-    $(document).ready(function(){
-        //헤더 인크루드
-        $(this).include(true, [['헤더-관리자', { target: '#header.admin', url: '/html/admin/header/header_admin_template.html', get: true }]]);
-        //lnb 인크루드
-        $(this).include(true, [['lnb-관리자', { target: '#rlnb.admin', url: '/html/admin/lnb/lnb_admin_template.html', get: true }]]);
-        $(this).admCustomTags();
-    });
-    </script>
-    <div id="container" class="container paddingbottom0">
-        <div class="contents">
-            <div class="admin subpage">
-                <!-- LNB :S -->
-                <div id="rlnb" class="rlnb admin"></div>
-                <!-- LNB :E -->
-                <div class="admContents">
-                    <div class="admInnerWrap">
+	<!-- Skip Nav : S -->
+	<div id="skipnavigation">
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#search">검색 바로가기</a>
+		<a href="#container">본문내용 바로가기</a>
+	</div>
+	<!-- Skip Nav : E -->
+	<!-- HEADER : S -->
+	<div id="header" class="header admin headerFixed"></div>
+	<!-- HEADER : E -->
+	<!-- CONTAINER : S -->
+	<script src="/js/ui/admCustomTags.js"></script>
+	<script>
+		$(document).ready(function () {
+			//헤더 인크루드
+			$(this).include(true, [
+				['헤더-관리자', {
+					target: '#header.admin',
+					url: '/html/admin/header/header_admin_template.html',
+					get: true
+				}]
+			]);
+			//lnb 인크루드
+			$(this).include(true, [
+				['lnb-관리자', {
+					target: '#rlnb.admin',
+					url: '/html/admin/lnb/lnb_admin_template.html',
+					get: true
+				}]
+			]);
+			$(this).admCustomTags();;
+		});
+	</script>
+	<div id="container" class="container paddingbottom0">
+		<div class="contents">
+			<div class="admin subpage">
+				<!-- LNB :S -->
+				<div id="rlnb" class="rlnb admin"></div>
+				<!-- LNB :E -->
+				<div class="admContents">
+					<div class="admInnerWrap">
+						<div class="admCmmTit">공고관리</div>
 
-                        <!-- 페이지경로 :S -->
-                        <div class="admBreadMaps">
-                            <span class="txl">Home</span>
-                            <span class="txl">메인관리</span>
-                            <span class="txl">Main Manager (PC)</span>
-                            <span class="txl">컨텐츠 관리</span>
-                            <span class="txl">채용속보</span>
-                        </div>
-                        <!-- 페이지경로 :E -->
-                        <div class="admCmmTit">채용속보</div>
-                        <!-- 관리자사이트 sub 타이틀 : S -->
-                        <div class="admCmmStit">* 채용속보는 12개 최신 공고를 유지해 주세요. </div>
-                        <div class="admCmmStit">* 채용속보 저장을 클릭하고 만드시 Main Manage (PC)에서 등록상황을 검수하기 바랍니다.</div>
-                        <div class="admCmmStit">* 운영자는 오전, 오후, 퇴근전에 반드시 확인하고 마감 임박한 채용공고는 반드시 다른 공고로 교체 바랍니다.</div>
-                        <!-- 관리자사이트 sub 타이틀 : E -->
+						<div class="admTableTop MT20">
+							<div class="inner">
+								<div class="FLOATL">
+									<div class="fidForm MT25">
+										<label>
+											<input type="radio" name="radioA" value="Y" checked="">
+											<span class="lb">진행중</span>
+										</label>
+										<label>
+											<input type="radio" name="radioA" value="N">
+											<span class="lb">마감</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- CONTAINER : E -->
+						<div class="admTable MT10">
+							<table>
+								<colgroup>
+									<col width="15%">
+									<col width="15%">
+									<col width="*">
+									<col width="15%">
+									<col width="15%">
+									<col width="10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>기업명</th>
+										<th>공고제목</th>
+										<th>자격요건</th>
+										<th>근무조건</th>
+										<th>마감일</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- foreach:S -->
+									<tr>
+										<td>
+											<span class="colorGry-1 ">Saraminhr78</span>
+											<button class="admBtns sm">Login</button>
+										</td>
+										<td class="FWB colorGry-1">나이스 평가정보</td>
+										<td class="TXTL">
+											<a href="#" class="FONT16 colorGry-1 HOVER_UNDERLINE">나이스 평가정보 데이터 가공</a>
+										</td>
+										<td>
+											신입<br>
+											대졸(4년)
+										</td>
+										<td>
+											인턴직<br>
+											경기 성남시 분당구
+										</td>
+										<td>~11/12</td>
+									</tr>
+									<!-- foreach:E -->
+									<!-- 리스트없을때:S -->
+									<tr>
+										<td colspan="6">
+											<div class="cmmNoResult">데이타가 없습니다.</div>
+										</td>
+									</tr>
+									<!-- 리스트없을때:E -->
+								</tbody>
+							</table>
+						</div>
+
+						<!-- 페이징:S -->
+						<div class="pagination MT15">
+							<div class="ptp contr prev"><a href="#" class="txt"></a></div>
+							<div class="ptp active"><a href="#" class="txt">1</a></div>
+							<div class="ptp"><a href="#" class="txt">2</a></div>
+							<div class="ptp contr next"><a href="#" class="txt"></a></div>
+						</div>
+						<!-- 페이징:E -->
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- CONTAINER : E -->
 
 </body>
+
 </html>

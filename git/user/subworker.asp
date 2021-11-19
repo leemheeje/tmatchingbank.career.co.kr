@@ -1,7 +1,13 @@
+<%
+'====================================================================
+'   구직신청서 작성
+' 	최초 작성일	: 2021-11-19
+'	최초 작성자	: 임상균
+'====================================================================
+%>
 <!--#include virtual = "/common/common.asp"-->
 <!--#include virtual = "/wwwconf/function/db/DBConnection.asp"-->
 <%
-
 
 %>
 <!--#include virtual = "/common/header.asp"-->
@@ -21,7 +27,7 @@
 					$this.include(true, [
 						['희망근무', {
 							target: '.cmmMainSearchPageArea[data-params="area"]',
-							url: '/html/template/search_main_area.html',
+							url: '/user/Desire_Area_Inc.asp',
 							get: true
 						}]
 					]);
@@ -192,7 +198,7 @@
 
 									<div class="searchPennelBox area fnMainSearchPannelDivision" data-params="area">
 										<div class="cmmMainSearchPageArea" data-params="area">
-											<!-- 희망근무지 /html/template/search_main_area.html -->
+											<!-- 희망근무지 /user/Desire_Area_Inc.asp -->
 										</div>
 									</div>
 
@@ -275,6 +281,7 @@
 
 								</div>
 							</div>
+							<!--
 							<div class="dtForsInBox">
 								<span class="ldt">희망급여</span>
 								<div class="inBox">
@@ -310,6 +317,7 @@
 									</div>
 								</div>
 							</div>
+							-->
 							<!-- foreach:E -->
 						</div>
 					</div>

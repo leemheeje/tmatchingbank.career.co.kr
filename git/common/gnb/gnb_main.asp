@@ -26,11 +26,11 @@
 		<div class="dimmd"></div>
 		<div class="innerWrap">
 			<div class="hdStmap">
+				
+				<% '로그인 전 %>
 				<div class="gdStInner">
-					<div class="inst"><span class="poi">대체인력뱅크 관리자</span> 님</div>
 					<a href="/signup/Join_Member.asp" class="gbtsn prim FWB">회원가입</a>
 					<a href="/login/Login.asp" class="gbtsn navy FWB">로그인</a>
-					<a href="#" class="gbtsn dnavy FWB">관리자</a>
 					<div class="grLayWr">
 						<button class="gbtsn outline gray deRform">
 							<span class="int">신청서</span>
@@ -38,35 +38,53 @@
 						</button>
 						<div class="lstsaArea">
 							<div class="lstsa">
-								<div class="tp">
-									<a href="#" class="txt">구직신청</a>
-								</div>
-								<div class="tp">
-									<a href="#" class="txt">구인신청</a>
-								</div>
+								<div class="tp"><a href="/user/subworker.asp" class="txt">구직신청</a></div>
+								<div class="tp"><a href="/company/subworker.asp" class="txt">구인신청</a></div>
 							</div>
 						</div>
 					</div>
-					<a href="/signup/Join_Member.asp" class="gbtsn outline gray">회원가입</a>
+					<a href="/board/notice_list.asp" class="gbtsn outline gray">공지사항</a>
 				</div>
+				<!--
+				<% '로그인(개인) %>
+				<div class="gdStInner">
+					<div class="inst"><span class="poi">홍길동</span> 님</div>
+					<a href="/login/Logout.asp" class="gbtsn navy FWB">로그아웃</a>
+					<a href="#" class="gbtsn outline gray">구직신청서</a>
+					<a href="/board/notice_list.asp" class="gbtsn outline gray">공지사항</a>
+				</div>
+
+				<% '로그인(기업) %>
+				<div class="gdStInner">
+					<div class="inst"><span class="poi">커리어넷</span> 님</div>
+					<a href="/login/Logout.asp" class="gbtsn navy FWB">로그아웃</a>
+					<a href="#" class="gbtsn outline gray">구인신청서</a>
+					<a href="/board/notice_list.asp" class="gbtsn outline gray">공지사항</a>
+				</div>
+
+				<% '로그인(관리자) %>
+				<div class="gdStInner">
+					<div class="inst"><span class="poi">대체인력뱅크 관리자</span> 님</div>
+					<a href="/login/Logout.asp" class="gbtsn navy FWB">로그아웃</a>
+					<a href="/board/notice_list.asp" class="gbtsn outline gray">공지사항</a>
+					<a href="#" class="gbtsn dnavy FWB">관리자</a>
+				</div>
+				-->
 			</div>
 			<div class="gnbArea">
 				<a href="/" class="logo"></a>
 				<!-- gnb:S -->
 				<div class="gnb">
 					<ul class="lst">
-						<!-- foreach:S -->
 						<li class="tp active">
 							<a href="#" class="txt">대체인력뱅크</a>
 							<ul class="dtpd">
-								<!-- foreach:S -->
 								<li class="stp active">
 									<a href="#" class="txt">사업소개</a>
 								</li>
 								<li class="stp">
 									<a href="#" class="txt">지원금 안내</a>
 								</li>
-								<!-- foreach:E -->
 							</ul>
 						</li>
 						<li class="tp">
@@ -81,20 +99,17 @@
 						<li class="tp">
 							<a href="#" class="txt">기업전용 채용관</a>
 							<ul class="dtpd">
-								<!-- foreach:S -->
 								<li class="stp ">
 									<a href="#" class="txt">신협 채용관</a>
 								</li>
 								<li class="stp">
 									<a href="#" class="txt">공공기관 채용정보</a>
 								</li>
-								<!-- foreach:E -->
 							</ul>
 						</li>
 						<li class="tp">
 							<a href="#" class="txt">자료실</a>
 							<ul class="dtpd">
-								<!-- foreach:S -->
 								<li class="stp ">
 									<a href="#" class="txt">취업 성공수기</a>
 								</li>
@@ -110,10 +125,8 @@
 								<li class="stp">
 									<a href="#" class="txt">성공취업 Tool</a>
 								</li>
-								<!-- foreach:E -->
 							</ul>
 						</li>
-						<!-- foreach:E -->
 					</ul>
 				</div>
 				<!-- gnb:E -->
