@@ -328,7 +328,7 @@ $(document).ready(function () {
 								<div class="tit JALNAN">
 									대체인력뱅크란? <span class="poi">FAQ에서 궁금증 해결!</span>
 								</div>
-								<a href="/board/list.asp?gubun=2" class="bt">
+								<a href="/board/faq.asp" class="bt">
 									<span class="int">바로가기</span>
 									<span class="ic"></span>
 								</a>
